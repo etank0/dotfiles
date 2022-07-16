@@ -1,4 +1,4 @@
-"~/
+"~/.vimrc
 
 syntax on
 
@@ -78,9 +78,9 @@ set statusline+=\ ::
 set statusline+=\ %n
 set statusline+=\ ››\ %*
 
-hi User1 ctermfg=5 ctermbg=0
-hi User2 ctermfg=9 ctermbg=0
-hi User3 ctermfg=8 ctermbg=0
-hi User4 ctermfg=1 ctermbg=0
-hi User5 ctermfg=6 ctermbg=0
+hi User1 ctermfg=5 ctermbg=none
+hi User2 ctermfg=9 ctermbg=none
+hi User3 ctermfg=8 ctermbg=none
+hi User4 ctermfg=1 ctermbg=none
+hi User5 ctermfg=6 ctermbg=none
 hi User6 ctermfg=15 ctermbg=11
