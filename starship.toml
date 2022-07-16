@@ -1,0 +1,20 @@
+#NOTE:
+#file location : .config/starship.toml
+#for installation : curl -sS https://starship.rs/install.sh | sh
+
+[package]
+disabled = true
+
+[python]
+disabled = true
+
+#[username]
+#style_user = "bold dimmed blue"
+#show_always = true
+
+#[hostname]
+#ssh_only = false
+#format = "<[$hostname]($style)>"
+#trim_at = "-"
+#style = "bold dimmed white"
+#disabled = false
