@@ -18,10 +18,10 @@ call plug#end()
 
 "Vim
 syntax on
-set fileencoding=UTF-8
 colorscheme wal
 set nocompatible
 set numberwidth=5
+set fileencoding=utf
 set number
 set autoindent
 set tabstop=4
@@ -37,10 +37,29 @@ set wildmode=longest,list,full
 set ttymouse=sgr
 set pastetoggle=<F2>
 set clipboard=unnamed
+
+"cursorline
 set cursorline
 highlight CursorLine cterm=NONE ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
-
 highlight CursorLineNR cterm=bold ctermfg=15 ctermbg=NONE
+
+"for transparent background
+hi Normal guibg=NONE ctermbg=NONE
+hi EndOfBuffer guibg=NONE ctermbg=NONE
+
+"keybindings
+
+imap <c-b> <Esc>:NERDTreeToggle<CR>
+nmap <c-b> :NERDTreeToggle<CR>
+
+nnoremap <silent> <c-Up> :resize -1<CR>
+nnoremap <silent> <c-Down> :resize +1<CR>
+nnoremap <silent> <c-left> :vertical resize -1<CR>
+nnoremap <silent> <c-right> :vertical resize +1<CR>
+
+nmap <silent> <c-\> :terminal<CR>
+nmap <silent> <c-h> :History<CR>
+
 
 "built in files
 
@@ -113,24 +132,6 @@ highlight CursorLineNR cterm=bold ctermfg=15 ctermbg=NONE
 "hi User5 ctermfg=6 ctermbg=none
 "hi User6 ctermfg=0  ctermbg=11
 
-"for transparent background
-hi Normal guibg=NONE ctermbg=NONE
-hi EndOfBuffer guibg=NONE ctermbg=NONE
-
-
-"keybindings
-
-imap <c-b> <Esc>:NERDTreeToggle<CR
-nmap <c-b> :NERDTreeToggle<CR>
-
-nnoremap <silent> <c-Up> :resize -1<CR>
-nnoremap <silent> <c-Down> :resize +1<CR>
-nnoremap <silent> <c-left> :vertical resize -1<CR>
-nnoremap <silent> <c-right> :vertical resize +1<CR>
-
-nmap <silent> <c-\> :History<CR>
-
-
 "-----------------------------------------------------------------------------
 " air-line
 if !exists('g:airline_symbols')
@@ -160,4 +161,4 @@ let g:airline#extensions#tabline#show_buffers = 0    " dont show buffers in the 
 let g:airline#extensions#tabline#tab_min_count = 1  " minimum of 2 tabs needed to display the tabline
 let g:airline#extensions#tabline#show_splits = 0       " disables the buffer name that displays on the right
 let g:airline#extensions#tabline#show_tab_nr = 0    " disable tab numbers
-let g:airline#extensions#tabline#show_tab_type = 0  
+let g:airline#extensions#tabline#show_tab_type = 0     " disables the weird ornage arrow on the tabline
