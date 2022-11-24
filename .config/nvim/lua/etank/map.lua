@@ -17,4 +17,4 @@ map("n", "<C-Right>", ":vertical resize +1<CR>")
 
 --Fuzzy
 
-map("n", "<C-t>", ":History<CR>")
+map("n", "<C-h>", ":History<CR>")
