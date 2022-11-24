@@ -4,7 +4,8 @@ For Customization and Stuff.
 
 This folder contains files for for:
 -terminals : alacritty, kitty etc.
--vim
+-vim/nvim
 -gedit (color scheme)
 -startship prompt
+-ranger
 and etc.
