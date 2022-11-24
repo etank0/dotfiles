@@ -23,6 +23,7 @@ set nocompatible
 set numberwidth=5
 set fileencoding=utf
 set number
+set relativenumber
 set autoindent
 set tabstop=4
 set shiftwidth=4
