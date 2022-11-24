@@ -6,7 +6,7 @@ vim.cmd('syntax on')
 o.number = true
 o.cursorline = true
 o.numberwidth = 5
---o.relativenumber = true
+o.relativenumber = true
 --o.signcolumn = 'yes'
 --o.termguicolors = true
 o.scrolloff = 8
