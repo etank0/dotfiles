@@ -16,9 +16,14 @@ return require('packer').startup(function(use)
   use 'chrisbra/Colorizer'
   use 'junegunn/fzf.vim'
 --  use 'neoclide/coc.nvim'
---
---
+
+--indentation
+--  use "lukas-reineke/indent-blankline.nvim"
+  --pywal
   use { 'AlphaTechnolog/pywal.nvim', as = 'pywal' }
+  --Catppuccin theme
+  use { "catppuccin/nvim", as = "catppuccin" }
+  --lualine
   use {
   'nvim-lualine/lualine.nvim',
   requires = { 'kyazdani42/nvim-web-devicons', opt = true }
@@ -29,4 +34,7 @@ return require('packer').startup(function(use)
   use 'dylanaraps/wal.vim'
   use 'preservim/nerdtree'
   use "akinsho/toggleterm.nvim"
+  
+  -- for lsp
+  use 'neovim/nvim-lspconfig' -- Configurations for Nvim LSP
 end)
