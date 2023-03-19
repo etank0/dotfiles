@@ -5,7 +5,9 @@ require('etank.map')
 require('etank.bufferline')
 require('etank.lualine')
 require('etank.toggleterm')
-
+require('etank.lspconfig')
+--require('etank.indent')
 --Pywal
 --local pywal = require('pywal')
+
 --pywal.setup()
