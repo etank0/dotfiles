@@ -31,7 +31,7 @@ unset rc
 
 #for aliases
 if [ -f ~/.bash_aliases ]; then
-	. ~/.bash_aliases
+    . ~/.bash_aliases
 fi
 
 # for pywal
@@ -41,7 +41,7 @@ fi
 export PATH=/usr/local/lib/nodejs/node-v18.12.1-linux-x64/bin:$PATH
 export PATH="/home/swetank/.local/bin:$PATH"
 
-#for cs50
+#for CS50x
 export LIBRARY_PATH=/usr/local/lib
 export C_INCLUDE_PATH=/usr/local/include
 export LD_LIBRARY_PATH=/usr/local/lib
@@ -49,4 +49,4 @@ export CC="clang"
 export CFLAGS="-fsanitize=signed-integer-overflow -fsanitize=undefined -ggdb3 -O0 -std=c11 -Wall -Werror -Wextra -Wno-sign-compare -Wno-unused-parameter -Wno-unused-variable -Wshadow"
 export LDLIBS="-lcrypt -lcs50 -lm"
 
- eval "$(starship init bash)"
+eval "$(starship init bash)"

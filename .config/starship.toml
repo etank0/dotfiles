@@ -1,6 +1,5 @@
-#NOTE:
-#file location : .config/starship.toml
-#for installation : curl -sS https://starship.rs/install.sh | sh
+[line_break]
+disabled = true
 
 [package]
 disabled = true
@@ -8,13 +7,22 @@ disabled = true
 [python]
 disabled = true
 
-#[username]
+[java]
+disabled = true
+
+[nodejs]
+disabled = true
+
+[username]
 #style_user = "bold dimmed blue"
+format = "[$user](cyan bold)@"
 #show_always = true
 
-#[hostname]
+[hostname]
 #ssh_only = false
-#format = "<[$hostname]($style)>"
+format = "[$hostname]($style) "
 #trim_at = "-"
 #style = "bold dimmed white"
 #disabled = false
+
+
