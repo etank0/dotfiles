@@ -133,7 +133,7 @@ hi User2 ctermfg=9 ctermbg=none
 hi User3 ctermfg=8 ctermbg=none
 hi User4 ctermfg=1 ctermbg=none
 hi User5 ctermfg=6 ctermbg=none
-hi User6 ctermfg=0  ctermbg=11
+hi User6 ctermfg=0  ctermbg=11 cterm=bold
 
 "-----------------------------------------------------------------------------
 " air-line
