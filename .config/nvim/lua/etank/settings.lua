@@ -13,6 +13,7 @@ o.scrolloff = 8
 -- Better editing experience
 o.smarttab = true
 o.cindent = true
+o.expandtab = true
 o.laststatus = 2
 o.autoindent = true
 o.wrap = true
@@ -27,6 +28,9 @@ o.clipboard = 'unnamedplus'
 -- Better buffer splitting
 o.splitright = true
 o.splitbelow = true
+--searching
+o.hlsearch = false
+o.incsearch = true
 
 vim.opt.mouse = "a"
 -- Map <leader> to space
