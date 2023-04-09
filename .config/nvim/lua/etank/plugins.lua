@@ -16,7 +16,6 @@ return require('packer').startup(function(use)
   use 'chrisbra/Colorizer'
   use 'junegunn/fzf.vim'
 --  use 'neoclide/coc.nvim'
-
 --indentation
 --  use "lukas-reineke/indent-blankline.nvim"
   --pywal
@@ -59,4 +58,11 @@ return require('packer').startup(function(use)
     {'rafamadriz/friendly-snippets'}, -- Optional
   }
 }
+
+-- Treesitter
+  use {
+      "nvim-treesitter/nvim-treesitter",
+      run = ":TSUpdate",
+  }
+
 end)
