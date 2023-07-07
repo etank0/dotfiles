@@ -7,7 +7,7 @@ require('etank.lualine')
 require('etank.toggleterm')
 require('etank.lspconfig')
 require('etank.treesitter')
-require('etank.catppuccin')
+--require('etank.catppuccin')
 --require('etank.indent')
 --Pywal
 --local pywal = require('pywal')

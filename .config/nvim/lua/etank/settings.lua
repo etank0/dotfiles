@@ -4,7 +4,7 @@ local o = vim.o
 vim.cmd('syntax on')
 -- Better editor UI
 o.number = true
-o.cursorline = true
+--o.cursorline = true
 o.numberwidth = 5
 o.relativenumber = true
 --o.signcolumn = 'yes'

@@ -15,11 +15,22 @@ return require('packer').startup(function(use)
   -------------------
   use 'chrisbra/Colorizer'
   use 'junegunn/fzf.vim'
+
 --  use 'neoclide/coc.nvim'
+
 --indentation
 --  use "lukas-reineke/indent-blankline.nvim"
-  --pywal
-  use { 'AlphaTechnolog/pywal.nvim', as = 'pywal' }
+
+--pywal
+--  use { 'AlphaTechnolog/pywal.nvim', as = 'pywal' }
+--  use({
+--   "atalazer/wally.nvim",
+--   run = "./setup.sh",
+--   setup = function()
+--            vim.g.wally_transparent = true
+--   end,
+--   config = [[require("wally").colorscheme()]]
+--    })
   --Catppuccin theme
   use { "catppuccin/nvim", as = "catppuccin" }
   --lualine
