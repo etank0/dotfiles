@@ -14,15 +14,18 @@ disabled = true
 disabled = true
 
 [username]
-#style_user = "bold dimmed blue"
-format = "[$user](cyan bold)@"
-#show_always = true
+format = '\[[$user]($style_user)@'
+style_user = 'white bold'
+style_root = 'white bold'
+disabled = false
+show_always = true
 
 [hostname]
-#ssh_only = false
-format = "[$hostname]($style) "
+ssh_only = false
+format = '[$hostname]($style)\] '
 #trim_at = "-"
-#style = "bold dimmed white"
-#disabled = false
+style = "white bold"
+disabled = false
 
-
+[sudo]
+format = '\[[as $symbol]($style)\]'
