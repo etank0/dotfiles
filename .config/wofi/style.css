@@ -1,0 +1,52 @@
+#window {
+	border: 2px solid rgba(--wofi-rgb-color13, 0.94);
+	background-color: rgba(--wofi-rgb-color0, 0.94);
+	font-size: 15px;
+	font-family: "JetBrains Mono";
+}
+
+#outer-box {
+	margin: 2px;
+}
+
+#input {
+	border: 0;
+	border-radius: 0;
+	background-color: transparent;
+	color: --wofi-color15;
+	margin: 2px;
+}
+
+#input image:first-child {
+	margin-left: -60px;
+}
+
+#input image:last-child {
+	margin-right: -60px;
+}
+
+#input:focus {
+	border-radius: 0;
+}
+
+#entry {
+	color: --wofi-color15;
+}
+
+#entry:selected {
+	background-color: rgba(--wofi-rgb-color13, 0.94);
+}
+
+#text:selected {
+	color: --wofi-color0;
+}
+#img {
+	margin-right: 3px;
+	margin-left: 2px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+#text {
+	margin-left: 2px;
+}

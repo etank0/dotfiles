@@ -1,0 +1,11 @@
+mode=drun,run
+run-always_parse_args=true
+term=foot
+color=.cache/wal/colors
+allow_images=true
+hide_scroll=true
+insensitive=true
+prompt=drun
+width=35%
+height=35%
+location=center
