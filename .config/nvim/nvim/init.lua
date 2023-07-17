@@ -1,0 +1,16 @@
+require('etank.settings')
+require('etank.plugins')
+require('etank.highlights')
+require('etank.map')
+require('etank.bufferline')
+require('etank.lualine')
+require('etank.toggleterm')
+require('etank.lspconfig')
+require('etank.treesitter')
+require('etank.nvim-tree')
+--require('etank.catppuccin')
+--require('etank.indent')
+
+--Pywal AlphaTechnology
+--local pywal = require('pywal')
+--pywal.setup()
