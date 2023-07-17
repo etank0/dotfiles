@@ -5,7 +5,7 @@
 -- local ok, _ = pcall(vim.cmd, 'colorscheme base16-nord')
 -- local ok, _ = pcall(vim.cmd, 'colorscheme base16-oceanicnext')
 -- local ok, _ = pcall(vim.cmd, 'colorscheme pywal')
-local ok, _ = pcall(vim.cmd, 'colorscheme wal')
+local _ = pcall(vim.cmd, 'colorscheme wal')
 -- local ok, _ = pcall(vim.cmd, 'colorscheme catppuccin')
 
 --vim.cmd([[highlight Normal ctermbg=NONE guibg=NONE]])

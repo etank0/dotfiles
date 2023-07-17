@@ -1,0 +1,14 @@
+set icons
+set drawbox
+
+#for previews of files
+set previewer ctpv
+set cleaner ctpvclear
+&ctpv -s $id
+&ctpvquit $id
+
+#for dragon (drag and drop)
+cmd dragon %dragon -a -x "$fx"
+
+#Key Mappings
+map R dragon
