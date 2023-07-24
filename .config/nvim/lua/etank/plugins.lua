@@ -19,32 +19,38 @@ return require('packer').startup(function(use)
 --  use 'neoclide/coc.nvim'
 
 --indentation
---  use "lukas-reineke/indent-blankline.nvim"
+  use "lukas-reineke/indent-blankline.nvim"
 
 --pywal
---  use { 'AlphaTechnolog/pywal.nvim', as = 'pywal' }
---  use({
---   "atalazer/wally.nvim",
---   run = "./setup.sh",
---   setup = function()
---            vim.g.wally_transparent = true
---   end,
---   config = [[require("wally").colorscheme()]]
---    })
-  --Catppuccin theme
+  use { 'AlphaTechnolog/pywal.nvim', as = 'pywal' }
+
+--Catppuccin theme
   use { "catppuccin/nvim", as = "catppuccin" }
-  --lualine
+
+-- Rosepine theme
+  use({ 'rose-pine/neovim', as = 'rose-pine' })
+
+--lualine
   use {
   'nvim-lualine/lualine.nvim',
   requires = { 'kyazdani42/nvim-web-devicons', opt = true }
 }
+
+-- nvim-tree
+ use {
+  'nvim-tree/nvim-tree.lua',
+  requires = {
+    'nvim-tree/nvim-web-devicons', -- optional
+  },
+}
+
 --  use 'vim-airline/vim-airline'
   use 'akinsho/bufferline.nvim'
   use 'ryanoasis/vim-devicons'
   use 'dylanaraps/wal.vim'
   use 'preservim/nerdtree'
   use "akinsho/toggleterm.nvim"
-  
+
   -- for lsp
   --use 'neovim/nvim-lspconfig' -- Configurations for Nvim LSP
   use {

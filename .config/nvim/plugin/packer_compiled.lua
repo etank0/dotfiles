@@ -129,6 +129,11 @@ _G.packer_plugins = {
     path = "/home/swetank/.local/share/nvim/site/pack/packer/start/fzf.vim",
     url = "https://github.com/junegunn/fzf.vim"
   },
+  ["indent-blankline.nvim"] = {
+    loaded = true,
+    path = "/home/swetank/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
+    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
+  },
   ["lsp-zero.nvim"] = {
     loaded = true,
     path = "/home/swetank/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
@@ -164,6 +169,11 @@ _G.packer_plugins = {
     path = "/home/swetank/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-tree.lua"] = {
+    loaded = true,
+    path = "/home/swetank/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
+    url = "https://github.com/nvim-tree/nvim-tree.lua"
+  },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/home/swetank/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
@@ -179,6 +189,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/swetank/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
+  },
+  pywal = {
+    loaded = true,
+    path = "/home/swetank/.local/share/nvim/site/pack/packer/start/pywal",
+    url = "https://github.com/AlphaTechnolog/pywal.nvim"
+  },
+  ["rose-pine"] = {
+    loaded = true,
+    path = "/home/swetank/.local/share/nvim/site/pack/packer/start/rose-pine",
+    url = "https://github.com/rose-pine/neovim"
   },
   ["toggleterm.nvim"] = {
     loaded = true,

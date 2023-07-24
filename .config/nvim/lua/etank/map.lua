@@ -7,7 +7,7 @@ local function map(m, k, v)
 end
 
 
-map("n", "<C-b>", "<CMD>NERDTreeToggle<CR>")
+map("n", "<C-b>", "<CMD>NvimTreeToggle<CR>")
 
 --Resizing
 map("n", "<C-Up>", ":resize -1<CR>")

@@ -19,3 +19,4 @@ bufferline.setup({
 	pick = { italic = false },
  },
 })
+

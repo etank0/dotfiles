@@ -11,6 +11,14 @@ catppuccin.setup {
 			mantle = "#000000",
 			crust = "#000000",
 		},
-	}
+	},
+    integrations = {
+        treesitter = true,
+        nvimtree = {
+            enabled = true,
+            show_root = false,
+            transparent_panel = false,
+        },
+    },
 }
 vim.cmd.colorscheme "catppuccin"

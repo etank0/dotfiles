@@ -1,15 +1,21 @@
--------------------------------------------------
+------------------------------------------------
 -- COLORSCHEMES
 -------------------------------------------------
--- local ok, _ = pcall(vim.cmd, 'colorscheme base16-monokai')
--- local ok, _ = pcall(vim.cmd, 'colorscheme base16-nord')
--- local ok, _ = pcall(vim.cmd, 'colorscheme base16-oceanicnext')
--- local ok, _ = pcall(vim.cmd, 'colorscheme pywal')
-local _ = pcall(vim.cmd, 'colorscheme wal')
--- local ok, _ = pcall(vim.cmd, 'colorscheme catppuccin')
+-- local ok, _ = pcall(vim.cmd, 'colorscheme wal')
+local _ = pcall(vim.cmd, 'colorscheme pywal')
 
---vim.cmd([[highlight Normal ctermbg=NONE guibg=NONE]])
---vim.cmd([[highlight NonText ctermbg=NONE guibg=NONE]])
+
+----------------FOR PYWAL.NVIM EXTENSION------------------
+vim.cmd([[highlight EndOfBuffer ctermbg=NONE guibg=NONE]])
+vim.cmd([[highlight NormalNC ctermbg=NONE guibg=NONE]])
+vim.cmd([[highlight SignColumn ctermfg=NONE ctermbg=NONE guibg=NONE]])
+vim.cmd([[highlight Pmenu ctermfg=NONE ctermbg=NONE guibg=NONE]])
+vim.cmd([[highlight FloatBorder ctermfg=NONE ctermbg=NONE guibg=NONE]])
+vim.cmd([[highlight NormalFloat ctermfg=NONE ctermbg=NONE guibg=NONE]])
+vim.cmd([[highlight TabLine ctermfg=NONE ctermbg=NONE guibg=NONE]])
+vim.cmd([[highlight LineNR ctermbg=NONE guibg=NONE]])
+vim.cmd([[highlight Normal ctermbg=NONE guibg=NONE]])
+vim.cmd([[highlight NonText ctermbg=NONE guibg=NONE]])
 --vim.cmd([[highlight CursorLine cterm=NONE ctermfg=NONE ctermbg=NONE guibg=NONE guifg=NONE]])
 --vim.cmd([[highlight CursorLineNR cterm=Bold ctermfg=15 ctermbg=NONE]])
 

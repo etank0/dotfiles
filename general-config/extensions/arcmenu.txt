@@ -41,6 +41,7 @@ override-menu-theme=false
 pinned-app-list=['ArcMenu Settings', '/home/swetank/.local/share/gnome-shell/extensions/arcmenu@arcmenu.com/icons/arcmenu-logo-symbolic.svg', 'gnome-extensions prefs arcmenu@arcmenu.com', 'Files', 'org.gnome.Nautilus', 'org.gnome.Nautilus.desktop', 'Terminal', 'org.gnome.Terminal', 'org.gnome.Terminal.desktop', 'Calculator', 'org.gnome.Calculator', 'org.gnome.Calculator.desktop', 'OBS Studio', 'com.obsproject.Studio', 'com.obsproject.Studio.desktop', 'Text Editor', 'org.gnome.TextEditor', 'org.gnome.TextEditor.desktop', 'Visual Studio Code', 'vscode', 'code.desktop', 'Xournal++', 'com.github.xournalpp.xournalpp', 'com.github.xournalpp.xournalpp.desktop']
 prefs-visible-page=0
 quicklinks-item-icon-size='Default'
+recently-installed-apps=['java-17-openjdk-17.0.7.0.7-5.fc38.x86_64-jconsole.desktop', 'qt5-linguist.desktop']
 right-panel-width=205
 runner-menu-custom-hotkey=['<Super>r']
 search-entry-border-radius=(true, 25)
