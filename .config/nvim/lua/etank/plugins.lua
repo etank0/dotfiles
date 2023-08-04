@@ -18,6 +18,9 @@ return require('packer').startup(function(use)
 
 --  use 'neoclide/coc.nvim'
 
+--Transparent--
+  use 'xiyaowong/transparent.nvim'
+
 --indentation
   use "lukas-reineke/indent-blankline.nvim"
 

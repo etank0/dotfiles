@@ -16,6 +16,7 @@ vim.cmd([[highlight TabLine ctermfg=NONE ctermbg=NONE guibg=NONE]])
 vim.cmd([[highlight LineNR ctermbg=NONE guibg=NONE]])
 vim.cmd([[highlight Normal ctermbg=NONE guibg=NONE]])
 vim.cmd([[highlight NonText ctermbg=NONE guibg=NONE]])
+-------------------------------------------------------------------
 --vim.cmd([[highlight CursorLine cterm=NONE ctermfg=NONE ctermbg=NONE guibg=NONE guifg=NONE]])
 --vim.cmd([[highlight CursorLineNR cterm=Bold ctermfg=15 ctermbg=NONE]])
 
