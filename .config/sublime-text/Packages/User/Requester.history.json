@@ -1,0 +1,1 @@
+{"requests.post('https://jsonplaceholder.typicode.com/posts')": {"file": null, "request": "requests.post('https://jsonplaceholder.typicode.com/posts')", "env_string": "base_url = 'https://jsonplaceholder.typicode.com'", "code": 201, "ts": 1695134858, "method": "POST", "meta": null, "tabname": null, "url": "https://jsonplaceholder.typicode.com/posts", "original_request": null}}
