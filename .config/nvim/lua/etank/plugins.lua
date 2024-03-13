@@ -16,11 +16,6 @@ return require('packer').startup(function(use)
   use 'chrisbra/Colorizer'
   use 'junegunn/fzf.vim'
 
---  use 'neoclide/coc.nvim'
-
---Transparent--
-  use 'xiyaowong/transparent.nvim'
-
 --indentation
   use "lukas-reineke/indent-blankline.nvim"
 
@@ -33,6 +28,8 @@ return require('packer').startup(function(use)
 -- Rosepine theme
   use({ 'rose-pine/neovim', as = 'rose-pine' })
 
+-- Nord theme
+  use({ 'shaunsingh/nord.nvim' })
 --lualine
   use {
   'nvim-lualine/lualine.nvim',
@@ -77,6 +74,14 @@ return require('packer').startup(function(use)
     {'L3MON4D3/LuaSnip'},             -- Required
     {'rafamadriz/friendly-snippets'}, -- Optional
   }
+}
+
+
+-- Telescope
+use {
+  'nvim-telescope/telescope.nvim', branch = '0.1.x',
+-- or                            , tag = '0.1.6',
+  requires = { {'nvim-lua/plenary.nvim'} }
 }
 
 -- Treesitter

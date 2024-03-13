@@ -8,10 +8,11 @@ require('etank.lspconfig')
 require('etank.bufferline')
 require('etank.treesitter')
 require('etank.nvim-tree')
+require("etank.telescope")
 --require('etank.rosepine')
 --require('etank.catppuccin')
 require('etank.indent')
-
+--require('etank.nord')
 --Pywal AlphaTechnology
 --local pywal = require('pywal')
 --pywal.setup()
