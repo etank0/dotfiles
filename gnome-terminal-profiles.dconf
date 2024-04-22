@@ -1,0 +1,78 @@
+[/]
+default='de9b3483-5336-40e0-8c90-370ba55f2742'
+list=['b1dcc9dd-5262-4d8d-a863-c897e6d979b9', 'a33a7233-d9c6-47ef-be8a-5864512f11a2', 'b95617e7-02ca-4984-acdc-3aebbc1b14d6', '402c4f50-74f1-4d7f-b6a0-4b03f9041761', 'de9b3483-5336-40e0-8c90-370ba55f2742']
+
+[:402c4f50-74f1-4d7f-b6a0-4b03f9041761]
+audible-bell=false
+background-color='#1E1E21212727'
+background-transparency-percent=97
+bold-color='#5C5C63637070'
+bold-color-same-as-fg=true
+cursor-background-color='#5C5C63637070'
+cursor-colors-set=true
+cursor-foreground-color='#1E1E21212727'
+default-size-columns=100
+default-size-rows=32
+font='Fira Code 12'
+foreground-color='#5C5C63637070'
+palette=['#000000000000', '#E0E06C6C7575', '#9898C3C37979', '#D1D19A9A6666', '#6161AFAFEFEF', '#C6C67878DDDD', '#5656B6B6C2C2', '#ABABB2B2BFBF', '#5C5C63637070', '#E0E06C6C7575', '#9898C3C37979', '#D1D19A9A6666', '#6161AFAFEFEF', '#C6C67878DDDD', '#5656B6B6C2C2', '#FFFFFEFEFEFE']
+use-system-font=false
+use-theme-colors=false
+use-transparent-background=false
+visible-name='One Dark (Copy)'
+
+[:a33a7233-d9c6-47ef-be8a-5864512f11a2]
+audible-bell=false
+background-color='rgb(33,33,33)'
+background-transparency-percent=97
+default-size-columns=100
+default-size-rows=33
+font='Fira Code 12'
+foreground-color='rgb(255,255,255)'
+use-system-font=false
+use-theme-colors=false
+use-transparent-background=false
+visible-name='custom'
+
+[:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+default-size-columns=120
+default-size-rows=34
+use-system-font=true
+visible-name='default'
+
+[:b95617e7-02ca-4984-acdc-3aebbc1b14d6]
+allow-bold=true
+audible-bell=false
+background-color='#1E1E21212727'
+background-transparency-percent=97
+bold-color='#5C5C63637070'
+bold-color-same-as-fg=true
+cursor-background-color='#5C5C63637070'
+cursor-colors-set=true
+cursor-foreground-color='#1E1E21212727'
+default-size-columns=100
+default-size-rows=32
+font='Fira Code 12'
+foreground-color='#5C5C63637070'
+palette=['#000000000000', '#E0E06C6C7575', '#9898C3C37979', '#D1D19A9A6666', '#6161AFAFEFEF', '#C6C67878DDDD', '#5656B6B6C2C2', '#ABABB2B2BFBF', '#5C5C63637070', '#E0E06C6C7575', '#9898C3C37979', '#D1D19A9A6666', '#6161AFAFEFEF', '#C6C67878DDDD', '#5656B6B6C2C2', '#FFFFFEFEFEFE']
+use-system-font=false
+use-theme-background=false
+use-theme-colors=false
+use-theme-transparency=false
+use-transparent-background=false
+visible-name='One Dark'
+
+[:de9b3483-5336-40e0-8c90-370ba55f2742]
+background-color='rgb(33,33,33)'
+cursor-background-color='rgb(255,204,0)'
+cursor-colors-set=true
+cursor-foreground-color='rgb(88,88,88)'
+cursor-shape='ibeam'
+default-size-columns=105
+default-size-rows=35
+font='FiraCode Nerd Font 12'
+foreground-color='rgb(238,255,255)'
+palette=['rgb(0,0,0)', 'rgb(240,113,120)', 'rgb(195,232,141)', 'rgb(255,203,107)', 'rgb(130,170,255)', 'rgb(199,146,234)', 'rgb(137,221,255)', 'rgb(255,255,255)', 'rgb(84,84,84)', 'rgb(240,113,120)', 'rgb(195,232,141)', 'rgb(255,203,107)', 'rgb(130,170,255)', 'rgb(199,146,234)', 'rgb(137,221,255)', 'rgb(255,255,255)']
+use-system-font=false
+use-theme-colors=false
+visible-name='material-darker'
