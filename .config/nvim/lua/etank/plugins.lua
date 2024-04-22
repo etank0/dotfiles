@@ -28,6 +28,9 @@ return require('packer').startup(function(use)
 -- Rosepine theme
   use({ 'rose-pine/neovim', as = 'rose-pine' })
 
+-- Material theme
+  use({ 'kaicataldo/material.vim', as = 'material'})
+
 -- Nord theme
   use({ 'shaunsingh/nord.nvim' })
 --lualine
