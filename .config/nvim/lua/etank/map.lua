@@ -21,3 +21,5 @@ map("v", "K", ":m '<-2<CR>gv=gv")
 
 map("n", "<C-h>", ":History<CR>")
 
+vim.g.mapleader = " "
+vim.g.maplocalleader= " "
