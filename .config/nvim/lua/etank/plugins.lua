@@ -39,6 +39,8 @@ use({ 'kaicataldo/material.vim', as = 'material'})
 -------------------------------------------------------------
     -- Editor Utils --
 -------------------------------------------------------------
+-- commenting
+use "numToStr/Comment.nvim"
 --indentation
 use "lukas-reineke/indent-blankline.nvim"
 

@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/home/swetank/.local/share/nvim/site/pack/packer/start/Colorizer",
     url = "https://github.com/chrisbra/Colorizer"
   },
+  ["Comment.nvim"] = {
+    loaded = true,
+    path = "/home/swetank/.local/share/nvim/site/pack/packer/start/Comment.nvim",
+    url = "https://github.com/numToStr/Comment.nvim"
+  },
   LuaSnip = {
     loaded = true,
     path = "/home/swetank/.local/share/nvim/site/pack/packer/start/LuaSnip",
