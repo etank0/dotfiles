@@ -1,6 +1,20 @@
 ############ My Settings ##############
+# Gnome ssh setting
+export GIT_ASKPASS=ksshaskpass
+export SSH_ASKPASS=ksshaskpass
+export SSH_ASKPASS_REQUIRE=prefer
+
 # STARSHIP : sh -c "$(curl -fsSL https://starship.rs/install.sh)"
 eval "$(starship init zsh)"
+
+# Setup default $EDITOR
+if which vim >/dev/null 2>&1; then
+  EDITOR=vim
+else
+  EDITOR=nano
+fi
+export EDITOR
+
 
 # User specific environment
 if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
@@ -16,6 +30,11 @@ export PATH
 export PATH=/usr/local/lib/nodejs/node-v18.12.1-linux-x64/bin:$PATH
 export PATH="/home/swetank/.local/bin:$PATH"
 
+#for tomcat
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk
+export CATALINA_HOME=/opt/tomcat
+export PATH=$PATH:$CATALINA_HOME/bin
+export PATH=$JAVA_HOME/bin:$PATH
 ######################################
 
 # If you come from bash you might have to change your $PATH.
@@ -122,3 +141,19 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/swetank/.local/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/swetank/.local/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/swetank/.local/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/swetank/.local/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+

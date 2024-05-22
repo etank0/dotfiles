@@ -10,16 +10,18 @@ Plug 'chrisbra/Colorizer'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'preservim/nerdtree'
-Plug 'ryanoasis/vim-devicons'
-Plug 'dylanaraps/wal.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'kyazdani42/nvim-web-devicons'
-Plug 'catppuccin/vim', { 'as': 'catppuccin' }
+Plug 'kaicataldo/material.vim', { 'branch': 'main' }
+"Plug 'catppuccin/vim', { 'as': 'catppuccin' }
+Plug 'ryanoasis/vim-devicons'
+"Plug 'dylanaraps/wal.vim'
 call plug#end()
 
 "Vim
 syntax on
-colorscheme wal
+let g:material_theme_style = 'darker'
+colorscheme material
 set nocompatible
 set numberwidth=5
 set fileencoding=utf
@@ -40,14 +42,18 @@ set ttymouse=sgr
 set pastetoggle=<F2>
 set clipboard=unnamed
 
+if (has('termguicolors'))
+  set termguicolors
+endif
+
 "cursorline
-set cursorline
-highlight CursorLine cterm=NONE ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
-highlight CursorLineNR cterm=bold ctermfg=15 ctermbg=NONE
+"set cursorline
+"highlight CursorLine cterm=NONE ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
+"highlight CursorLineNR cterm=bold ctermfg=15 ctermbg=NONE
 
 "for transparent background
-hi Normal guibg=NONE ctermbg=NONE
-hi EndOfBuffer guibg=NONE ctermbg=NONE
+"hi Normal guibg=NONE ctermbg=NONE
+"hi EndOfBuffer guibg=NONE ctermbg=NONE
 
 "keybindings
 
@@ -59,7 +65,7 @@ nnoremap <silent> <c-Down> :resize +1<CR>
 nnoremap <silent> <c-left> :vertical resize -1<CR>
 nnoremap <silent> <c-right> :vertical resize +1<CR>
 
-nmap <silent> <c-\> :terminal<CR>
+nmap <silent> <c-`> :terminal<CR>
 nmap <silent> <c-h> :History<CR>
 
 
@@ -137,13 +143,13 @@ nmap <silent> <c-h> :History<CR>
 
 "-------------------------------------------------------------------------------
 "lightline
-let g:lightline = {
-			\ 'colorscheme' : 'wal',
-		    \ 'active': {
-				      \   'left': [ [ 'mode', 'paste' ],
-					        \             [ 'readonly', 'filename', 'modified', 'helloworld' ] ]
-      \ },
-	        \ 'component': {
-			      \   'helloworld': 'aaj meri yaad kaise?'
-      \ },
-	        \ }
+let g:lightline={ 
+			\'colorscheme': 'material_vim',
+			\ 'active': {
+			\   'left': [ [ 'mode', 'paste' ],
+			\             [ 'readonly', 'filename', 'modified',] ]
+			\ },
+			"\ 'component': {
+			"\   'helloworld': 'no nvim today?'
+	 		"\ },
+			\ }
