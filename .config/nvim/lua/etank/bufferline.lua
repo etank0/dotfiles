@@ -7,9 +7,8 @@ end
 
 bufferline.setup({
 	options = {
-		separator_style = 'thin'
+        separator_style = {' ', ' '},
 	},
-
 	highlights = {
 	buffer_selected = {bold = true, italic = false},
 	diagnostic_selected = { italic = false },

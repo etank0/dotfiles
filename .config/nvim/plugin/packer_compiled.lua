@@ -89,11 +89,6 @@ _G.packer_plugins = {
     path = "/home/swetank/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
     url = "https://github.com/akinsho/bufferline.nvim"
   },
-  catppuccin = {
-    loaded = true,
-    path = "/home/swetank/.local/share/nvim/site/pack/packer/start/catppuccin",
-    url = "https://github.com/catppuccin/nvim"
-  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/swetank/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -159,16 +154,6 @@ _G.packer_plugins = {
     path = "/home/swetank/.local/share/nvim/site/pack/packer/start/material",
     url = "https://github.com/kaicataldo/material.vim"
   },
-  nerdtree = {
-    loaded = true,
-    path = "/home/swetank/.local/share/nvim/site/pack/packer/start/nerdtree",
-    url = "https://github.com/preservim/nerdtree"
-  },
-  ["nord.nvim"] = {
-    loaded = true,
-    path = "/home/swetank/.local/share/nvim/site/pack/packer/start/nord.nvim",
-    url = "https://github.com/shaunsingh/nord.nvim"
-  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/home/swetank/.local/share/nvim/site/pack/packer/start/nvim-cmp",
@@ -192,7 +177,7 @@ _G.packer_plugins = {
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "/home/swetank/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
-    url = "https://github.com/nvim-tree/nvim-web-devicons"
+    url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -209,11 +194,6 @@ _G.packer_plugins = {
     path = "/home/swetank/.local/share/nvim/site/pack/packer/start/pywal",
     url = "https://github.com/AlphaTechnolog/pywal.nvim"
   },
-  ["rose-pine"] = {
-    loaded = true,
-    path = "/home/swetank/.local/share/nvim/site/pack/packer/start/rose-pine",
-    url = "https://github.com/rose-pine/neovim"
-  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/swetank/.local/share/nvim/site/pack/packer/start/telescope.nvim",
@@ -223,16 +203,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/swetank/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
-  },
-  ["vim-devicons"] = {
-    loaded = true,
-    path = "/home/swetank/.local/share/nvim/site/pack/packer/start/vim-devicons",
-    url = "https://github.com/ryanoasis/vim-devicons"
-  },
-  ["wal.vim"] = {
-    loaded = true,
-    path = "/home/swetank/.local/share/nvim/site/pack/packer/start/wal.vim",
-    url = "https://github.com/dylanaraps/wal.vim"
   }
 }
 

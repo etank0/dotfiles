@@ -4,35 +4,43 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
+
 -- Packer can manage itself
----------------------
--- Package Manager --
----------------------
+-------------------------------------------------------------
+    -- Package Manager --
+-------------------------------------------------------------
 use 'wbthomason/packer.nvim'
 
---------------------
---Plugins--
--------------------
+-------------------------------------------------------------
+    -- Plugins --
+-------------------------------------------------------------
 use 'chrisbra/Colorizer'
 use 'junegunn/fzf.vim'
 
---indentation
-use "lukas-reineke/indent-blankline.nvim"
-
+-------------------------------------------------------------
+    -- Theming --
+-------------------------------------------------------------
 --pywal
+-- use 'dylanaraps/wal.vim'
 use { 'AlphaTechnolog/pywal.nvim', as = 'pywal' }
 
 --Catppuccin theme
-use { "catppuccin/nvim", as = "catppuccin" }
+-- use { "catppuccin/nvim", as = "catppuccin" }
 
 -- Rosepine theme
-use({ 'rose-pine/neovim', as = 'rose-pine' })
+-- use({ 'rose-pine/neovim', as = 'rose-pine' })
 
 -- Material theme
 use({ 'kaicataldo/material.vim', as = 'material'})
 
 -- Nord theme
-use({ 'shaunsingh/nord.nvim' })
+-- use({ 'shaunsingh/nord.nvim' })
+
+-------------------------------------------------------------
+    -- Editor Utils --
+-------------------------------------------------------------
+--indentation
+use "lukas-reineke/indent-blankline.nvim"
 
 --lualine
   use {
@@ -48,9 +56,6 @@ use {'kyazdani42/nvim-web-devicons'}
 
 --  use 'vim-airline/vim-airline'
 use 'akinsho/bufferline.nvim'
-use 'ryanoasis/vim-devicons'
-use 'dylanaraps/wal.vim'
-use 'preservim/nerdtree'
 use "akinsho/toggleterm.nvim"
 
 -- for lsp
