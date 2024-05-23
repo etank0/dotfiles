@@ -1,0 +1,51 @@
+# Material Darker Vscode color theme for Zathura
+# Swaps Foreground for Background to get a light version if the user prefers
+
+#
+# Material Darker Vscode color theme
+#
+
+set notification-error-bg       rgba(240,113,120,1)     # Red
+set notification-error-fg       rgba(238,255,255,1)   # Foreground
+set notification-warning-bg     rgba(247,140,108,1)   # Orange
+set notification-warning-fg     rgba(238,255,255,1)      # Selection
+set notification-bg             rgba(33,33,33,1) # Background
+set notification-fg             rgba(238,255,255,1)   # Foreground
+
+set completion-bg               rgba(33,33,33,1)      # Background
+set completion-fg               rgba(84,84,84,1)    # Comment
+set completion-group-bg         rgba(33,33,33,1)      # Background
+set completion-group-fg         rgba(84,84,84,1)    # Comment
+set completion-highlight-bg     rgba(238,255,255,1)     # Selection
+set completion-highlight-fg     rgba(238,255,255,1)    # Foreground
+
+set index-bg                    rgba(33,33,33,1)    # Background
+set index-fg                    rgba(238,255,255,1)    # Foreground
+set index-active-bg             rgba(238,255,255,1)  # Current Line
+set index-active-fg             rgba(238,255,255,1)    # Foreground
+
+set inputbar-bg                 rgba(33,33,33,1)      # Background
+set inputbar-fg                 rgba(238,255,255,1)    # Foreground
+set statusbar-bg                rgba(33,33,33,1)      # Background
+set statusbar-fg                rgba(33,33,33,1)    # Foreground
+
+set highlight-color             rgba(247,140,108,1) # Orange
+set highlight-active-color      rgba(255,156,172,1) # Pink
+
+set default-bg                  rgba(33,33,33,1)      # Background
+set default-fg                  rgba(238,255,255,1)    # Foreground
+
+set render-loading              true
+set render-loading-fg           rgba(33,33,33,1)    # Background
+set render-loading-bg           rgba(238,255,255,1)    # Foreground
+
+#
+# Recolor mode settings
+#
+
+set recolor-lightcolor          rgba(33,33,33,1)     # Background
+set recolor-darkcolor           rgba(238,255,255,1)   # Foreground
+
+#
+# Startup options
+#
