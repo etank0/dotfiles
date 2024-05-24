@@ -22,6 +22,6 @@ set scroll-step 100
 include material-darker
 
 # Start up
-
+set guioptions s
 set adjust-open width
 set recolor true
