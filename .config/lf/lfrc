@@ -6,9 +6,14 @@ set previewer ctpv
 set cleaner ctpvclear
 &ctpv -s $id
 &ctpvquit $id
+#set previewer ~/.config/lf/lf_kitty_preview
+#set cleaner ~/.config/lf/lf_kitty_clean
 
 #for dragon (drag and drop)
 cmd dragon %dragon -a -x "$fx"
 
 #Key Mappings
-map R dragon
+map <a-r> dragon
+map <a-p> set nopreview
+map <a-P> set preview
+map D delete

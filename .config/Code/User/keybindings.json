@@ -16,7 +16,7 @@
       "command": "workbench.action.togglePanel"
     },
     {
-      "key": "ctrl+shift+n",
+      "key": "ctrl+shift+0",
       "command": "workbench.action.terminal.new",
       "when": "terminalFocus"
     },
@@ -46,12 +46,27 @@
       "when": "filesExplorerFocus && !inputFocus"
     },
     {
-      "key": "shift+n",
-      "command": "explorer.newFolder",
-      "when": "explorerViewletFocus"
+      "command": "filesExplorer.copy",
+      "key": "y",
+      "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+      "command": "filesExplorer.cut",
+      "key": "shift+d",
+      "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+      "command": "filesExplorer.paste",
+      "key": "p",
+      "when": "filesExplorerFocus && !inputFocus"
     },
     {
       "key": "shift+n",
+      "command": "explorer.newFolder",
+      "when": "explorerViewletFocus && !inputFocus"
+    },
+    {
+      "key": "ctrl+shift+n",
       "command": "workbench.action.newWindow",
       "when": "!explorerViewletFocus"
     },
@@ -66,8 +81,4 @@
       "key": "ctrl+shift+5",
       "command": "editor.emmet.action.matchTag"
     },
-    {
-      "key": "ctrl+z",
-      "command": "workbench.action.toggleZenMode"
-    }
   ]
