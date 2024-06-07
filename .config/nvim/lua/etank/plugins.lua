@@ -14,7 +14,6 @@ use 'wbthomason/packer.nvim'
 -------------------------------------------------------------
     -- Plugins --
 -------------------------------------------------------------
-use 'chrisbra/Colorizer'
 use 'junegunn/fzf.vim'
 
 -------------------------------------------------------------
@@ -39,13 +38,18 @@ use({ 'kaicataldo/material.vim', as = 'material'})
 -------------------------------------------------------------
     -- Editor Utils --
 -------------------------------------------------------------
+-- Colorizer
+use {
+    "norcalli/nvim-colorizer.lua"
+}
+
 -- commenting
 use "numToStr/Comment.nvim"
 --indentation
 use "lukas-reineke/indent-blankline.nvim"
 
 --lualine
-  use {
+use {
   'nvim-lualine/lualine.nvim',
 }
 
