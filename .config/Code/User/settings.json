@@ -74,7 +74,11 @@
         "commands": ["editor.action.quickFix"]
       },
       { "before": ["leader", "f", "f"], "commands": ["workbench.action.quickOpen"] },
-      { "before": ["leader", "p"], "commands": ["editor.action.formatDocument"] },
+      {
+        "before": ["<leader>", "p"],
+        "commands": ["workbench.action.showCommands"],
+      },
+      { "before": ["leader", "o"], "commands": ["editor.action.formatDocument"] },
       { "before": ["g", "c", "c"], "commands": ["editor.action.commentLine"] },
       {
         "before": ["g", "h"],

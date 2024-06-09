@@ -12,14 +12,8 @@ return require('packer').startup(function(use)
 
     -------------------------------------------------------------
     -- Plugins --
-<<<<<<< HEAD
     -------------------------------------------------------------
     use 'junegunn/fzf.vim'
-=======
--------------------------------------------------------------
-use 'chrisbra/Colorizer'
-use 'junegunn/fzf.vim'
->>>>>>> parent of de69979 (added nchat config :speech_balloon:)
 
     -------------------------------------------------------------
     -- Theming --
@@ -42,7 +36,6 @@ use 'junegunn/fzf.vim'
 
     -------------------------------------------------------------
     -- Editor Utils --
-<<<<<<< HEAD
     -------------------------------------------------------------
     -- Colorizer
     use {
@@ -58,18 +51,6 @@ use 'junegunn/fzf.vim'
     use {
         'nvim-lualine/lualine.nvim',
     }
-=======
--------------------------------------------------------------
--- commenting
-use "numToStr/Comment.nvim"
---indentation
-use "lukas-reineke/indent-blankline.nvim"
-
---lualine
-  use {
-  'nvim-lualine/lualine.nvim',
-}
->>>>>>> parent of de69979 (added nchat config :speech_balloon:)
 
     -- nvim-tree
     use {
