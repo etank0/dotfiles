@@ -5,7 +5,7 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 local function map(m, k, v)
-	 vim.api.nvim_set_keymap(m, k, v, { silent = true })
+    vim.api.nvim_set_keymap(m, k, v, { silent = true })
 end
 
 -- Nvim Tree Toggle
@@ -35,6 +35,9 @@ map("n", "<S-l>", ":bn<CR>")
 map("n", "<leader>bd", ":bd<CR>")
 map("n", "<leader>bw", ":bw<CR>")
 
---Fuzzy
+-- Fuzzy
 map("n", "<C-h>", ":History<CR>")
 
+-- Diagnostic
+vim.keymap.set('n', ']d', vim.diagnostic.goto_prev)
+vim.keymap.set('n', '[d', vim.diagnostic.goto_next)
