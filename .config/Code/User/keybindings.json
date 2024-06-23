@@ -1,7 +1,7 @@
 // Place your key bindings in this file to override the defaults
 [
-    // NAVIGATION
-    {
+  // NAVIGATION
+  {
       "key": "ctrl+shift+a",
       "command": "workbench.action.terminal.focusNext",
       "when": "terminalFocus"
@@ -11,11 +11,11 @@
       "command": "workbench.action.terminal.focusPrevious",
       "when": "terminalFocus"
     },
-    { 
-      "key": "ctrl+shift+c", 
-      "command": "editor.action.clipboardCopyAction",
-      "when": "editorTextFocus" 
-    }, 
+    // { 
+    //   "key": "ctrl+shift+c", 
+    //   "command": "editor.action.clipboardCopyAction",
+    //   "when": "editorTextFocus" 
+    // }, 
     {
       "key": "ctrl+shift+j",
       "command": "workbench.action.togglePanel"
@@ -85,5 +85,17 @@
     {
       "key": "ctrl+shift+5",
       "command": "editor.emmet.action.matchTag"
+    },
+    
+    // VSCODE-NEOVIM
+    {
+      "command": "editor.action.moveLinesUpAction",
+      "key": "shift+k",
+      "when": "neovim.init && neovim.mode == visual && editorTextFocus"
+    },
+    {
+      "command": "editor.action.moveLinesDownAction",
+      "key": "shift+j",
+      "when": "neovim.init && neovim.mode == visual && editorTextFocus"
     },
   ]
