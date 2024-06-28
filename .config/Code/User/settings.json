@@ -3,7 +3,7 @@
     "workbench.iconTheme": "material-icon-theme",
     "window.titleBarStyle": "custom",
     "editor.fontFamily": "'Fira Code Medium','Droid Sans Mono', 'monospace', monospace",
-    "terminal.integrated.fontFamily": "'Fira Code'",
+    "terminal.integrated.fontFamily": "'Fira Code Medium'",
     "[typescriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
@@ -104,7 +104,6 @@
         // toggle comment selection
         { "before": ["g", "c"], "commands": ["editor.action.commentLine"] }
     ],
-    "window.zoomLevel": 0.2,
     "[jsonc]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
@@ -120,4 +119,5 @@
     "workbench.layoutControl.enabled": false,
     "editor.detectIndentation": false,
     "editor.indentSize": "tabSize",
+    "window.zoomLevel": 0.2,
 }
