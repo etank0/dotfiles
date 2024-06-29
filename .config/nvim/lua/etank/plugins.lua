@@ -57,7 +57,7 @@ return require('packer').startup(function(use)
         'nvim-tree/nvim-tree.lua',
     }
 
-    use { 'kyazdani42/nvim-web-devicons' }
+    use { 'nvim-tree/nvim-web-devicons' }
 
     --  use 'vim-airline/vim-airline'
     use 'akinsho/bufferline.nvim'

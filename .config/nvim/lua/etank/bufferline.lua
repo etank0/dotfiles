@@ -18,6 +18,6 @@ bufferline.setup({
         fill = {
             fg = "#212121",
             bg = "#212121"
-        }
+        },
     },
 })

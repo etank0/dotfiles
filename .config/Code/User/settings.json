@@ -1,15 +1,41 @@
 {
+    // Functionality
+    "files.autoSave": "onFocusChange",
+
+    // Looks
     "workbench.colorTheme": "Material Theme Darker",
     "workbench.iconTheme": "material-icon-theme",
     "window.titleBarStyle": "custom",
-    "editor.fontFamily": "'Fira Code Medium','Droid Sans Mono', 'monospace', monospace",
-    "terminal.integrated.fontFamily": "'Fira Code Medium'",
+    "editor.fontFamily": "'JetBrainsMono NF', 'Droid Sans Mono', 'monospace', monospace",
+    "editor.lineNumbers": "relative",
+    "window.commandCenter": false,
+    "window.menuBarVisibility": "compact",
+    "breadcrumbs.enabled": false,
+    "workbench.layoutControl.enabled": false,
+    "editor.detectIndentation": false,
+    "editor.indentSize": "tabSize",
+    "window.zoomLevel": 0.2,
+    "editor.fontSize": 15,
+    "editor.fontWeight": "500",
+    "workbench.activityBar.location": "top",
+    "editor.scrollbar.verticalScrollbarSize": 12,
+    "editor.scrollbar.horizontalScrollbarSize": 10,
+    "editor.scrollbar.vertical": "hidden",
+    "editor.cursorBlinking": "phase",
+    "editor.inlayHints.padding": true,
+    "editor.lineHeight": 1.6,
+    "workbench.sideBar.location": "right",
+    "editor.wordWrap": "on",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.minimap.enabled": false,
+    "window.customTitleBarVisibility": "auto",
+
+    // Prettier
+    "prettier.tabWidth": 4,
+    "reactSnippets.settings.prettierEnabled": true,
     "[typescriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "prettier.tabWidth": 4,
-    "files.autoSave": "onFocusChange",
-    "editor.cursorBlinking": "phase",
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
@@ -19,105 +45,12 @@
     "[css]": {
         "editor.defaultFormatter": "vscode.css-language-features"
     },
-    "editor.inlayHints.padding": true,
-    "editor.lineHeight": 1.6,
-    "reactSnippets.settings.prettierEnabled": true,
-    "workbench.sideBar.location": "right",
-    "editor.wordWrap": "on",
-    "editor.cursorSmoothCaretAnimation": "on",
-    "editor.minimap.enabled": false,
-
-    // Vim Settings
-    "vim.leader": "<Space>",
-    "vim.hlsearch": true,
-    "vim.normalModeKeyBindingsNonRecursive": [
-        // NAVIGATION
-        // switch b/w buffers
-        { "before": ["<S-h>"], "commands": [":bprevious"] },
-        { "before": ["<S-l>"], "commands": [":bnext"] },
-
-        // splits
-        { "before": ["leader", "v"], "commands": [":vsplit"] },
-        { "before": ["leader", "s"], "commands": [":split"] },
-
-        // panes
-        {
-            "before": ["leader", "h"],
-            "commands": ["workbench.action.focusLeftGroup"]
-        },
-        {
-            "before": ["leader", "j"],
-            "commands": ["workbench.action.focusBelowGroup"]
-        },
-        {
-            "before": ["leader", "k"],
-            "commands": ["workbench.action.focusAboveGroup"]
-        },
-        {
-            "before": ["leader", "l"],
-            "commands": ["workbench.action.focusRightGroup"]
-        },
-        // NICE TO HAVE
-        { "before": ["leader", "w"], "commands": [":w!"] },
-        { "before": ["leader", "q"], "commands": [":q!"] },
-        { "before": ["leader", "x"], "commands": [":x!"] },
-        {
-            "before": ["[", "d"],
-            "commands": ["editor.action.marker.prev"]
-        },
-        {
-            "before": ["]", "d"],
-            "commands": ["editor.action.marker.next"]
-        },
-        {
-            "before": ["<leader>", "c", "a"],
-            "commands": ["editor.action.quickFix"]
-        },
-        {
-            "before": ["leader", "f", "f"],
-            "commands": ["workbench.action.quickOpen"]
-        },
-        {
-            "before": ["<leader>", "p"],
-            "commands": ["workbench.action.showCommands"]
-        },
-        {
-            "before": ["leader", "f"],
-            "commands": ["editor.action.formatDocument"]
-        },
-        {
-            "before": ["g", "c", "c"],
-            "commands": ["editor.action.commentLine"]
-        },
-        {
-            "before": ["K"],
-            "commands": ["editor.action.showDefinitionPreviewHover"]
-        }
-    ],
-    "vim.visualModeKeyBindings": [
-        // Stay in visual mode while indenting
-        { "before": ["<"], "commands": ["editor.action.outdentLines"] },
-        { "before": [">"], "commands": ["editor.action.indentLines"] },
-        // Move selected lines while staying in visual mode
-        { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
-        { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
-        // toggle comment selection
-        { "before": ["g", "c"], "commands": ["editor.action.commentLine"] }
-    ],
     "[jsonc]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
+
+    // VSCode-Neovim
     "extensions.experimental.affinity": {
         "asvetliakov.vscode-neovim": 1
-    },
-
-    // looks
-    "editor.lineNumbers": "relative",
-    "window.commandCenter": false,
-    "window.menuBarVisibility": "compact",
-    "breadcrumbs.enabled": false,
-    "workbench.layoutControl.enabled": false,
-    "editor.detectIndentation": false,
-    "editor.indentSize": "tabSize",
-    "window.zoomLevel": 0.2,
+    }
 }
