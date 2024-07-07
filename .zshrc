@@ -26,10 +26,6 @@ export PATH
 # for pywal
 # cat ~/.cache/wal/sequences
 
-#for nodejs
-export PATH=/usr/local/lib/nodejs/node-v18.12.1-linux-x64/bin:$PATH
-export PATH="/home/swetank/.local/bin:$PATH"
-
 #for tomcat
 export JAVA_HOME=/usr/lib/jvm/java-17-openjdk
 export CATALINA_HOME=/opt/tomcat
@@ -40,8 +36,17 @@ export PATH=$JAVA_HOME/bin:$PATH
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+# For SASS compiler/transpiler
+export PATH=/home/swetank/.local/bin/dart-sass:$PATH
+
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
+
+# For eclipse in Wayland
+# export WEBKIT_DISABLE_COMPOSITING_MODE=1
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -156,4 +161,5 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+
 

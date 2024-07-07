@@ -31,6 +31,8 @@ o.splitbelow = true
 --searching
 o.hlsearch = false
 o.incsearch = true
+-- remove '~'
+o.fillchars = 'eob: '
 
 vim.opt.mouse = "a"
 -- Map <leader> to space

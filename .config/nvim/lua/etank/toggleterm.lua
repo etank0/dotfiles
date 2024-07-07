@@ -7,7 +7,7 @@ require("toggleterm").setup {
             return vim.o.columns * 0.4
         end
     end,
-    open_mapping = [[<c-`>]],
+    open_mapping = { [[<c-`>]], [[<c-s-j>]] },
     hide_numbers = true,    -- hide the number column in toggleterm buffers
     shade_filetypes = {},
     shade_terminals = true, -- NOTE: this option takes priority over highlights specified so if you specify Normal highlights you should set this to false

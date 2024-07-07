@@ -36,7 +36,7 @@ map("n", "<leader>bd", ":bd<CR>")
 map("n", "<leader>bw", ":bw<CR>")
 
 -- Fuzzy
-map("n", "<C-h>", ":History<CR>")
+map("n", "<leader><Bslash>", ":History<CR>")
 
 -- Diagnostic
 vim.keymap.set('n', ']d', vim.diagnostic.goto_prev)

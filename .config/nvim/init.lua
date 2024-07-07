@@ -13,6 +13,7 @@ if vim.g.vscode == nil then
     require('etank.indent')
     require('etank.comment')
     require('etank.colorizer')
+    require('etank.cmp')
     --require('etank.rosepine')
     --require('etank.catppuccin')
     --require('etank.nord')
