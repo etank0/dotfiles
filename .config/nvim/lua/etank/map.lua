@@ -39,5 +39,6 @@ map("n", "<leader>bw", ":bw<CR>")
 map("n", "<leader><Bslash>", ":History<CR>")
 
 -- Diagnostic
+vim.keymap.set('n', '<leader>dh', vim.diagnostic.open_float)
 vim.keymap.set('n', ']d', vim.diagnostic.goto_prev)
 vim.keymap.set('n', '[d', vim.diagnostic.goto_next)

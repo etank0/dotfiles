@@ -10,7 +10,6 @@
     "editor.lineNumbers": "relative",
     "window.commandCenter": false,
     "window.menuBarVisibility": "compact",
-    "breadcrumbs.enabled": false,
     "workbench.layoutControl.enabled": false,
     "editor.detectIndentation": false,
     "editor.indentSize": "tabSize",
@@ -18,9 +17,9 @@
     "editor.fontSize": 15,
     "editor.fontWeight": "500",
     "workbench.activityBar.location": "top",
-    "editor.scrollbar.verticalScrollbarSize": 12,
+    "editor.scrollbar.verticalScrollbarSize": 10,
     "editor.scrollbar.horizontalScrollbarSize": 10,
-    "editor.scrollbar.vertical": "hidden",
+    "editor.scrollbar.vertical": "auto",
     "editor.cursorBlinking": "phase",
     "editor.inlayHints.padding": true,
     "editor.lineHeight": 1.6,
@@ -30,7 +29,11 @@
     "editor.minimap.enabled": false,
     "window.customTitleBarVisibility": "auto",
 
+    // Terminal
+    "terminal.integrated.fontSize": 15,
+
     // Prettier
+    // "prettier.useTabs": true,
     "prettier.tabWidth": 4,
     "reactSnippets.settings.prettierEnabled": true,
     "[typescriptreact]": {
@@ -52,5 +55,11 @@
     // VSCode-Neovim
     "extensions.experimental.affinity": {
         "asvetliakov.vscode-neovim": 1
-    }
+    },
+    
+    // Zed theme importer
+    "theme-to-zed.theme_importer": "/home/swetank/.local/bin/theme_importer",
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
 }

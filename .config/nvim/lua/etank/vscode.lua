@@ -8,6 +8,9 @@ vim.g.maplocalleader = " "
 -- Files
 vim.keymap.set({'n', 'v'}, "<leader>ff", ":call VSCodeNotify('workbench.action.quickOpen')<CR>");
 
+-- Match Tags
+vim.keymap.set('n', '<leader>m', ":call VSCodeNotify('editor.emmet.action.matchTag')<CR>");
+
 -- Window Manipulations
 vim.keymap.set("n", "<C-Up>", ":resize -1<CR>")
 vim.keymap.set("n", "<C-Down>", ":resize +1<CR>")
@@ -22,8 +25,8 @@ vim.keymap.set("n", "<leader>s", "<C-w>s")
 vim.keymap.set("n", "<leader>w", "<C-w>w")
 vim.keymap.set("n", "<leader>dd", "<C-w>q")
 
--- vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
--- vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 
 -- Buffer Manipulations
 
@@ -33,5 +36,7 @@ vim.keymap.set("n", "<S-h>", ":Tabprevious<CR>")
 -- vim.keymap.set("n", "<S-l>", ":bn<CR>")
 
 -- Diagnostic
+vim.keymap.set('n', '<leader>dh', vim.diagnostic.open_float)
 vim.keymap.set('n', ']d', vim.diagnostic.goto_prev)
 vim.keymap.set('n', '[d', vim.diagnostic.goto_next)
+

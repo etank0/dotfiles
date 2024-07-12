@@ -9,3 +9,4 @@ vim.keymap.set("n", "<leader>fw", builtin.grep_string, { desc = "Find Word under
 vim.keymap.set("n", "<leader>gc", builtin.git_commits, { desc = "Search Git Commits" })
 vim.keymap.set("n", "<leader>gb", builtin.git_bcommits, { desc = "Search Git Commits for Buffer" })
 vim.keymap.set("n", "<leader>fk", builtin.keymaps, { desc = "Find Keymaps" })
+vim.keymap.set("n", "<leader>dl", function () builtin.diagnostics({bufnr=0}) end, { desc = "For diagnostics list"})

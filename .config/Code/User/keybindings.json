@@ -2,30 +2,15 @@
 [
     // NAVIGATION
     {
-        "key": "ctrl+shift+a",
-        "command": "workbench.action.terminal.focusNext",
-        "when": "terminalFocus"
-    },
-    {
-        "key": "ctrl+shift+b",
-        "command": "workbench.action.terminal.focusPrevious",
-        "when": "terminalFocus"
-    },
-    {
         "key": "ctrl+shift+j",
         "command": "workbench.action.togglePanel"
     },
-    {
-        "key": "ctrl+shift+0",
-        "command": "workbench.action.terminal.new",
-        "when": "terminalFocus"
-    },
-    {
-        "key": "ctrl+shift+w",
-        "command": "workbench.action.terminal.kill",
-        "when": "terminalFocus"
-    },
+
     // FILE TREE
+
+    // Keybindings for file operations: 
+    // x - cut, y - copy, p - paste, r - rename, d - delete
+
     {
         "command": "workbench.action.toggleSidebarVisibility",
         "key": "ctrl+e"
@@ -36,61 +21,20 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "n",
-        "command": "explorer.newFile",
-        "when": "filesExplorerFocus && !inputFocus"
-    },
-    {
-        "command": "renameFile",
-        "key": "r",
-        "when": "filesExplorerFocus && !inputFocus"
-    },
-    {
-        "command": "filesExplorer.copy",
-        "key": "y",
-        "when": "filesExplorerFocus && !inputFocus"
-    },
-    {
-        "command": "filesExplorer.cut",
-        "key": "shift+d",
-        "when": "filesExplorerFocus && !inputFocus"
-    },
-    {
-        "command": "filesExplorer.paste",
-        "key": "p",
-        "when": "filesExplorerFocus && !inputFocus"
-    },
-    {
-        "key": "shift+n",
-        "command": "explorer.newFolder",
-        "when": "explorerViewletFocus && !inputFocus"
-    },
-    {
         "key": "ctrl+shift+n",
         "command": "workbench.action.newWindow",
         "when": "!explorerViewletFocus"
     },
-    {
-        "command": "deleteFile",
-        "key": "d",
-        "when": "filesExplorerFocus && !inputFocus"
-    },
-
-    // EXTRA
-    {
-        "key": "ctrl+shift+5",
-        "command": "editor.emmet.action.matchTag"
-    },
 
     // VSCODE-NEOVIM
-    {
-        "command": "editor.action.moveLinesUpAction",
-        "key": "shift+k",
-        "when": "neovim.init && neovim.mode == visual && editorTextFocus"
-    },
-    {
-        "command": "editor.action.moveLinesDownAction",
-        "key": "shift+j",
-        "when": "neovim.init && neovim.mode == visual && editorTextFocus"
-    }
+    // {
+    //     "key": "shift+k",
+    //     "command": "editor.action.moveLinesUpAction",
+    //     "when": "neovim.init && neovim.mode == visual && editorTextFocus"
+    // },
+    // {
+    //     "command": "editor.action.moveLinesDownAction",
+    //     "key": "shift+j",
+    //     "when": "neovim.init && neovim.mode == visual && editorTextFocus"
+    // }
 ]

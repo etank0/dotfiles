@@ -1,0 +1,54 @@
+{
+  // ui
+  "ui_font_family": "JetBrains Mono",
+  "ui_font_size": 15,
+  "project_panel": {
+    "dock": "right"
+  },
+
+  // git
+  "git": {
+    "inline_blame": {
+      "enabled": false
+    }
+  },
+
+  //telemetry
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+
+  // theme
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "Material Theme Darker"
+  },
+
+  // editor
+  // "enable_language_server": false,
+  "autosave": "on_window_change",
+  "format_on_save": "off",
+  "base_keymap": "VSCode",
+  "relative_line_numbers": true,
+  "vim_mode": true,
+  "buffer_font_family": "JetBrains Mono",
+  "buffer_font_size": 15,
+  "buffer_line_height": {
+    "custom": 1.6
+  },
+  "scrollbar": {
+    "show": "never"
+  },
+  "inlay_hints": {
+    "enabled": false
+  },
+  "tab_size": 4,
+
+  // terminal
+  "terminal": {
+    "font_family": "JetBrains Mono",
+    "font_size": 14
+  }
+}

@@ -1,0 +1,81 @@
+[
+  {
+    "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
+    "bindings": {
+      // put key-bindings here if you want them to work in normal & visual mode
+      "space c a": "editor::ToggleCodeActions",
+      "space f f": "file_finder::Toggle",
+      "space f b": "tab_switcher::Toggle",
+      "space f s": "outline::Toggle",
+      "space f g": "pane::DeploySearch",
+      "space g b": "editor::ToggleGitBlameInline",
+
+      // others
+      "ctrl-e": "project_panel::ToggleFocus",
+      "ctrl-shift-i": "editor::Format",
+      "shift-h": "pane::GoBack",
+      "shift-l": "pane::GoForward",
+      "g H": "editor::FindAllReferences",
+      "g o": "editor::GoToTypeDefinition",
+
+      // diagnostics
+      "space d l": "diagnostics::Deploy",
+      "[d": "editor::GoToPrevDiagnostic",
+      "]d": "editor::GoToDiagnostic",
+
+      // window manipulations
+      "space left": ["workspace::ActivatePaneInDirection", "Left"],
+      "space right": ["workspace::ActivatePaneInDirection", "Right"],
+      "space up": ["workspace::ActivatePaneInDirection", "Up"],
+      "space down": ["workspace::ActivatePaneInDirection", "Down"],
+      "space h": ["workspace::ActivatePaneInDirection", "Left"],
+      "space l": ["workspace::ActivatePaneInDirection", "Right"],
+      "space k": ["workspace::ActivatePaneInDirection", "Up"],
+      "space j": ["workspace::ActivatePaneInDirection", "Down"],
+      "space v": "pane::SplitLeft",
+      "space s": "pane::SplitUp",
+      "space d d": "pane::CloseAllItems",
+      "space w": "workspace::ActivateNextPane"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
+    "bindings": {
+      // put key-bindings here if you want them to work only in normal mode
+      // "down": ["workspace::SendKeystrokes", "4 j"]
+      // "up": ["workspace::SendKeystrokes", "4 k"]
+    }
+  },
+  {
+    "context": "Editor && vim_mode == visual && !VimWaiting && !menu",
+    "bindings": {
+      // visual, visual line & visual block modes
+      "shift-k": "editor::MoveLineUp",
+      "shift-j": "editor::MoveLineDown"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == insert && !menu",
+    "bindings": {
+      // put key-bindings here if you want them to work in insert mode
+      // e.g.
+      // "j j": "vim::NormalBefore" // remap jj in insert mode to escape.
+    }
+  },
+  {
+    "context": "EmptyPane || SharedScreen",
+    "bindings": {
+      // put key-bindings here (in addition to above) if you want them to
+      // work when no editor exists
+      // e.g.
+      "space f f": "file_finder::Toggle"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-e": "workspace::ToggleRightDock",
+      "ctrl-shift-j": "workspace::ToggleBottomDock"
+    }
+  }
+]
