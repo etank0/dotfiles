@@ -1,5 +1,13 @@
 {
   // ui
+  "assistant": {
+    "default_open_ai_model": "gpt-3.5-turbo",
+    "provider": {
+      "name": "openai",
+      "default_model": "gpt-3.5-turbo",
+      "available_models": []
+    }
+  },
   "ui_font_family": "JetBrains Mono",
   "ui_font_size": 15,
   "project_panel": {
@@ -23,11 +31,12 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Material Theme Darker"
+    "dark": "Material Theme Darker High Contrast"
   },
 
   // editor
   // "enable_language_server": false,
+  "soft_wrap": "editor_width",
   "autosave": "on_window_change",
   "format_on_save": "off",
   "base_keymap": "VSCode",
