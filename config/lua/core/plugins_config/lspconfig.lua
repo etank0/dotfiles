@@ -1,21 +1,16 @@
 local lsp = require('lsp-zero')
 lsp.preset('recommended')
+lsp.setup()
 
-lsp.ensure_installed({
-    'tsserver',
-    'eslint',
-    'lua_ls',
-    'clangd',
+require('mason').setup({})
+require('mason-lspconfig').setup({
+    handlers = {
+        function(server_name)
+            require('lspconfig')[server_name].setup({})
+        end,
+    },
 })
 
--- When you don't have mason.nvim installed
--- You'll need to list the servers installed in your system
-lsp.setup_servers({ 'tsserver', 'eslint' })
-
--- (Optional) Configure lua language server for neovim
-lsp.nvim_workspace()
-
-lsp.setup()
 vim.api.nvim_create_autocmd('LspAttach', {
     group = vim.api.nvim_create_augroup('UserLspConfig', {}),
     callback = function(ev)
@@ -26,8 +21,8 @@ vim.api.nvim_create_autocmd('LspAttach', {
         -- See `:help vim.lsp.*` for documentation on any of the below functions
         local opts = { buffer = ev.buf }
         vim.keymap.set('n', 'K', vim.lsp.buf.hover, opts)
-        vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, { buffer = 0 })
-        vim.keymap.set('n', 'gd', vim.lsp.buf.definition, { buffer = 0 })
+        vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, opts)
+        vim.keymap.set('n', 'gd', vim.lsp.buf.definition, opts)
         vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, opts)
         vim.keymap.set('n', 'go', vim.lsp.buf.type_definition, opts)
         vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, opts)

@@ -5,8 +5,21 @@ local vscode = require("vscode")
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
+--- Builtins in VS Code ---
+
+-- -- Files
+-- vim.keymap.set({'n', 'v'}, "<leader>ff", ":call VSCodeNotify('workbench.action.quickOpen')<CR>");
+--
+-- -- Live Grep
+-- vim.keymap.set({'n', 'v'}, "<leader>fg", ":call VSCodeNotify('workbench.action.findInFiles')<CR>");
+
+--- Find it Faster ---
+
 -- Files
-vim.keymap.set({'n', 'v'}, "<leader>ff", ":call VSCodeNotify('workbench.action.quickOpen')<CR>");
+vim.keymap.set({'n', 'v'}, "<leader>ff", ":call VSCodeNotify('find-it-faster.findFiles')<CR>");
+
+-- Live Grep
+vim.keymap.set({'n', 'v'}, "<leader>fg", ":call VSCodeNotify('find-it-faster.findWithinFiles')<CR>");
 
 -- Match Tags
 vim.keymap.set('n', '<leader>m', ":call VSCodeNotify('editor.emmet.action.matchTag')<CR>");

@@ -38,6 +38,9 @@ map("n", "<leader>bw", ":bw<CR>")
 -- Fuzzy
 map("n", "<leader><Bslash>", ":History<CR>")
 
+-- Format
+map("n", "<C-S-i>", "<leader>lf")
+
 -- Diagnostic
 vim.keymap.set('n', '<leader>dh', vim.diagnostic.open_float)
 vim.keymap.set('n', ']d', vim.diagnostic.goto_prev)

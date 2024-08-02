@@ -1,0 +1,18 @@
+[/]
+default='99bc9f6b-9aa7-48b6-93bc-ba37428aacff'
+list=['b1dcc9dd-5262-4d8d-a863-c897e6d979b9', '99bc9f6b-9aa7-48b6-93bc-ba37428aacff']
+
+[:99bc9f6b-9aa7-48b6-93bc-ba37428aacff]
+background-color='rgb(33,33,33)'
+cursor-background-color='rgb(255,204,0)'
+cursor-colors-set=true
+cursor-foreground-color='rgb(0,0,0)'
+cursor-shape='block'
+default-size-columns=120
+default-size-rows=35
+font='JetBrainsMono Nerd Font 11.5'
+foreground-color='rgb(238,255,255)'
+palette=['rgb(0,0,0)', 'rgb(240,113,120)', 'rgb(195,232,141)', 'rgb(255,203,107)', 'rgb(130,170,255)', 'rgb(199,146,234)', 'rgb(137,221,255)', 'rgb(255,255,255)', 'rgb(84,84,84)', 'rgb(240,113,120)', 'rgb(195,232,141)', 'rgb(255,203,107)', 'rgb(130,170,255)', 'rgb(199,146,234)', 'rgb(137,221,255)', 'rgb(255,255,255)']
+use-system-font=false
+use-theme-colors=false
+visible-name='material-darker'

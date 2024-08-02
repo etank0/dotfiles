@@ -4,11 +4,8 @@
 -- local ok, _ = pcall(vim.cmd, 'colorscheme wal')
 -- local _ = pcall(vim.cmd, 'colorscheme pywal')
 
-local g = vim.g
-local o = vim.o
-o.termguicolors = true
-g.material_theme_style = 'darker'
-local _ = pcall(vim.cmd, 'colorscheme material')
+vim.o.termguicolors = true
+
 ----------------FOR PYWAL.NVIM EXTENSION------------------
 -- vim.cmd([[highlight EndOfBuffer ctermfg=0 ctermbg=NONE guibg=NONE]])
 -- vim.cmd([[highlight NormalNC ctermbg=NONE guibg=NONE]])
