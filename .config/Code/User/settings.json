@@ -1,65 +1,79 @@
 {
-    // Functionality
-    "files.autoSave": "onFocusChange",
+	// Functionality
+	"files.autoSave": "onFocusChange",
 
-    // Looks
-    "workbench.colorTheme": "Material Theme Darker",
-    "workbench.iconTheme": "material-icon-theme",
-    "window.titleBarStyle": "custom",
-    "editor.fontFamily": "'JetBrainsMono NF', 'Droid Sans Mono', 'monospace', monospace",
-    "editor.lineNumbers": "relative",
-    "window.commandCenter": false,
-    "window.menuBarVisibility": "compact",
-    "workbench.layoutControl.enabled": false,
-    "editor.detectIndentation": false,
-    "editor.indentSize": "tabSize",
-    "window.zoomLevel": 0.2,
-    "editor.fontSize": 15,
-    "editor.fontWeight": "500",
-    "workbench.activityBar.location": "top",
-    "editor.scrollbar.verticalScrollbarSize": 10,
-    "editor.scrollbar.horizontalScrollbarSize": 10,
-    "editor.scrollbar.vertical": "auto",
-    "editor.cursorBlinking": "phase",
-    "editor.inlayHints.padding": true,
-    "editor.lineHeight": 1.6,
-    "workbench.sideBar.location": "right",
-    "editor.wordWrap": "on",
-    "editor.cursorSmoothCaretAnimation": "on",
-    "editor.minimap.enabled": false,
-    "window.customTitleBarVisibility": "auto",
+	// Looks
+	"workbench.colorTheme": "Material Theme Darker High Contrast",
+	"workbench.iconTheme": "material-icon-theme",
+	"window.titleBarStyle": "native",
+	"window.customTitleBarVisibility": "never",
+	"window.menuBarVisibility": "hidden",
+	"editor.fontFamily": "'JetBrainsMono NF', 'Droid Sans Mono', 'monospace', monospace",
+	"editor.lineNumbers": "relative",
+	"window.commandCenter": false,
+	"workbench.layoutControl.enabled": false,
+	"editor.detectIndentation": false,
+	"editor.indentSize": "tabSize",
+	"window.zoomLevel": 0.2,
+	"editor.fontSize": 15,
+	"editor.fontWeight": "500",
+	"workbench.activityBar.location": "top",
+	"editor.scrollbar.verticalScrollbarSize": 10,
+	"editor.scrollbar.horizontalScrollbarSize": 10,
+	"editor.scrollbar.vertical": "auto",
+	"editor.cursorBlinking": "phase",
+	"editor.inlayHints.padding": true,
+	"editor.lineHeight": 1.6,
+	"workbench.sideBar.location": "right",
+	"editor.wordWrap": "on",
+	"editor.cursorSmoothCaretAnimation": "on",
+	"editor.minimap.enabled": false,
+	"breadcrumbs.enabled": false,
 
-    // Terminal
-    "terminal.integrated.fontSize": 15,
+	// File Tree
+	"workbench.tree.indent": 15,
 
-    // Prettier
-    // "prettier.useTabs": true,
-    "prettier.tabWidth": 4,
-    "reactSnippets.settings.prettierEnabled": true,
-    "[typescriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[javascriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[css]": {
-        "editor.defaultFormatter": "vscode.css-language-features"
-    },
-    "[jsonc]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
+	// Terminal
+	"terminal.integrated.fontSize": 14,
+	"terminal.integrated.fontWeight": "500",
 
-    // VSCode-Neovim
-    "extensions.experimental.affinity": {
-        "asvetliakov.vscode-neovim": 1
-    },
-    
-    // Zed theme importer
-    "theme-to-zed.theme_importer": "/home/swetank/.local/bin/theme_importer",
-    "[json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
+	// Prettier
+	"prettier.useTabs": true,
+	"prettier.tabWidth": 4,
+	"reactSnippets.settings.prettierEnabled": true,
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[javascriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[css]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+
+	// VSCode-Neovim
+	"extensions.experimental.affinity": {
+		"asvetliakov.vscode-neovim": 1
+	},
+
+	// Keybindings for file operations:
+	// x - cut, y - copy, p - paste, r - rename, d - delete
+
+	// Material Icon
+	"material-icon-theme.activeIconPack": "react_redux",
+
+	// APC UI Extension
+	"apc.font.family": "JetBrains Mono",
+    "apc.menubar.compact": true,
+    "gitlens.codeLens.enabled": false,
+    "workbench.startupEditor": "none",
 }

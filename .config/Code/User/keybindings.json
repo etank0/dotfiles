@@ -1,40 +1,22 @@
 // Place your key bindings in this file to override the defaults
 [
-    // NAVIGATION
-    {
-        "key": "ctrl+shift+j",
-        "command": "workbench.action.togglePanel"
-    },
-
-    // FILE TREE
-
-    // Keybindings for file operations: 
-    // x - cut, y - copy, p - paste, r - rename, d - delete
-
-    {
-        "command": "workbench.action.toggleSidebarVisibility",
-        "key": "ctrl+e"
-    },
-    {
-        "command": "workbench.files.action.focusFilesExplorer",
-        "key": "ctrl+e",
-        "when": "editorTextFocus"
+    // GitLens
+	{
+		"command": "workbench.action.toggleSidebarVisibility",
+		"key": "ctrl+e"
+	},
+	{
+		"command": "workbench.files.action.focusFilesExplorer",
+		"key": "ctrl+e",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+shift+n",
+		"command": "workbench.action.newWindow",
+		"when": "!explorerViewletFocus"
     },
     {
-        "key": "ctrl+shift+n",
-        "command": "workbench.action.newWindow",
-        "when": "!explorerViewletFocus"
-    },
-
-    // VSCODE-NEOVIM
-    // {
-    //     "key": "shift+k",
-    //     "command": "editor.action.moveLinesUpAction",
-    //     "when": "neovim.init && neovim.mode == visual && editorTextFocus"
-    // },
-    // {
-    //     "command": "editor.action.moveLinesDownAction",
-    //     "key": "shift+j",
-    //     "when": "neovim.init && neovim.mode == visual && editorTextFocus"
-    // }
+        "key": "shift+alt+g",
+        "command": "gitlens.toggleLineBlame"
+    }
 ]
