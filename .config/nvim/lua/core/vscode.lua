@@ -16,13 +16,18 @@ vim.g.maplocalleader = " "
 --- Find it Faster ---
 
 -- Files
-vim.keymap.set({'n', 'v'}, "<leader>ff", ":call VSCodeNotify('find-it-faster.findFiles')<CR>");
+vim.keymap.set({ "n", "v" }, "<leader>ff", ":call VSCodeNotify('find-it-faster.findFiles')<CR>")
 
 -- Live Grep
-vim.keymap.set({'n', 'v'}, "<leader>fg", ":call VSCodeNotify('find-it-faster.findWithinFiles')<CR>");
+vim.keymap.set({ "n", "v" }, "<leader>fg", ":call VSCodeNotify('find-it-faster.findWithinFiles')<CR>")
 
 -- Match Tags
-vim.keymap.set('n', '<leader>m', ":call VSCodeNotify('editor.emmet.action.matchTag')<CR>");
+vim.keymap.set("n", "<leader>m", ":call VSCodeNotify('editor.emmet.action.matchTag')<CR>")
+
+-- Git stuff
+vim.keymap.set("n", "<leader>gs", ":call VSCodeNotify('workbench.view.scm')<CR>")
+vim.keymap.set("n", "<leader>tb", ":call VSCodeNotify('gitlens.toggleLineBlame')<CR>")
+vim.keymap.set("n", "<leader>tB", ":call VSCodeNotify('gitlens.toggleFileBlame')<CR>")
 
 -- Window Manipulations
 vim.keymap.set("n", "<C-Up>", ":resize -1<CR>")
@@ -49,7 +54,11 @@ vim.keymap.set("n", "<S-h>", ":Tabprevious<CR>")
 -- vim.keymap.set("n", "<S-l>", ":bn<CR>")
 
 -- Diagnostic
-vim.keymap.set('n', '<leader>dh', vim.diagnostic.open_float)
-vim.keymap.set('n', ']d', vim.diagnostic.goto_prev)
-vim.keymap.set('n', '[d', vim.diagnostic.goto_next)
+vim.keymap.set("n", "<leader>dh", vim.diagnostic.open_float)
+vim.keymap.set("n", "]d", vim.diagnostic.goto_prev)
+vim.keymap.set("n", "[d", vim.diagnostic.goto_next)
 
+-- Scroll
+-- vim.keymap.set("n", "<C-d>", "<C-d>zz")
+-- vim.keymap.set("n", "<C-f>", "<C-f>zz")
+-- vim.keymap.set("n", "<C-u>", "<C-u>zz")

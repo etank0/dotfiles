@@ -1,7 +1,7 @@
 local g = vim.g
 local o = vim.o
 
-vim.cmd('syntax on')
+vim.cmd("syntax on")
 -- Better editor UI
 o.number = true
 --o.cursorline = true
@@ -21,10 +21,10 @@ o.tabstop = 4
 o.shiftwidth = 4
 o.softtabstop = -1 -- If negative, shiftwidth value is used
 o.list = true
-o.listchars = 'trail:·,nbsp:◇,tab:→ ,extends:▸,precedes:◂'
+o.listchars = "trail:·,nbsp:◇,tab:→ ,extends:▸,precedes:◂"
 -- o.formatoptions = 'qrn1'
 -- Makes neovim and host OS clipboard play nicely with each other
-o.clipboard = 'unnamedplus'
+o.clipboard = "unnamedplus"
 -- Better buffer splitting
 o.splitright = true
 o.splitbelow = true
@@ -32,9 +32,6 @@ o.splitbelow = true
 o.hlsearch = false
 o.incsearch = true
 -- remove '~'
-o.fillchars = 'eob: '
+o.fillchars = "eob: "
 
 vim.opt.mouse = "a"
--- Map <leader> to space
-g.mapleader = " "
-g.maplocalleader = " "

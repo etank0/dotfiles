@@ -8,9 +8,9 @@ local function map(m, k, v)
     vim.api.nvim_set_keymap(m, k, v, { silent = true })
 end
 
--- Nvim Tree Toggle
+-- Nvim/Neo Tree Toggle
 vim.api.nvim_set_keymap("n", "<C-b>", "<C-e>", { noremap = true, silent = true })
-map("n", "<C-e>", ":NvimTreeToggle<CR>")
+map("n", "<C-e>", ":Neotree toggle<CR>")
 
 -- Window Manipulations
 map("n", "<C-Up>", ":resize -1<CR>")
@@ -26,6 +26,7 @@ map("n", "<leader>s", "<C-w>s")
 map("n", "<leader>w", "<C-w>w")
 map("n", "<leader>dd", "<C-w>q")
 
+-- Move lines
 map("v", "J", ":m '>+1<CR>gv=gv")
 map("v", "K", ":m '<-2<CR>gv=gv")
 
@@ -35,13 +36,15 @@ map("n", "<S-l>", ":bn<CR>")
 map("n", "<leader>bd", ":bd<CR>")
 map("n", "<leader>bw", ":bw<CR>")
 
--- Fuzzy
-map("n", "<leader><Bslash>", ":History<CR>")
-
 -- Format
-map("n", "<C-S-i>", "<leader>lf")
+-- map("n", "<C-S-i>", "<leader>lf")
 
 -- Diagnostic
-vim.keymap.set('n', '<leader>dh', vim.diagnostic.open_float)
-vim.keymap.set('n', ']d', vim.diagnostic.goto_prev)
-vim.keymap.set('n', '[d', vim.diagnostic.goto_next)
+vim.keymap.set("n", "<leader>dh", vim.diagnostic.open_float)
+vim.keymap.set("n", "]d", vim.diagnostic.goto_prev)
+vim.keymap.set("n", "[d", vim.diagnostic.goto_next)
+
+-- Scroll
+map("n", "<C-d>", "<C-d>zz")
+map("n", "<C-f>", "<C-f>zz")
+map("n", "<C-u>", "<C-u>zz")
