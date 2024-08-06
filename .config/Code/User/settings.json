@@ -4,11 +4,11 @@
 
 	// Looks
 	"workbench.colorTheme": "Material Theme Darker High Contrast",
-	"workbench.iconTheme": "material-icon-theme",
 	"window.titleBarStyle": "native",
 	"window.customTitleBarVisibility": "never",
-	"window.menuBarVisibility": "hidden",
+	"window.menuBarVisibility": "toggle",
 	"editor.fontFamily": "'JetBrainsMono NF', 'Droid Sans Mono', 'monospace', monospace",
+	"editor.fontLigatures": true,
 	"editor.lineNumbers": "relative",
 	"window.commandCenter": false,
 	"workbench.layoutControl.enabled": false,
@@ -17,29 +17,30 @@
 	"window.zoomLevel": 0.2,
 	"editor.fontSize": 15,
 	"editor.fontWeight": "500",
-	"workbench.activityBar.location": "top",
-	"editor.scrollbar.verticalScrollbarSize": 10,
-	"editor.scrollbar.horizontalScrollbarSize": 10,
+	"editor.scrollbar.verticalScrollbarSize": 7,
+	"editor.scrollbar.horizontalScrollbarSize": 7,
 	"editor.scrollbar.vertical": "auto",
 	"editor.cursorBlinking": "phase",
 	"editor.inlayHints.padding": true,
 	"editor.lineHeight": 1.6,
-	"workbench.sideBar.location": "right",
 	"editor.wordWrap": "on",
 	"editor.cursorSmoothCaretAnimation": "on",
 	"editor.minimap.enabled": false,
 	"breadcrumbs.enabled": false,
 
 	// File Tree
+	"workbench.activityBar.location": "top",
+	"workbench.sideBar.location": "right",
 	"workbench.tree.indent": 15,
 
 	// Terminal
 	"terminal.integrated.fontSize": 14,
 	"terminal.integrated.fontWeight": "500",
 
-	// Prettier
-	"prettier.useTabs": true,
+	// Prettier & TabSize
+	"editor.tabSize": 4,
 	"prettier.tabWidth": 4,
+	"prettier.useTabs": false,
 	"reactSnippets.settings.prettierEnabled": true,
 	"[typescriptreact]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -69,11 +70,9 @@
 	// x - cut, y - copy, p - paste, r - rename, d - delete
 
 	// Material Icon
+	"workbench.iconTheme": "material-icon-theme",
 	"material-icon-theme.activeIconPack": "react_redux",
 
-	// APC UI Extension
-	"apc.font.family": "JetBrains Mono",
-    "apc.menubar.compact": true,
-    "gitlens.codeLens.enabled": false,
-    "workbench.startupEditor": "none",
+	// Gitlens
+	"gitlens.codeLens.enabled": false
 }
