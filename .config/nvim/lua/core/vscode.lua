@@ -58,7 +58,7 @@ vim.keymap.set("n", "<leader>dh", vim.diagnostic.open_float)
 vim.keymap.set("n", "]d", vim.diagnostic.goto_prev)
 vim.keymap.set("n", "[d", vim.diagnostic.goto_next)
 
--- Scroll
+-- Scroll [ Note: Not working :( ]
 -- vim.keymap.set("n", "<C-d>", "<C-d>zz")
 -- vim.keymap.set("n", "<C-f>", "<C-f>zz")
 -- vim.keymap.set("n", "<C-u>", "<C-u>zz")

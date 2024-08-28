@@ -1,78 +1,104 @@
 {
-	// Functionality
-	"files.autoSave": "onFocusChange",
+    // Functionality
+    "files.autoSave": "onFocusChange",
 
-	// Looks
-	"workbench.colorTheme": "Material Theme Darker High Contrast",
-	"window.titleBarStyle": "native",
-	"window.customTitleBarVisibility": "never",
-	"window.menuBarVisibility": "toggle",
-	"editor.fontFamily": "'JetBrainsMono NF', 'Droid Sans Mono', 'monospace', monospace",
-	"editor.fontLigatures": true,
-	"editor.lineNumbers": "relative",
-	"window.commandCenter": false,
-	"workbench.layoutControl.enabled": false,
-	"editor.detectIndentation": false,
-	"editor.indentSize": "tabSize",
-	"window.zoomLevel": 0.2,
-	"editor.fontSize": 15,
-	"editor.fontWeight": "500",
-	"editor.scrollbar.verticalScrollbarSize": 7,
-	"editor.scrollbar.horizontalScrollbarSize": 7,
-	"editor.scrollbar.vertical": "auto",
-	"editor.cursorBlinking": "phase",
-	"editor.inlayHints.padding": true,
-	"editor.lineHeight": 1.6,
-	"editor.wordWrap": "on",
-	"editor.cursorSmoothCaretAnimation": "on",
-	"editor.minimap.enabled": false,
-	"breadcrumbs.enabled": false,
+    // Looks
+    "workbench.colorTheme": "Material Theme Darker High Contrast",
+    "window.titleBarStyle": "native",
+    "window.customTitleBarVisibility": "never",
+    "window.menuBarVisibility": "toggle",
+    "editor.fontFamily": "'JetBrainsMono NF', 'Droid Sans Mono', 'monospace', monospace",
+    "editor.fontLigatures": true,
+    "editor.lineNumbers": "relative",
+    "window.commandCenter": false,
+    "workbench.layoutControl.enabled": false,
+    "editor.detectIndentation": false,
+    "editor.indentSize": "tabSize",
+    "window.zoomLevel": 0.2,
+    "editor.fontSize": 15,
+    "editor.fontWeight": "500",
+    "editor.scrollbar.verticalScrollbarSize": 10,
+    "editor.scrollbar.horizontalScrollbarSize": 10,
+    "editor.scrollbar.vertical": "auto",
+    "editor.cursorBlinking": "phase",
+    "editor.inlayHints.padding": true,
+    "editor.lineHeight": 1.6,
+    "editor.wordWrap": "on",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": false,
 
-	// File Tree
-	"workbench.activityBar.location": "top",
-	"workbench.sideBar.location": "right",
-	"workbench.tree.indent": 15,
+    // File Tree
+    "workbench.activityBar.location": "top",
+    "explorer.compactFolders": false,
+    "workbench.sideBar.location": "right",
+    "workbench.tree.indent": 15,
 
-	// Terminal
-	"terminal.integrated.fontSize": 14,
-	"terminal.integrated.fontWeight": "500",
+    // Terminal
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.fontWeight": "500",
 
-	// Prettier & TabSize
-	"editor.tabSize": 4,
-	"prettier.tabWidth": 4,
-	"prettier.useTabs": false,
-	"reactSnippets.settings.prettierEnabled": true,
-	"[typescriptreact]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[javascript]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[javascriptreact]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[css]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[jsonc]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
-	"[json]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	},
+    // Prettier & TabSize
+    "editor.tabSize": 4,
+    "prettier.tabWidth": 4,
+    "prettier.useTabs": false,
+    "reactSnippets.settings.prettierEnabled": true,
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
 
-	// VSCode-Neovim
-	"extensions.experimental.affinity": {
-		"asvetliakov.vscode-neovim": 1
-	},
+    // VSCode-Neovim
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
 
-	// Keybindings for file operations:
-	// x - cut, y - copy, p - paste, r - rename, d - delete
+    // Keybindings for file operations:
+    // x - cut, y - copy, p - paste, r - rename, d - delete
 
-	// Material Icon
-	"workbench.iconTheme": "material-icon-theme",
-	"material-icon-theme.activeIconPack": "react_redux",
+    // Material Icon
+    "workbench.iconTheme": "material-icon-theme",
+    "material-icon-theme.activeIconPack": "react_redux",
 
-	// Gitlens
-	"gitlens.codeLens.enabled": false
+    // Gitlens
+    "gitlens.codeLens.enabled": false,
+
+    // Centered Scrolling
+    "multiCommand.commands": [
+        {
+            "command": "multiCommand.pageUp",
+            "sequence": [
+                {
+                    "command": "editorScroll",
+                    "args": { "to": "up", "by": "wrappedLine", "value": 32 }
+                },
+                { "command": "cursorMove", "args": { "to": "viewPortCenter" } }
+            ]
+        },
+
+        {
+            "command": "multiCommand.pageDown",
+            "sequence": [
+                {
+                    "command": "editorScroll",
+                    "args": { "to": "down", "by": "wrappedLine", "value": 32 }
+                },
+                { "command": "cursorMove", "args": { "to": "viewPortCenter" } }
+            ]
+        }
+    ]
 }

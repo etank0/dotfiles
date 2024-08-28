@@ -1,22 +1,25 @@
 // Place your key bindings in this file to override the defaults
 [
     // GitLens
-	{
-		"command": "workbench.action.toggleSidebarVisibility",
-		"key": "ctrl+e"
-	},
-	{
-		"command": "workbench.files.action.focusFilesExplorer",
-		"key": "ctrl+e",
-		"when": "editorTextFocus"
-	},
-	{
-		"key": "ctrl+shift+n",
-		"command": "workbench.action.newWindow",
-		"when": "!explorerViewletFocus"
+    {
+        "command": "workbench.action.toggleSidebarVisibility",
+        "key": "ctrl+e"
     },
     {
-        "key": "shift+alt+g",
-        "command": "gitlens.toggleLineBlame"
+        "command": "workbench.files.action.focusFilesExplorer",
+        "key": "ctrl+e",
+        "when": "editorTextFocus"
+    },
+
+    // Centered Scrolling
+    {
+        "key": "ctrl+u",
+        "command": "multiCommand.pageUp",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "multiCommand.pageDown",
+        "when": "editorTextFocus"
     }
 ]
