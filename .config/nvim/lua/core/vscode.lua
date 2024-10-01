@@ -53,6 +53,8 @@ vim.keymap.set("n", "<S-h>", ":Tabprevious<CR>")
 -- vim.keymap.set("n", "<S-h>", ":bp<CR>")
 -- vim.keymap.set("n", "<S-l>", ":bn<CR>")
 
+vim.keymap.set("n", "<leader>lf", "<C-S-i>")
+
 -- Diagnostic
 vim.keymap.set("n", "<leader>dh", vim.diagnostic.open_float)
 vim.keymap.set("n", "]d", vim.diagnostic.goto_prev)

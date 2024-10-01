@@ -25,10 +25,12 @@ return {
                 null_ls.builtins.formatting.prettier.with({
                     filetypes = { "javascript", "typescript", "css", "scss", "html", "json", "yaml", "markdown" },
                 }),
+
                 -- -- JavaScript and TypeScript Linting
                 -- null_ls.builtins.diagnostics.eslint.with({
                 --     filetypes = { "javascript", "typescript" },
                 -- }),
+                --
             },
         })
     end,

@@ -33,9 +33,9 @@ map("v", "K", ":m '<-2<CR>gv=gv")
 -- Buffer Manipulations
 map("n", "<S-h>", ":bp<CR>")
 map("n", "<S-l>", ":bn<CR>")
+map('n', '<leader>q', ':bnext | bd#<CR>')
 map("n", "<leader>bd", ":bd<CR>")
 map("n", "<leader>bw", ":bw<CR>")
-
 -- Format
 -- map("n", "<C-S-i>", "<leader>lf")
 

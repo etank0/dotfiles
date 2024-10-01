@@ -27,6 +27,7 @@ return {
                 "markdown_inline",
                 "vim",
                 "vimdoc",
+                "haskell",
                 "php",
                 "phpdoc",
             },           -- one of "all" or a list of languages
