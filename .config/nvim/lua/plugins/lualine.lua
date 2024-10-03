@@ -6,7 +6,8 @@ return {
             options = {
                 theme = require('material.lualine'),
                 component_separators = { left = '', right = '' },
-                section_separators = { left = '', right = '' },
+                -- section_separators = { left = '', right = '' },
+                section_separators = { left = '', right = '' },
             },
         })
     end

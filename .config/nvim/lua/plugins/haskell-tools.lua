@@ -19,6 +19,12 @@ return {
                     end, opts)
                     vim.keymap.set('n', '<leader>rq', ht.repl.quit, opts)
                 end,
+
+                settings = {
+                    haskell = {
+                        formatting = { indentSize = 2 },
+                    }
+                },
             },
         }
     end,
