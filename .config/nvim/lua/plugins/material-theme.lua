@@ -6,6 +6,7 @@ return {
     config = function()
         vim.o.termguicolors = true
         vim.g.material_theme_style = "darker"
+        vim.g.material_terminal_italics = 1
         vim.cmd.colorscheme("material")
 
         -- Set up global highlights for floating windows to improve aesthetics
