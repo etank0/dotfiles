@@ -22,7 +22,7 @@ disabled = false
 [sudo]
 format = '\[[as $symbol]($style)\]'
 
-# No version language
+# for languages
 [bun]
 format = "via [$symbol]($style)"
 
@@ -157,3 +157,14 @@ format = 'via [$symbol]($style)'
 
 [c]
 format = 'via [$symbol]($style)'
+
+[haskell]
+format = 'via [$symbol]($style)'
+
+[custom.cpp]
+detect_extensions = ['cpp', 'hpp']
+symbol = " "
+style = "fg:#86BBD8"
+format = 'via [$symbol]($style)'
+# format = '[ $symbol ($output) ]($style)'
+command = "g++ --version | awk 'NR==1 {print $3}'"
