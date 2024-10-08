@@ -21,20 +21,20 @@ return {
                     },
                 },
                 lualine_x = {
-                    {
-                        function()
-                            local clients = vim.lsp.get_active_clients()
-                            if next(clients) == nil then
-                                return 'No LSP'
-                            end
-                            local names = {}
-                            for _, client in pairs(clients) do
-                                table.insert(names, client.name)
-                            end
-                            return table.concat(names, ', ')
-                        end,
-                        icon = ' LSP:',
-                    },
+                    -- {
+                    --     function()
+                    --         local clients = vim.lsp.get_active_clients()
+                    --         if next(clients) == nil then
+                    --             return 'No LSP'
+                    --         end
+                    --         local names = {}
+                    --         for _, client in pairs(clients) do
+                    --             table.insert(names, client.name)
+                    --         end
+                    --         return table.concat(names, ', ')
+                    --     end,
+                    --     icon = ' LSP:',
+                    -- },
                     'encoding', 'fileformat', 'filetype',
                     {
                         -- Show current directory (workspace) in lualine_x
