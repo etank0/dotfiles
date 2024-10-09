@@ -48,3 +48,13 @@ vim.keymap.set("n", "[d", vim.diagnostic.goto_next)
 map("n", "<C-d>", "<C-d>zz")
 map("n", "<C-f>", "<C-f>zz")
 map("n", "<C-u>", "<C-u>zz")
+
+-- autosave
+-- vim.api.nvim_create_augroup("autosave", { clear = true })
+-- vim.api.nvim_create_autocmd({"BufLeave", "BufWinLeave", "FocusLost"}, {
+--     group = "autosave",
+--     pattern = "*",
+--     callback = function()
+--         vim.cmd("silent! wall")
+--     end,
+-- })
