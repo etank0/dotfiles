@@ -1,0 +1,3 @@
+#!/bin/sh
+
+sudo ~/.local/bin/legion-kbutil load-profile -p ~/Documents/BlueStatic
