@@ -7,7 +7,6 @@ return {
             hls = {
                 on_attach = function(client, bufnr, ht)
                     local opts = { noremap = true, silent = true, buffer = bufnr }
-
                     -- Set keybindings for Haskell Language Server
                     vim.keymap.set('n', '<leader>cl', vim.lsp.codelens.run, opts)
                     vim.keymap.set('n', '<leader>hs', ht.hoogle.hoogle_signature, opts)

@@ -65,7 +65,7 @@ return {
                 "clangd",
                 "rust_analyzer",
                 "pyright",
-                "hls",
+                -- "hls",
             },
             handlers = {
                 function(server_name)
@@ -92,5 +92,9 @@ return {
                 },
             },
         })
+
+        -- require("lspconfig").hls.setup({
+        --     capabilites = capabilites,
+        -- })
     end,
 }
