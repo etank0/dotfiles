@@ -16,7 +16,7 @@
     "editor.indentSize": "tabSize",
     "window.zoomLevel": 0.2,
     "editor.fontSize": 15,
-    "editor.fontWeight": "500",
+    "editor.fontWeight": "400",
     "editor.scrollbar.verticalScrollbarSize": 10,
     "editor.scrollbar.horizontalScrollbarSize": 10,
     "editor.scrollbar.vertical": "auto",
@@ -36,7 +36,7 @@
 
     // Terminal
     "terminal.integrated.fontSize": 14,
-    "terminal.integrated.fontWeight": "500",
+    "terminal.integrated.fontWeight": "400",
 
     // Prettier & TabSize
     "editor.tabSize": 4,
@@ -76,6 +76,10 @@
 
     // Gitlens
     "gitlens.codeLens.enabled": false,
+
+    // find-it-faster
+    // "find-it-faster.general.useTerminalInEditor": true,
+    "find-it-faster.general.killTerminalAfterUse": true,
 
     // Centered Scrolling
     "multiCommand.commands": [
