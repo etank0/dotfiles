@@ -53,7 +53,12 @@ vim.keymap.set("n", "<S-h>", ":Tabprevious<CR>")
 -- vim.keymap.set("n", "<S-h>", ":bp<CR>")
 -- vim.keymap.set("n", "<S-l>", ":bn<CR>")
 
-vim.keymap.set("n", "<leader>lf", "<C-S-i>")
+-- vim.keymap.set("n", "<leader>lf", "<C-S-i>")
+vim.keymap.set("n", "<leader>lf", ":call VSCodeNotify('editor.action.formatDocument')<CR>")
+-- vim.keymap.set("v", "<leader>lf", ":call VSCodeNotify('editor.action.formatSelection')<CR>")
+vim.keymap.set("v", "<leader>lf", function()
+    vscode.action("editor.action.formatSelection")
+end)
 
 -- Diagnostic
 vim.keymap.set("n", "<leader>dh", vim.diagnostic.open_float)
