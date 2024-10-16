@@ -80,6 +80,7 @@
     // find-it-faster
     // "find-it-faster.general.useTerminalInEditor": true,
     "find-it-faster.general.killTerminalAfterUse": true,
+    "find-it-faster.general.batTheme": "material-theme-darker",
 
     // Centered Scrolling
     "multiCommand.commands": [
