@@ -45,6 +45,8 @@ source <(fzf --zsh)
 # For eclipse in Wayland
 # export WEBKIT_DISABLE_COMPOSITING_MODE=1
 
+# For fzf defaults
+source ~/.fzf.zsh
 #----------------------------------------------------
 
 # Path to your oh-my-zsh installation.
