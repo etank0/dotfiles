@@ -1,1 +1,1 @@
-{"name":"BlueStatic","rgb_zones":[{"rgb":[7,14,33],"enabled":true},{"rgb":[7,14,33],"enabled":true},{"rgb":[7,14,33],"enabled":true},{"rgb":[7,14,33],"enabled":true}],"effect":"Static","direction":"Left","speed":1,"brightness":"Low"}
+{"name":"BlueStatic","rgb_zones":[{"rgb":[5,9,17],"enabled":true},{"rgb":[5,9,17],"enabled":true},{"rgb":[5,9,17],"enabled":true},{"rgb":[5,9,17],"enabled":true}],"effect":"Static","direction":"Left","speed":1,"brightness":"Low"}
