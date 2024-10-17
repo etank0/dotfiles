@@ -2,19 +2,27 @@
     // Functionality
     "files.autoSave": "onFocusChange",
 
-    // Looks
+    // Looks & File Tree
     "workbench.colorTheme": "Material Theme Darker High Contrast",
-    "window.titleBarStyle": "native",
-    "window.customTitleBarVisibility": "never",
+    "workbench.activityBar.location": "top",
+    "workbench.sideBar.location": "right",
+    "workbench.tree.indent": 15,
+    "workbench.layoutControl.enabled": false,
+    "explorer.compactFolders": false,
+
+    // Window Looks
+    "window.titleBarStyle": "custom",
+    "window.commandCenter": true,
     "window.menuBarVisibility": "toggle",
+    // "window.customTitleBarVisibility": "never",
+    // "window.zoomLevel": 0.2,
+    
+    // Editor
     "editor.fontFamily": "'JetBrainsMono NF', 'Droid Sans Mono', 'monospace', monospace",
     "editor.fontLigatures": true,
     "editor.lineNumbers": "relative",
-    "window.commandCenter": false,
-    "workbench.layoutControl.enabled": false,
     "editor.detectIndentation": false,
     "editor.indentSize": "tabSize",
-    "window.zoomLevel": 0.2,
     "editor.fontSize": 15,
     "editor.fontWeight": "400",
     "editor.scrollbar.verticalScrollbarSize": 10,
@@ -27,12 +35,6 @@
     "editor.cursorSmoothCaretAnimation": "on",
     "editor.minimap.enabled": false,
     "breadcrumbs.enabled": false,
-
-    // File Tree
-    "workbench.activityBar.location": "top",
-    "explorer.compactFolders": false,
-    "workbench.sideBar.location": "right",
-    "workbench.tree.indent": 15,
 
     // Terminal
     "terminal.integrated.fontSize": 15,
@@ -68,12 +70,18 @@
         "asvetliakov.vscode-neovim": 1
     },
 
-    // Keybindings for file operations:
-    // x - cut, y - copy, p - paste, r - rename, d - delete
-
     // Material Icon
     "workbench.iconTheme": "material-icon-theme",
     "material-icon-theme.activeIconPack": "react_redux",
+
+    // Material Theme
+    "workbench.colorCustomizations": {
+        "[Material Theme*]": {
+            "tab.border": "#333333",
+            "tab.activeBorder": "#89ddff",
+            "editorGroupHeader.tabsBorder": "#333333"
+        }
+    },
 
     // Gitlens
     "gitlens.codeLens.enabled": false,
@@ -106,5 +114,6 @@
                 { "command": "cursorMove", "args": { "to": "viewPortCenter" } }
             ]
         }
-    ]
+    ],
 }
+
