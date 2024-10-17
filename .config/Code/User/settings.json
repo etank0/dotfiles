@@ -35,8 +35,9 @@
     "workbench.tree.indent": 15,
 
     // Terminal
-    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.fontSize": 15,
     "terminal.integrated.fontWeight": "400",
+    "terminal.integrated.shellIntegration.enabled": false,
 
     // Prettier & TabSize
     "editor.tabSize": 4,
