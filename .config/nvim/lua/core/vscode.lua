@@ -21,6 +21,12 @@ vim.keymap.set({ "n", "v" }, "<leader>ff", function() vscode.action("find-it-fas
 -- vim.keymap.set("n", "<leader>fg", ":call VSCodeNotify('find-it-faster.findWithinFiles')<CR>")
 vim.keymap.set({ "n", "v" }, "<leader>fg", function() vscode.action("find-it-faster.findWithinFiles") end)
 
+-- Find Open Buffers
+vim.keymap.set({ "n", "v" }, "<leader>fb", function() vscode.action("workbench.action.showAllEditorsByMostRecentlyUsed") end)
+
+-- Find Recently Opened buffers in the project/directory
+vim.keymap.set({ "n", "v" }, "<leader>fo", function() vscode.action("workbench.action.quickOpen") end)
+
 -- Match Tags
 -- vim.keymap.set("n", "<leader>m", ":call VSCodeNotify('editor.emmet.action.matchTag')<CR>")
 vim.keymap.set("n", "<leader>m", function() vscode.action("editor.emmet.action.matchTag") end)
