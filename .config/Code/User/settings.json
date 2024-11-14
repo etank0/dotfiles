@@ -16,7 +16,7 @@
     "window.menuBarVisibility": "toggle",
     // "window.customTitleBarVisibility": "never",
     // "window.zoomLevel": 0.2,
-    
+
     // Editor
     "editor.fontFamily": "'JetBrainsMono NF', 'Droid Sans Mono', 'monospace', monospace",
     "editor.fontLigatures": true,
@@ -78,8 +78,30 @@
     "workbench.colorCustomizations": {
         "[Material Theme*]": {
             "tab.border": "#333333",
+            "editorGroupHeader.tabsBorder": "#333333",
+            "activityBarBadge.background": "#89ddff",
+            "activityBar.activeBorder": "#89ddff",
+            "list.activeSelectionForeground": "#89ddff",
+            "list.inactiveSelectionForeground": "#89ddff",
+            "list.highlightForeground": "#89ddff",
+            "scrollbarSlider.activeBackground": "#89ddff50",
+            "editorSuggestWidget.highlightForeground": "#89ddff",
+            "textLink.foreground": "#89ddff",
+            "progressBar.background": "#89ddff",
+            "pickerGroup.foreground": "#89ddff",
             "tab.activeBorder": "#89ddff",
-            "editorGroupHeader.tabsBorder": "#333333"
+            "notificationLink.foreground": "#89ddff",
+            "editorWidget.resizeBorder": "#89ddff",
+            "editorWidget.border": "#89ddff",
+            "settings.modifiedItemIndicator": "#89ddff",
+            "settings.headerForeground": "#89ddff",
+            "panelTitle.activeBorder": "#89ddff",
+            "breadcrumb.activeSelectionForeground": "#89ddff",
+            "menu.selectionForeground": "#89ddff",
+            "menubar.selectionForeground": "#89ddff",
+            "editor.findMatchBorder": "#89ddff",
+            "selection.background": "#89ddff40",
+            "statusBarItem.remoteBackground": "#89ddff"
         }
     },
 
