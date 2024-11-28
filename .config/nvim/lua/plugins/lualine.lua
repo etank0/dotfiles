@@ -36,6 +36,7 @@ return {
                     --     icon = ' LSP:',
                     -- },
                     'encoding', 'fileformat', 'filetype',
+                    -- 'encoding', { "fileformat", symbols = { unix = " " } }, 'filetype',
                     {
                         -- Show current directory (workspace) in lualine_x
                         function()
@@ -56,4 +57,3 @@ return {
         })
     end
 }
-
