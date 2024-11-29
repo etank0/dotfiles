@@ -41,6 +41,9 @@
     "terminal.integrated.fontSize": 15,
     "terminal.integrated.fontWeight": "400",
     // "terminal.integrated.shellIntegration.enabled": false,
+    // "terminal.integrated.persistentSessionReviveProcess": "never",
+    // "terminal.integrated.enablePersistentSessions": false,
+
 
     // Prettier & TabSize
     "editor.tabSize": 4,
