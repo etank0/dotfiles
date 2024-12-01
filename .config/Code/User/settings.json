@@ -15,7 +15,7 @@
     "window.commandCenter": true,
     "window.menuBarVisibility": "toggle",
     // "window.customTitleBarVisibility": "never",
-    // "window.zoomLevel": 0.2,
+    // "window.zoomLevel": 0.4,
 
     // Editor
     "editor.fontFamily": "'JetBrainsMono NF', 'Droid Sans Mono', 'monospace', monospace",
