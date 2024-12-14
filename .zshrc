@@ -1,8 +1,4 @@
 #--------------------- My Settings ---------------------
-# Gnome ssh setting
-export GIT_ASKPASS=ksshaskpass
-export SSH_ASKPASS=ksshaskpass
-export SSH_ASKPASS_REQUIRE=prefer
 
 # STARSHIP : sh -c "$(curl -fsSL https://starship.rs/install.sh)"
 eval "$(starship init zsh)"
@@ -49,7 +45,10 @@ source <(fzf --zsh)
 source ~/.fzf.zsh
 #----------------------------------------------------
 
-# Path to your oh-my-zsh installation.
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
+
+# Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
@@ -118,11 +117,12 @@ export ZSH="$HOME/.oh-my-zsh"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-
 plugins=(
 	git
 	zsh-autosuggestions
+    zsh-syntax-highlighting
 )
+
 
 source $ZSH/oh-my-zsh.sh
 
@@ -137,7 +137,7 @@ source $ZSH/oh-my-zsh.sh
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
 # else
-#   export EDITOR='mvim'
+#   export EDITOR='nvim'
 # fi
 
 # Compilation flags
@@ -154,3 +154,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
