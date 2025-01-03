@@ -1,5 +1,5 @@
 return {
-	"nvim-neo-tree/neo-tree.nvim",
+    "nvim-neo-tree/neo-tree.nvim",
     lazy = false,
     priority = 700,
     branch = "v3.x",
@@ -26,7 +26,14 @@ return {
                     enabled = true,
                     leave_dirs_open = false,
                 },
+                filtered_items = {
+                    visible = true,
+                    hide_dotfiles = false,
+                    hide_gitignored = false,
+                }
             },
+
         })
+
     end
 }

@@ -11,6 +11,14 @@ return {
             options = {
                 diagnostics = "nvim_lsp",
                 separator_style = "thick",
+                offsets = {
+                    {
+                        filetype = "neo-tree",
+                        text = "File Explorer", -- Text shown in the offset
+                        text_align = "center",  -- Align text (left, center, or right)
+                        separator = true,       -- Whether to show a separator
+                    },
+                },
                 -- diagnostics_indicator = function(count, level, diagnostics_dict, context)
                 --     local s = " "
                 --     for e, n in pairs(diagnostics_dict) do
@@ -33,8 +41,11 @@ return {
                     fg = "#212121",
                     bg = "#212121",
                 },
+                offset_separator = {
+                    fg = "#eeffff",
+                    bg = "#212121",
+                },
             },
         })
-
     end,
 }
