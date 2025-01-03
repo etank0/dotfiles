@@ -32,6 +32,5 @@ o.splitbelow = true
 o.hlsearch = false
 o.incsearch = true
 -- remove '~'
-o.fillchars = "eob: "
--- vim.o.fillchars = "eob: ,vert:▏,horiz:▁"
+o.fillchars = "eob: ,vert:▏"
 vim.opt.mouse = "a"

@@ -12,5 +12,9 @@ return {
         -- Set up global highlights for floating windows to improve aesthetics
         vim.api.nvim_set_hl(0, "NormalFloat", { bg = "NONE" })
         vim.api.nvim_set_hl(0, "FloatBorder", { fg = "NONE" })
+
+        -- To change the separator color
+        vim.cmd([[highlight WinSeparator guifg=#545454]])
+        vim.cmd([[highlight Virtcolumn guifg=#545454]])
     end,
 }

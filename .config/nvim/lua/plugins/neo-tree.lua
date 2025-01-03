@@ -20,6 +20,16 @@ return {
                 width = 35,
             },
 
+            -- Indent
+            default_component_configs = {
+                indent = {
+                    indent_marker = "▏",
+                    last_indent_marker = "🭼",
+                    expander_collapsed = "",
+                    expander_expanded = "",
+                },
+            },
+
             -- Filesystem
             filesystem = {
                 follow_current_file = {
@@ -34,6 +44,5 @@ return {
             },
 
         })
-
     end
 }
