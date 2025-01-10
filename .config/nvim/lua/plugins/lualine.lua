@@ -1,10 +1,11 @@
 return {
     "nvim-lualine/lualine.nvim",
-    priority = 1000,
+    priority = 1001,
     config = function()
         require("lualine").setup({
             options = {
-                theme = require('material.lualine'),
+                -- theme = require('material.lualine'),
+                theme = "material",
                 component_separators = { left = '', right = '' },
                 section_separators = { left = '', right = '' },
                 -- section_separators = { left = '', right = '' },

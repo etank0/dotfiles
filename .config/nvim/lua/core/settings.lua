@@ -33,4 +33,4 @@ o.hlsearch = false
 o.incsearch = true
 -- remove '~'
 o.fillchars = "eob: ,vert:▏"
-vim.opt.mouse = "a"
+o.mouse = "a"

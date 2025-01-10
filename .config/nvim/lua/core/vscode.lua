@@ -75,7 +75,10 @@ vim.keymap.set("n", "<leader>o", function() vscode.action("workbench.action.join
 -- Window focus command
 vim.keymap.set("n", "<leader>w", function() vscode.action("workbench.action.focusNextGroup") end)
 vim.keymap.set("n", "<leader>p", function() vscode.action("workbench.action.focusPreviousGroup") end)
+
+-- Close Window/Tab
 vim.keymap.set("n", "<leader>dd", function() vscode.action('workbench.action.closeActiveEditor') end)
+vim.keymap.set("n", "<leader>q", function() vscode.action('workbench.action.closeActiveEditor') end)
 
 ----------------- Native Neovim ------------------
 -- Buffer Manipulations

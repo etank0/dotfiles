@@ -1,53 +1,50 @@
-# Font settings
-font_size 11.4
-
 # font_family      FiraCode Nerd Font Med
 # bold_font        FiraCode Nerd Font Bold
 # italic_font      FiraCode Nerd Font Med Italic
 # bold_italic_font FiraCode Nerd Font Bold Italic
 
-font_family      JetBrainsMono NF Light
-bold_font        JetBrainsMono NF Regular
-italic_font      JetBrainsMono NF Light Italic
-bold_italic_font JetBrainsMono NF Italic
-modify_font cell_height 120%
+font_family      JetBrainsMono NF Medium
+bold_font        JetBrainsMono NF Bold
+italic_font      JetBrainsMono NF Medium Italic
+bold_italic_font JetBrainsMono NF Bold Italic
 
-# Wayland Titlebar
+font_size 11.4
+
 wayland_titlebar_color background
 
-# Ligatures
+#ligatures
 disable_ligatures always
 
-# Window settings
+#window settings
 remember_window_size  no
 hide_window_decorations no
 initial_window_width  1160
 initial_window_height 770
 
-# Transparency
+#transparency
 background_opacity 1.00
+window_padding_width 5
 
-# Margin & Padding
-window_padding_width 2
-window_margin_width 0.2
+#borders for windows
 
-# Borders for windows
 window_border_width 0
 active_border_color #398cc8
 inactive_border_color #bdc8d1
 
-# Ask while closing
+#window settings 2
 confirm_os_window_close 0
+window_margin_width 0.2
 
-# Visual Bell
+#bell
 enable_audio_bell no
 visual_bell_duration 0.0
 
-# Tab Bar
+#tab Bar
+
 tab_bar_edge top
 tab_bar_margin_height 3 5
 tab_bar_style powerline
-tab_powerline_style slanted
+tab_powerline_style round
 tab_bar_align left
 tab_bar_min_tabs 2
 tab_switch_strategy previous
@@ -67,7 +64,7 @@ map ctrl+shift+s paste_from_selection
 map alt+1 disable_ligatures_in active always
 map alt+2 disable_ligatures_in all never
 
-### Tabs
+### tabs
 map ctrl+shift+alt+t set_tab_title
 map ctrl+shift+t new_tab
 map ctrl+shift+q close_tab
@@ -78,7 +75,6 @@ map ctrl+shift+, move_tab_backward
 
 # Backspace
 map ctrl+backspace send_text all \x17
-
 # ------------------- <Color Themes> -----------------------
 #include dracula.conf
 #include TokyoNight.conf
@@ -88,4 +84,3 @@ map ctrl+backspace send_text all \x17
 include material-darker.conf
 #include rose-pine-moon.conf
 #include nord.conf
-
