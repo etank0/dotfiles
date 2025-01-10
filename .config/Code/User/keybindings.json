@@ -1,9 +1,10 @@
 // Place your key bindings in this file to override the defaults
 [
-    // GitLens
+    // File Explorer
     {
+        "key": "ctrl+e",
         "command": "workbench.action.toggleSidebarVisibility",
-        "key": "ctrl+e"
+        "when": "sideBarVisible"
     },
     {
         "command": "workbench.files.action.focusFilesExplorer",
