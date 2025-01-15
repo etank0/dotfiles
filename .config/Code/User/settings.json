@@ -24,7 +24,7 @@
     "editor.detectIndentation": true,
     "editor.indentSize": "tabSize",
     "editor.fontSize": 15,
-    "editor.fontWeight": "400",
+    "editor.fontWeight": "300",
     "editor.scrollbar.verticalScrollbarSize": 10,
     "editor.scrollbar.horizontalScrollbarSize": 10,
     "editor.scrollbar.vertical": "auto",
@@ -40,7 +40,7 @@
 
     // Terminal
     "terminal.integrated.fontSize": 15,
-    "terminal.integrated.fontWeight": "400",
+    "terminal.integrated.fontWeight": "300",
     // "terminal.integrated.shellIntegration.enabled": false,
     "terminal.integrated.persistentSessionReviveProcess": "never",
     "terminal.integrated.enablePersistentSessions": false,
@@ -142,6 +142,6 @@
             ]
         }
     ],
-    "materialTheme.accent": "Cyan"
+    "errorLens.enabled": false
 }
 
