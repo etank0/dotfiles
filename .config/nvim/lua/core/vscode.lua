@@ -80,6 +80,11 @@ vim.keymap.set("n", "<leader>p", function() vscode.action("workbench.action.focu
 vim.keymap.set("n", "<leader>dd", function() vscode.action('workbench.action.closeActiveEditor') end)
 vim.keymap.set("n", "<leader>q", function() vscode.action('workbench.action.closeActiveEditor') end)
 
+-- Errorlens/Inlay Hints
+vim.keymap.set("n", "<leader>tv", function() vscode.action('errorLens.toggle') end)
+
+-- Hover Virtual Text
+vim.keymap.set("n", "<leader>cd", function() vscode.action('editor.action.showHover') end)
 ----------------- Native Neovim ------------------
 -- Buffer Manipulations
 vim.keymap.set("n", "<S-l>", ":Tabnext<CR>")

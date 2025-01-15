@@ -23,5 +23,8 @@ return {
         vim.keymap.set("n", "<leader>dl", function()
             builtin.diagnostics({ bufnr = 0 })
         end, { desc = "For diagnostics list" })
+        vim.keymap.set("n", "<leader>cd", function()
+            vim.diagnostic.open_float(nil, { focusable = false, border = "rounded" })
+        end, { desc = "Show line diagnostics" })
     end,
 }

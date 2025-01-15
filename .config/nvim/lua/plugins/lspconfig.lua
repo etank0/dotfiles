@@ -48,12 +48,23 @@ return {
                 vim.keymap.set({ "n", "v" }, "<C-S-i>", function()
                     vim.lsp.buf.format({ async = true })
                 end, opts)
-                if client.server_capabilities.inlayHintProvider and type(client.server_capabilities.inlayHintProvider) == "table" then
-                    vim.keymap.set('n', '<leader>th', function()
-                        local current_setting = vim.lsp.inlay_hint.is_enabled(bufnr)
-                        vim.lsp.inlay_hint.enable(bufnr, not current_setting)
-                    end, { desc = '[lsp] toggle inlay hints' })
+                -- Toggle inlay hints
+                vim.keymap.set('n', '<leader>ih', function()
+                    vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
+                end, { desc = '[lsp] toggle inlay hints' })
+
+                -- Toggle Virtual Text
+                local show_virtual_text = true
+
+                function ToggleVirtualText()
+                    show_virtual_text = not show_virtual_text
+                    vim.diagnostic.config({
+                        virtual_text = show_virtual_text,
+                    })
+                    vim.notify("Virtual text " .. (show_virtual_text and "enabled" or "disabled"), vim.log.levels.INFO)
                 end
+
+                vim.keymap.set("n", "<leader>tv", ToggleVirtualText, { desc = "Toggle virtual text diagnostics" })
             end,
         })
 
@@ -92,9 +103,5 @@ return {
                 },
             },
         })
-
-        -- require("lspconfig").hls.setup({
-        --     capabilites = capabilites,
-        -- })
     end,
 }

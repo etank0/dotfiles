@@ -11,7 +11,7 @@ return {
                 terminal = false,
                 sidebars = false,
                 floating_windows = false,
-                cursor_line = true,
+                cursor_line = false,
                 lsp_virtual_text = false,
                 non_current_windows = false,
                 filetypes = {},
