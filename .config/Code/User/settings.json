@@ -18,13 +18,13 @@
     // "window.zoomLevel": 0.4,
 
     // Editor
-    "editor.fontFamily": "'JetBrainsMono NF', 'Droid Sans Mono', 'monospace', monospace",
+    "editor.fontFamily": "'JetBrainsMono NFM', 'Droid Sans Mono', 'monospace', monospace",
     "editor.fontLigatures": false,
     "editor.lineNumbers": "relative",
     "editor.detectIndentation": true,
     "editor.indentSize": "tabSize",
-    "editor.fontSize": 15,
-    "editor.fontWeight": "300",
+    "editor.fontSize": 14.6,
+    "editor.fontWeight": "500",
     "editor.scrollbar.verticalScrollbarSize": 10,
     "editor.scrollbar.horizontalScrollbarSize": 10,
     "editor.scrollbar.vertical": "auto",
@@ -40,7 +40,7 @@
 
     // Terminal
     "terminal.integrated.fontSize": 15,
-    "terminal.integrated.fontWeight": "300",
+    "terminal.integrated.fontWeight": "400",
     // "terminal.integrated.shellIntegration.enabled": false,
     "terminal.integrated.persistentSessionReviveProcess": "never",
     "terminal.integrated.enablePersistentSessions": false,
