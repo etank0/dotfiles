@@ -4,10 +4,12 @@
 DOTFILES_CONFIG="$HOME/mygithub/dotfiles/.config"
 DOTFILES_BIN="$HOME/mygithub/dotfiles/scripts/bins"
 DOTFILES_DESKTOP="$HOME/mygithub/dotfiles/scripts/desktops"
+DOTFILES_AUTOSTART="$HOME/mygithub/dotfiles/.config/autostart"
 
 TARGET_CONFIG="$HOME/.config"
 TARGET_BIN="$HOME/.local/bin"
 TARGET_DESKTOP="$HOME/.local/share/applications"
+TARGET_AUTOSTART="$HOME/.config/autostart"
 
 # Create target directories if they do not exist
 mkdir -p "$TARGET_CONFIG"
@@ -31,7 +33,7 @@ replace_home_in_desktop_files() {
   local desktop_file=$1
   local home_value=$HOME
   # Check if the desktop file name exists in the target desktop directory
-  if [ -f "$DOTFILES_DESKTOP/$(basename "$desktop_file")" ]; then
+  if [ -f "$DOTFILES_DESKTOP/$(basename "$desktop_file")" ] || [ -f "$DOTFILES_AUTOSTART/$(basename "$desktop_file")" ]; then
     # Check if $HOME is in the desktop file but not surrounded by quotes
     if grep -q "\$HOME" "$desktop_file" && ! grep -q '"\$HOME"' "$desktop_file"; then
       # Use sed to replace $HOME with the actual value of HOME environment variable
@@ -41,7 +43,7 @@ replace_home_in_desktop_files() {
       echo "Skipping $desktop_file as \$HOME is already quoted or not found"
     fi
   else
-    echo "No matching file found for $(basename "$desktop_file") in $DOTFILES_DESKTOP, skipping..."
+    echo "No matching file found for $(basename "$desktop_file") in $DOTFILES_DESKTOP or in $DOTFILES_AUTOSTART, skipping..."
   fi
 }
 
@@ -49,6 +51,12 @@ replace_home_in_desktop_files() {
 for desktop_file in "$TARGET_DESKTOP"/*.desktop; do
   replace_home_in_desktop_files "$desktop_file"
 done
+
+# Also check .desktop files in autostart directory
+for desktop_file in "$TARGET_AUTOSTART"/*.desktop; do
+  replace_home_in_desktop_files "$desktop_file"
+done
+
 # Ask for sudo password once
 echo "Setting scripts in $TARGET_BIN as executable..."
 sudo bash -c "chmod +x $TARGET_BIN/*"
