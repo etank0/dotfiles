@@ -1,0 +1,3 @@
+#!/bin/sh
+
+sudo "$HOME/.local/bin/legion-kbutil" load-profile -p "$HOME/mygithub/dotfiles/general-config/BlueStatic"

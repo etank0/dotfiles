@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<colorTheme id="69999" name="Material Theme Darker (VS Code)" modified="2020-04-28 20:03:55" author="Swetank U (etank0)">
+    <searchResultIndication color="#545454" /> <!-- grey -->
+    <filteredSearchResultIndication color="#545454" /> <!-- grey -->
+    <occurrenceIndication color="#212121" underline="true" /> <!-- background -->
+    <writeOccurrenceIndication color="#212121" underline="true" /> <!-- background -->
+    <findScope color="#616161" /> <!-- selection -->
+    <deletionIndication color="#f78c6c" /> <!-- orange -->
+    <sourceHoverBackground color="#89ddff" /> <!-- cyan -->
+    <singleLineComment color="#65737E" italic="false" /> <!-- comment-->
+    <multiLineComment color="#65737E" italic="false" /> <!-- comment-->
+    <commentTaskTag color="#616161" italic="false" underline="true" strikethrough="false" /> <!-- light grey -->
+    <javadoc color="#65737E" italic="false" /> <!-- comment -->
+    <javadocLink color="#616161" italic="false" underline="true" strikethrough="false" /> <!-- light grey -->
+    <javadocTag color="#616161" italic="false" /> <!-- light grey -->
+    <javadocKeyword color="#616161" italic="false" /> <!-- light grey -->
+    <class color="#ffcb6b" bold="false" underline="false" strikethrough="false" /> <!-- yellow -->
+    <interface color="#ffcb6b" /> <!-- yellow -->
+    <method color="#82aaff" /> <!-- blue -->
+    <methodDeclaration color="#82aaff" /> <!-- blue -->
+    <bracket color="#89ddff" /> <!-- cyan -->
+    <number color="#f07178" /> <!-- red -->
+    <string color="#c3e88d" /> <!-- green -->
+    <operator color="#ffcb6b" /> <!-- yellow (annoyingly class declaration too) -->
+    <keyword color="#89ddff" bold="false" /> <!-- cyan -->
+    <annotation color="#c3e88d" /> <!-- green -->
+    <staticMethod color="#c3e88d" /> <!-- green -->
+    <localVariable color="#eeffff" /> <!-- foreground -->
+    <localVariableDeclaration color="#eeffff" /> <!-- foreground -->
+    <field color="#eeffff" /> <!-- foreground -->
+    <staticField color="#eeffff" /> <!-- foreground -->
+    <staticFinalField color="#c792ea" /> <!-- purple -->
+    <deprecatedMember color="#f78c6c" underline="false" strikethrough="true" /> <!-- orange -->
+    <enum color="#c792ea" /> <!-- purple -->
+    <inheritedMethod color="#82aaff" /> <!-- blue -->
+    <abstractMethod color="#82aaff" /> <!-- blue -->
+    <parameterVariable color="#eeffff" /> <!-- foreground -->
+    <typeArgument color="#ffcb6b" /> <!-- yellow -->
+    <typeParameter color="#82aaff" /> <!-- blue -->
+    <constant color="#c792ea" /> <!-- purple -->
+    <background color="#212121" /> <!-- background -->
+    <currentLine color="#545454" /> <!-- grey -->
+    <foreground color="#eeffff" /> <!-- foreground -->
+    <lineNumber color="#545454" /> <!-- grey -->
+    <selectionBackground color="#616161" /> <!-- light grey -->
+    <selectionForeground color="#eeffff" /> <!-- foreground -->
+</colorTheme>
