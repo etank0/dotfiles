@@ -66,5 +66,8 @@ done
 echo "Setting scripts in $TARGET_BIN as executable..."
 sudo bash -c "chmod +x $TARGET_BIN/*"
 
+# Build bat binary
+bat cache --build
+
 echo "Configuration, scripts, and desktops successfully installed!"
 

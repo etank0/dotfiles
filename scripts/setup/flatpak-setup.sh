@@ -37,6 +37,12 @@ check_flathub_enabled() {
   fi
 }
 
+# Function to install Extension Manager via Flatpak
+install_extension_manager() {
+  echo "Installing Extension Manager via Flatpak..."
+  flatpak install -y flathub com.mattjakeman.ExtensionManager
+}
+
 # Function to install Postman via Flatpak
 install_postman() {
   echo "Installing Postman via Flatpak..."
@@ -73,6 +79,7 @@ apply_flatpak_overrides
 install_postman
 install_kdenlive
 install_telegram
+install_extension_manager
 
-echo "Postman, Kdenlive, and Telegram have been installed successfully via Flatpak!"
+echo "Postman, Kdenlive, and Telegram and Extension Manager have been installed successfully via Flatpak!"
 
