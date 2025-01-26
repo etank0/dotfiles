@@ -35,7 +35,7 @@
     "editor.cursorSmoothCaretAnimation": "on",
     "editor.minimap.enabled": false,
     "editor.renderWhitespace": "trailing",
-    "editor.rulers": [120],
+    "editor.rulers": [100],
     "breadcrumbs.enabled": true,
 
     // Terminal
@@ -144,4 +144,3 @@
     ],
     "errorLens.enabled": false
 }
-

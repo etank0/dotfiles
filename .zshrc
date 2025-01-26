@@ -11,7 +11,6 @@ else
 fi
 export EDITOR
 
-
 # User specific environment
 if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
 then
@@ -33,7 +32,6 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # For SASS compiler/transpiler
 export PATH=/home/swetank/.local/bin/dart-sass:$PATH
-
 
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
@@ -118,11 +116,10 @@ export ZSH="$HOME/.oh-my-zsh"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-	git
-	zsh-autosuggestions
+    git
+    zsh-autosuggestions
     zsh-syntax-highlighting
 )
-
 
 source $ZSH/oh-my-zsh.sh
 
