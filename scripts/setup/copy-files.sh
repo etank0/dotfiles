@@ -5,6 +5,7 @@ DOTFILES_CONFIG="$HOME/mygithub/dotfiles/.config"
 DOTFILES_BIN="$HOME/mygithub/dotfiles/scripts/bins"
 DOTFILES_DESKTOP="$HOME/mygithub/dotfiles/scripts/desktops"
 DOTFILES_AUTOSTART="$HOME/mygithub/dotfiles/.config/autostart"
+DOTFILES_HOME="$HOME/mygithub/dotfiles"
 
 TARGET_CONFIG="$HOME/.config"
 TARGET_BIN="$HOME/.local/bin"
@@ -16,9 +17,13 @@ mkdir -p "$TARGET_CONFIG"
 mkdir -p "$TARGET_BIN"
 mkdir -p "$TARGET_DESKTOP"
 
+# Copy dotfiles (hidden files starting with .) to home directory
+echo "Copying dotfiles from $DOTFILES_HOME to $HOME..."
+find "$DOTFILES_HOME" -maxdepth 1 -type f -name ".*" -exec cp {} "$HOME/" \;
+
 # Copy config files
-# echo "Copying config files from $DOTFILES_CONFIG to $TARGET_CONFIG..."
-# cp -r "$DOTFILES_CONFIG/"* "$TARGET_CONFIG/"
+echo "Copying config files from $DOTFILES_CONFIG to $TARGET_CONFIG..."
+cp -r "$DOTFILES_CONFIG/"* "$TARGET_CONFIG/"
 
 # Copy binaries
 echo "Copying scripts from $DOTFILES_BIN to $TARGET_BIN..."
