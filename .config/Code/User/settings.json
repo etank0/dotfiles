@@ -109,7 +109,8 @@
         }
     },
 
-    // Gitlens
+    // Git and Gitlens
+    "diffEditor.ignoreTrimWhitespace": false,
     "gitlens.codeLens.enabled": false,
     "gitlens.currentLine.enabled": false,
 
@@ -117,6 +118,9 @@
     // "find-it-faster.general.useTerminalInEditor": true,
     // "find-it-faster.general.killTerminalAfterUse": true,
     "find-it-faster.general.batTheme": "material-theme-darker",
+
+    // Errorlens
+    "errorLens.enabled": false,
 
     // Centered Scrolling
     "multiCommand.commands": [
@@ -142,5 +146,4 @@
             ]
         }
     ],
-    "errorLens.enabled": false
 }
