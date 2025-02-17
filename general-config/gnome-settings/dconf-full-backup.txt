@@ -32,20 +32,6 @@ profile-uuids=['b91fe61043713f0e7ff29bb4675d9a61']
 use-system-font=false
 window-size=(uint32 110, uint32 33)
 
-[Snapshot]
-capture-mode='picture'
-is-maximized=false
-show-composition-guidelines=true
-window-height=567
-window-width=814
-
-[TextEditor]
-style-scheme='Yaru-dark'
-
-[Totem]
-active-plugins=['screensaver', 'open-directory', 'save-file', 'apple-trailers', 'variable-rate', 'movie-properties', 'autoload-subtitles', 'rotation', 'mpris', 'skipto', 'screenshot', 'vimeo', 'recent']
-subtitle-encoding='UTF-8'
-
 [Weather]
 locations=[<(uint32 2, <('Bangalore', 'VOBG', true, [(0.22601989378717041, 1.3555659188172149)], [(0.22631101470640302, 1.3537937114947398)])>)>]
 window-height=497
@@ -106,9 +92,6 @@ size=(870, 690)
 
 [com/mattjakeman/ExtensionManager]
 last-used-version='0.5.0'
-
-[com/ubuntu/update-notifier]
-release-check-time=uint32 1728822057
 
 [control-center]
 last-panel='bluetooth'
@@ -442,10 +425,6 @@ playlist-width=250
 show-playlist=false
 volume=1.0
 width=1440
-
-[login-screen]
-enable-fingerprint-authentication=true
-enable-smartcard-authentication=false
 
 [mutter]
 edge-tiling=true
@@ -837,10 +816,6 @@ columns-order=[0, 1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19
 sort-col=8
 sort-order=0
 
-[org/gnome/login-screen]
-enable-fingerprint-authentication=true
-enable-smartcard-authentication=false
-
 [org/gnome/mutter]
 edge-tiling=true
 experimental-features=['variable-refresh-rate']
@@ -917,8 +892,8 @@ sleep-inactive-battery-timeout=1200
 app-picker-layout=[{'org.fedoraproject.MediaWriter.desktop': <{'position': <0>}>, 'simple-scan.desktop': <{'position': <1>}>, 'org.gnome.TextEditor.desktop': <{'position': <2>}>, 'org.gnome.SystemMonitor.desktop': <{'position': <3>}>, 'org.gnome.Ptyxis.desktop': <{'position': <4>}>, 'nvidia-settings.desktop': <{'position': <5>}>, '40ba67d8-4adf-4db6-9c02-97c5a8321167': <{'position': <6>}>, 'fd2f62bd-3e24-4b8d-97d5-74af99472385': <{'position': <7>}>, '57599155-c160-467f-98c9-ff03416071c1': <{'position': <8>}>, 'Utilities': <{'position': <9>}>, '58237e40-d7f4-4d31-a514-b8b98d6fd4a2': <{'position': <10>}>, '1136d9fc-159c-4a1d-a2bc-2bccef405f8f': <{'position': <11>}>, '29924836-3b49-426a-b801-bcbc936fe553': <{'position': <12>}>, '37173d24-3863-48b1-8eb0-d021f2ebc58c': <{'position': <13>}>, 'ab2fab41-d19d-40bd-8f50-647ba208f0db': <{'position': <14>}>, '186e90c6-22f7-4975-99f3-5de875333a93': <{'position': <15>}>, 'steam.desktop': <{'position': <16>}>}]
 command-history=['lg', 'pw-jack qjackctl', 'xprop WM_CLASS']
 disable-user-extensions=false
-disabled-extensions=['ding@rastersoft.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'light-style@gnome-shell-extensions.gcampax.github.com', 'native-window-placement@gnome-shell-extensions.gcampax.github.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'system-monitor@gnome-shell-extensions.gcampax.github.com', 'ubuntu-dock@ubuntu.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'background-logo@fedorahosted.org', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'window-list@gnome-shell-extensions.gcampax.github.com']
-enabled-extensions=['user-theme@gnome-shell-extensions.gcampax.github.com', 'gsconnect@andyholmes.github.io', 'bluetooth-battery@michalw.github.com', 'just-perfection-desktop@just-perfection', 'tiling-assistant@ubuntu.com', 'ubuntu-appindicators@ubuntu.com', 'arcmenu@arcmenu.com', 'appindicatorsupport@rgcjonas.gmail.com', 'space-bar@luchrioh', 'Vitals@CoreCoding.com', 'tilingshell@ferrarodomenico.com', 'forge@jmmaranan.com', 'blur-my-shell@aunetx', 'dash-to-panel@jderose9.github.com']
+disabled-extensions=['ding@rastersoft.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'light-style@gnome-shell-extensions.gcampax.github.com', 'native-window-placement@gnome-shell-extensions.gcampax.github.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'system-monitor@gnome-shell-extensions.gcampax.github.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'background-logo@fedorahosted.org', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'window-list@gnome-shell-extensions.gcampax.github.com']
+enabled-extensions=['user-theme@gnome-shell-extensions.gcampax.github.com', 'gsconnect@andyholmes.github.io', 'bluetooth-battery@michalw.github.com', 'just-perfection-desktop@just-perfection', 'arcmenu@arcmenu.com', 'appindicatorsupport@rgcjonas.gmail.com', 'space-bar@luchrioh', 'Vitals@CoreCoding.com', 'tilingshell@ferrarodomenico.com', 'forge@jmmaranan.com', 'blur-my-shell@aunetx', 'dash-to-panel@jderose9.github.com']
 favorite-apps=['org.mozilla.firefox.desktop', 'org.gnome.Settings.desktop', 'org.gnome.Nautilus.desktop', 'zen.desktop', 'discord.desktop', 'google-chrome.desktop', 'kitty.desktop', 'appimagekit_0d217aa3667a536320c94bc77e88e914-Obsidian.desktop']
 last-selected-power-profile='power-saver'
 welcome-dialog-last-shown-version='46.0'
@@ -1425,8 +1400,8 @@ sleep-inactive-battery-timeout=1200
 app-picker-layout=[{'org.fedoraproject.MediaWriter.desktop': <{'position': <0>}>, 'simple-scan.desktop': <{'position': <1>}>, 'org.gnome.SystemMonitor.desktop': <{'position': <2>}>, 'org.gnome.Ptyxis.desktop': <{'position': <3>}>, 'nvidia-settings.desktop': <{'position': <4>}>, '40ba67d8-4adf-4db6-9c02-97c5a8321167': <{'position': <5>}>, 'fd2f62bd-3e24-4b8d-97d5-74af99472385': <{'position': <6>}>, '57599155-c160-467f-98c9-ff03416071c1': <{'position': <7>}>, 'Utilities': <{'position': <8>}>, '58237e40-d7f4-4d31-a514-b8b98d6fd4a2': <{'position': <9>}>, 'b6757135-101b-4e00-ae40-014d07aa292a': <{'position': <10>}>, '1136d9fc-159c-4a1d-a2bc-2bccef405f8f': <{'position': <11>}>, '29924836-3b49-426a-b801-bcbc936fe553': <{'position': <12>}>, '37173d24-3863-48b1-8eb0-d021f2ebc58c': <{'position': <13>}>, 'org.telegram.desktop.desktop': <{'position': <14>}>, 'org.pulseaudio.pavucontrol.desktop': <{'position': <15>}>, 'deluge.desktop': <{'position': <16>}>, 'protonvpn-app.desktop': <{'position': <17>}>}]
 command-history=['lg', 'pw-jack qjackctl', 'xprop WM_CLASS']
 disable-user-extensions=false
-disabled-extensions=['ding@rastersoft.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'light-style@gnome-shell-extensions.gcampax.github.com', 'native-window-placement@gnome-shell-extensions.gcampax.github.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'system-monitor@gnome-shell-extensions.gcampax.github.com', 'ubuntu-dock@ubuntu.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'background-logo@fedorahosted.org', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'window-list@gnome-shell-extensions.gcampax.github.com']
-enabled-extensions=['user-theme@gnome-shell-extensions.gcampax.github.com', 'gsconnect@andyholmes.github.io', 'bluetooth-battery@michalw.github.com', 'just-perfection-desktop@just-perfection', 'tiling-assistant@ubuntu.com', 'ubuntu-appindicators@ubuntu.com', 'arcmenu@arcmenu.com', 'appindicatorsupport@rgcjonas.gmail.com', 'space-bar@luchrioh', 'blur-my-shell@aunetx', 'Vitals@CoreCoding.com', 'dash-to-panel@jderose9.github.com', 'tilingshell@ferrarodomenico.com', 'forge@jmmaranan.com']
+disabled-extensions=['ding@rastersoft.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'light-style@gnome-shell-extensions.gcampax.github.com', 'native-window-placement@gnome-shell-extensions.gcampax.github.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'system-monitor@gnome-shell-extensions.gcampax.github.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'background-logo@fedorahosted.org', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'window-list@gnome-shell-extensions.gcampax.github.com']
+enabled-extensions=['user-theme@gnome-shell-extensions.gcampax.github.com', 'gsconnect@andyholmes.github.io', 'bluetooth-battery@michalw.github.com', 'just-perfection-desktop@just-perfection', 'arcmenu@arcmenu.com', 'appindicatorsupport@rgcjonas.gmail.com', 'space-bar@luchrioh', 'blur-my-shell@aunetx', 'Vitals@CoreCoding.com', 'dash-to-panel@jderose9.github.com', 'tilingshell@ferrarodomenico.com', 'forge@jmmaranan.com']
 favorite-apps=['org.mozilla.firefox.desktop', 'org.gnome.Settings.desktop', 'zen.desktop', 'org.gnome.Nautilus.desktop', 'discord-canary.desktop', 'google-chrome.desktop', 'kitty.desktop', 'appimagekit_0d217aa3667a536320c94bc77e88e914-Obsidian.desktop']
 last-selected-power-profile='power-saver'
 welcome-dialog-last-shown-version='46.0'
