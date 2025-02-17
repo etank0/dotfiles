@@ -28,7 +28,7 @@ install_packages() {
 run_setup_scripts() {
     echo "Running general setup scripts..."
 
-    for script in copy-files.sh flatpak-setup.sh gnome-setup.sh shell-setup.sh vscode-setup.sh; do
+    for script in copy-files.sh gnome-setup.sh shell-setup.sh general-install.sh; do
         if [[ -f "$script" && -x "$script" ]]; then
             echo "Executing $script..."
             ./"$script"

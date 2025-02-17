@@ -1,11 +1,11 @@
 # dotfiles
-Dotfiles of my favourite programs.
-For Customization and Stuff.
+---
+Dotfiles for my favourite programs.
 
-This folder contains files for for:
--terminals : alacritty, kitty etc.
--vim/nvim
--gedit (color scheme)
--startship prompt
--ranger
-and etc.
+This repo contains files for:
+- bash/zsh
+- kitty
+- vim/nvim
+- startship prompt
+- install scripts
+- and many more...

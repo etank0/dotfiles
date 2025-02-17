@@ -1,3 +1,7 @@
+### BEFORE RUNNING
+- Ensure Nvidia is Setup
+- Enable rpm-fusion and multimedia codecs and other stuff for Fedora
+
 ### Things to install natively via platform
 zsh,
 kitty,
@@ -20,9 +24,7 @@ obs-studio,
 syncplay
 
 ### Things to install manually after Nvidia Setup
-- Zen Browser
 - Chrome
 - ProtonVPN
-- DiscordCanary
 - AppimageLauncher
 - Obsidian

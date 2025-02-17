@@ -32,7 +32,7 @@ PACKAGES=(
     qjackctl
     obs-studio
     syncplay
-    pipewire-jack-audio-connection-kit
+    discord
 )
 
 echo "Installing packages..."
