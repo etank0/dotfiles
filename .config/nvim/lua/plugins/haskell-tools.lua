@@ -21,7 +21,10 @@ return {
 
                 settings = {
                     haskell = {
-                        formatting = { indentSize = 2 },
+                        formatting = {
+                            indentSize = 2,
+                            maxLineLength = 100,
+                        },
                     }
                 },
             },

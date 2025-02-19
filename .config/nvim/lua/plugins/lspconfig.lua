@@ -61,10 +61,12 @@ return {
                     vim.diagnostic.config({
                         virtual_text = show_virtual_text,
                     })
-                    vim.notify("Virtual text " .. (show_virtual_text and "enabled" or "disabled"), vim.log.levels.INFO)
+                    vim.notify("Virtual text " .. (show_virtual_text and "enabled" or "disabled"),
+                        vim.log.levels.INFO)
                 end
 
-                vim.keymap.set("n", "<leader>tv", ToggleVirtualText, { desc = "Toggle virtual text diagnostics" })
+                vim.keymap.set("n", "<leader>tv", ToggleVirtualText,
+                    { desc = "Toggle virtual text diagnostics" })
             end,
         })
 
@@ -98,6 +100,11 @@ return {
                     diagnostics = {
                         globals = {
                             "vim",
+                        },
+                    },
+                    format = {
+                        defaultConfig = {
+                            max_line_length = "100", -- Set max width for formatting
                         },
                     },
                 },

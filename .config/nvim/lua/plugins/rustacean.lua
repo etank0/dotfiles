@@ -6,5 +6,8 @@ return {
         cargo = {
             allFeatures = true,
         },
+        rustfmt = {
+            extraArgs = { "--config", "max_width=100" },
+        },
     }
 }

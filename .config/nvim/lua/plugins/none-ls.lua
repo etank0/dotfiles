@@ -8,29 +8,23 @@ return {
 
         null_ls.setup({
             sources = {
-                -- formatting
-                -- null_ls.builtins.formatting.stylua,
-                -- null_ls.builtins.formatting.black,
-                -- null_ls.builtins.formatting.prettier,
-                -- require("none-ls.diagnostics.eslint"), -- requires none-ls-extras.nvim
-                -- Formatting for JavaScript, TypeScript, CSS, etc.
-                --
-                -- C++ Formatting
+                -- Formatting for C++
                 null_ls.builtins.formatting.clang_format.with({
-                    extra_args = { "--style", "{IndentWidth: 4}" },
+                    extra_args = { "--style", "{IndentWidth: 4, ColumnLimit: 100}" },
                     filetypes = { "cpp", "c" },
                 }),
 
-                -- Web Development
+                -- Web Development (Prettier)
                 null_ls.builtins.formatting.prettier.with({
+                    extra_args = { "--print-width", "100" },
                     filetypes = { "javascript", "typescript", "css", "scss", "html", "json", "yaml", "markdown" },
                 }),
 
-                -- -- JavaScript and TypeScript Linting
-                -- null_ls.builtins.diagnostics.eslint.with({
-                --     filetypes = { "javascript", "typescript" },
-                -- }),
-                --
+                -- Python Formatting (Black)
+                null_ls.builtins.formatting.black.with({
+                    extra_args = { "--line-length", "100" },
+                    filetypes = { "python" },
+                }),
             },
         })
     end,
