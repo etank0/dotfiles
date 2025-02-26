@@ -3,7 +3,6 @@
     "files.autoSave": "onFocusChange",
 
     // Looks & File Tree
-    "workbench.colorTheme": "Material Theme Darker High Contrast",
     "workbench.activityBar.location": "top",
     "workbench.sideBar.location": "right",
     "workbench.tree.indent": 15,
@@ -18,7 +17,7 @@
     // "window.zoomLevel": 0.4,
 
     // Editor
-    "editor.fontFamily": "'JetBrainsMono NFM', 'Droid Sans Mono', 'monospace', monospace",
+    "editor.fontFamily": "'JetBrains Mono', 'Droid Sans Mono', 'monospace', monospace",
     "editor.fontLigatures": false,
     "editor.lineNumbers": "relative",
     "editor.detectIndentation": true,
@@ -95,9 +94,11 @@
 
     // Material Icon
     "workbench.iconTheme": "material-icon-theme",
+    "workbench.productIconTheme": "material-product-icons",
     "material-icon-theme.activeIconPack": "react_redux",
 
     // Material Theme
+    "workbench.colorTheme": "Material Theme Darker High Contrast",
     "workbench.colorCustomizations": {
         "[Material Theme*]": {
             "tab.border": "#333333",
