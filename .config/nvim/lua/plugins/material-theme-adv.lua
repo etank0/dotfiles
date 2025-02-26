@@ -58,6 +58,5 @@ return {
 
         -- Apply the material colorscheme
         vim.cmd.colorscheme("material")
-
     end,
 }

@@ -37,7 +37,13 @@ map("v", "K", ":m '<-2<CR>gv=gv")
 -- Buffer Manipulations
 map("n", "<S-h>", ":bp<CR>")
 map("n", "<S-l>", ":bn<CR>")
-map('n', '<leader>q', ':bnext | bd#<CR>')
+vim.keymap.set("n", "<leader>q", function()
+    if vim.fn.winnr("$") > 1 then
+        vim.cmd("close")
+    else
+        vim.cmd("bnext | bd#")
+    end
+end, { noremap = true, silent = true })
 map("n", "<leader>bd", ":bd<CR>")
 map("n", "<leader>bw", ":bw<CR>")
 map('n', '<leader><tab>', ':b#<CR>')

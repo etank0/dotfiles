@@ -70,14 +70,21 @@ return {
             end,
         })
 
-        require("mason").setup({})
+        require("mason").setup({
+            ensure_installed = {
+                "shfmt",
+                "black",
+            },
+        })
         require("mason-lspconfig").setup({
             ensure_installed = {
                 "lua_ls",
                 "ts_ls",
+                "tailwindcss",
                 "clangd",
                 "rust_analyzer",
                 "pyright",
+                "bashls",
                 -- "hls",
             },
             handlers = {

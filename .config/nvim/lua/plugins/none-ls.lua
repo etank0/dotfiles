@@ -25,6 +25,13 @@ return {
                     extra_args = { "--line-length", "100" },
                     filetypes = { "python" },
                 }),
+
+                -- Shell Formatting
+                null_ls.builtins.formatting.shfmt.with({
+                    extra_args = {
+                        "-i", "4", "-ci", "-bn", "-sr", "-width", "100"
+                    },
+                }),
             },
         })
     end,
