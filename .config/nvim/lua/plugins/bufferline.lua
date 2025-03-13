@@ -10,7 +10,7 @@ return {
         bufferline.setup({
             options = {
                 diagnostics = "nvim_lsp",
-                separator_style = "thick",
+                separator_style = "thin",
                 offsets = {
                     {
                         filetype = "neo-tree",
@@ -38,12 +38,22 @@ return {
                 pick_visible = { italic = false },
                 pick = { italic = false },
                 fill = {
+                    -- For Material Darker
                     fg = "#212121",
                     bg = "#212121",
+
+                    -- For Gruvbox
+                    -- fg = "#1d2021",
+                    -- bg = "#1d2021",
                 },
                 offset_separator = {
+                    -- For Material Darker
                     fg = "#343434",
                     bg = "#212121",
+
+                    -- For Gruvbox
+                    -- fg = "#665c54",
+                    -- bg = "#1d2021",
                 },
             },
         })

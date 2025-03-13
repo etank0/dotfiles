@@ -6,6 +6,7 @@ return {
             options = {
                 -- theme = require('material.lualine'),
                 theme = "material",
+                -- theme = require("extras.gruvbox_lualine").stealth_theme,
                 component_separators = { left = '', right = '' },
                 section_separators = { left = '', right = '' },
                 -- section_separators = { left = '', right = '' },
@@ -36,8 +37,8 @@ return {
                     --     end,
                     --     icon = ' LSP:',
                     -- },
-                    -- 'encoding', 'fileformat', 'filetype',
-                    'encoding', { "fileformat", symbols = { unix = " " } }, 'filetype',
+                    'encoding', 'fileformat', 'filetype',
+                    -- 'encoding', { "fileformat", symbols = { unix = " " } }, 'filetype',
                     {
                         -- Show current directory (workspace) in lualine_x
                         function()

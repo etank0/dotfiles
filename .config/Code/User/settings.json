@@ -14,7 +14,7 @@
     "window.commandCenter": true,
     "window.menuBarVisibility": "toggle",
     // "window.customTitleBarVisibility": "never",
-    // "window.zoomLevel": 0.4,
+    "window.zoomLevel": 0.5,
 
     // Editor
     "editor.fontFamily": "'JetBrains Mono', 'Droid Sans Mono', 'monospace', monospace",
@@ -22,7 +22,7 @@
     "editor.lineNumbers": "relative",
     "editor.detectIndentation": true,
     "editor.indentSize": "tabSize",
-    "editor.fontSize": 15,
+    "editor.fontSize": 14,
     "editor.fontWeight": "400",
     "editor.scrollbar.verticalScrollbarSize": 10,
     "editor.scrollbar.horizontalScrollbarSize": 10,
@@ -38,7 +38,7 @@
     "breadcrumbs.enabled": true,
 
     // Terminal
-    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.fontSize": 13,
     "terminal.integrated.fontWeight": "400",
     // "terminal.integrated.shellIntegration.enabled": false,
     "terminal.integrated.persistentSessionReviveProcess": "never",
@@ -96,8 +96,6 @@
     "workbench.iconTheme": "material-icon-theme",
     "workbench.productIconTheme": "material-product-icons",
     "material-icon-theme.activeIconPack": "react_redux",
-
-    // Material Theme
     "workbench.colorTheme": "Material Theme Darker High Contrast",
     "workbench.colorCustomizations": {
         "[Material Theme*]": {
@@ -126,6 +124,37 @@
             "editor.findMatchBorder": "#89ddff",
             "selection.background": "#89ddff40",
             "statusBarItem.remoteBackground": "#89ddff"
+        },
+        "[Gruvbox Dark Hard]": {
+            "tab.border": "#333333",
+            "editorGroupHeader.tabsBorder": "#333333",
+            "activityBarBadge.background": "#458588",
+            "activityBar.activeBorder": "#458588",
+            "list.activeSelectionForeground": "#458588",
+            "list.inactiveSelectionForeground": "#458588",
+            "list.highlightForeground": "#458588",
+            "scrollbarSlider.activeBackground": "#45858850",
+            "editorSuggestWidget.highlightForeground": "#458588",
+            "textLink.foreground": "#458588",
+            "progressBar.background": "#458588",
+            "pickerGroup.foreground": "#458588",
+            "tab.activeBorder": "#458588",
+            "notificationLink.foreground": "#458588",
+            "editorWidget.resizeBorder": "#458588",
+            "editorWidget.border": "#458588",
+            "settings.modifiedItemIndicator": "#458588",
+            "settings.headerForeground": "#458588",
+            "panelTitle.activeBorder": "#458588",
+            "breadcrumb.activeSelectionForeground": "#458588",
+            "menu.selectionForeground": "#458588",
+            "menubar.selectionForeground": "#458588",
+            "editor.findMatchBorder": "#458588",
+            "selection.background": "#45858840",
+            "statusBarItem.remoteBackground": "#458588",
+
+            // More contrast for sidebar and titlebar
+            "titleBar.activeBackground": "#1b1b1b",
+            "titleBar.inactiveBackground": "#1d2021"
         }
     },
 
@@ -137,7 +166,7 @@
     // find-it-faster
     // "find-it-faster.general.useTerminalInEditor": true,
     // "find-it-faster.general.killTerminalAfterUse": true,
-    "find-it-faster.general.batTheme": "material-theme-darker",
+    "find-it-faster.general.batTheme": "gruvbox-dark-hard",
 
     // Errorlens
     "errorLens.enabled": false,
