@@ -1,6 +1,7 @@
 {
     // Functionality
     "files.autoSave": "onFocusChange",
+    "telemetry.telemetryLevel": "off",
 
     // Looks & File Tree
     "workbench.activityBar.location": "top",
@@ -162,6 +163,7 @@
     "diffEditor.ignoreTrimWhitespace": false,
     "gitlens.codeLens.enabled": false,
     "gitlens.currentLine.enabled": false,
+    "gitlens.telemetry.enabled": false,
 
     // find-it-faster
     // "find-it-faster.general.useTerminalInEditor": true,
