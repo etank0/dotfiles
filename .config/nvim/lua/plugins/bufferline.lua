@@ -15,8 +15,8 @@ return {
                     {
                         filetype = "neo-tree",
                         text = "File Explorer", -- Text shown in the offset
-                        text_align = "center",  -- Align text (left, center, or right)
-                        separator = "▏",       -- Whether to show a separator
+                        text_align = "center", -- Align text (left, center, or right)
+                        separator = "▏", -- Whether to show a separator
                     },
                 },
                 -- diagnostics_indicator = function(count, level, diagnostics_dict, context)
@@ -39,8 +39,8 @@ return {
                 pick = { italic = false },
                 fill = {
                     -- For Material Darker
-                    fg = "#212121",
-                    bg = "#212121",
+                    -- fg = "#212121",
+                    -- bg = "#212121",
 
                     -- For Gruvbox
                     -- fg = "#1d2021",
@@ -48,8 +48,8 @@ return {
                 },
                 offset_separator = {
                     -- For Material Darker
-                    fg = "#343434",
-                    bg = "#212121",
+                    -- fg = "#343434",
+                    -- bg = "#212121",
 
                     -- For Gruvbox
                     -- fg = "#665c54",

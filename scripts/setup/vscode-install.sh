@@ -98,6 +98,7 @@ extensions=(
   "usernamehw.errorlens"
   "llvm-vs-code-extensions.vscode-clangd"
   "sumneko.lua"
+  "jdinhlife.gruvbox"
 )
 
 for extension in "${extensions[@]}"; do

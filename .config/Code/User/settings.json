@@ -94,10 +94,10 @@
     },
 
     // Material Icon
+    "workbench.colorTheme": "Gruvbox Dark Hard",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.productIconTheme": "material-product-icons",
     "material-icon-theme.activeIconPack": "react_redux",
-    "workbench.colorTheme": "Material Theme Darker High Contrast",
     "workbench.colorCustomizations": {
         "[Material Theme*]": {
             "tab.border": "#333333",
@@ -168,7 +168,8 @@
     // find-it-faster
     // "find-it-faster.general.useTerminalInEditor": true,
     // "find-it-faster.general.killTerminalAfterUse": true,
-    "find-it-faster.general.batTheme": "material-theme-darker",
+    // "find-it-faster.general.batTheme": "material-theme-darker",
+    "find-it-faster.general.batTheme": "gruvbox-dark-hard",
 
     // Errorlens
     "errorLens.enabled": false,
