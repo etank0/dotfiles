@@ -33,6 +33,9 @@ PACKAGES=(
     obs-studio
     syncplay
     discord
+    zathura
+    zathura-pdf-mupdf
+    zathura-djvu
 )
 
 echo "Installing packages..."
