@@ -1,6 +1,6 @@
 // Place your key bindings in this file to override the defaults
 [
-    // File Explorer
+    // GitLens
     {
         "key": "ctrl+e",
         "command": "workbench.action.toggleSidebarVisibility",
@@ -22,5 +22,10 @@
         "key": "ctrl+d",
         "command": "multiCommand.pageDown",
         "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+w",
+        "command": "workbench.action.reloadWindow"
     }
 ]
+
