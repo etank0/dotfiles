@@ -11,8 +11,8 @@ disabled = true
 [username]
 # format = '[](fg:#82aaff)[ ](bg:#82aaff fg:#212121)[](fg:#82aaff)\[[$user]($style_user)@'
 format = '\[[$user]($style_user)@'
-style_user = 'white bold'
-style_root = 'white bold'
+style_user = 'blue bold'
+style_root = 'red bold'
 disabled = false
 show_always = true
 
