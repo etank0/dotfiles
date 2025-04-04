@@ -42,4 +42,5 @@ keybind = ctrl+alt+k=goto_split:up
 keybind = ctrl+shift+h=previous_tab
 keybind = ctrl+shift+l=next_tab
 keybind = ctrl+shift+space=toggle_tab_overview
+keybind = open:ctrl+shift+f=write_scrollback_file
 
