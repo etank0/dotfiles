@@ -6,6 +6,7 @@
 # for a list of all available themes
 # --theme="material-theme-darker"
 --theme="gruvbox-dark-hard"
+# --theme="poimandres"
 
 # Enable this to use italic text on the terminal. This is not supported on all
 # terminal emulators (like tmux, by default):

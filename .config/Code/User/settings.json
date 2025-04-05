@@ -41,6 +41,7 @@
     // Terminal
     "terminal.integrated.fontSize": 13,
     "terminal.integrated.fontWeight": "400",
+    "terminal.integrated.allowChords": false,
     // "terminal.integrated.shellIntegration.enabled": false,
     "terminal.integrated.persistentSessionReviveProcess": "never",
     "terminal.integrated.enablePersistentSessions": false,
@@ -89,70 +90,18 @@
     "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: LLVM, ColumnLimit: 100 }",
 
     // VSCode-Neovim
-    "extensions.experimental.affinity": {
-        "asvetliakov.vscode-neovim": 1
+    "extensions.experimental.affinity": { "asvetliakov.vscode-neovim": 1
     },
-
-    // Material Icon
     "workbench.colorTheme": "Gruvbox Dark Hard",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.productIconTheme": "material-product-icons",
     "material-icon-theme.activeIconPack": "react_redux",
     "workbench.colorCustomizations": {
-        "[Material Theme*]": {
+        "[*]": {
             "tab.border": "#333333",
             "editorGroupHeader.tabsBorder": "#333333",
-            "activityBarBadge.background": "#89ddff",
-            "activityBar.activeBorder": "#89ddff",
-            "list.activeSelectionForeground": "#89ddff",
-            "list.inactiveSelectionForeground": "#89ddff",
-            "list.highlightForeground": "#89ddff",
-            "scrollbarSlider.activeBackground": "#89ddff50",
-            "editorSuggestWidget.highlightForeground": "#89ddff",
-            "textLink.foreground": "#89ddff",
-            "progressBar.background": "#89ddff",
-            "pickerGroup.foreground": "#89ddff",
-            "tab.activeBorder": "#89ddff",
-            "notificationLink.foreground": "#89ddff",
-            "editorWidget.resizeBorder": "#89ddff",
-            "editorWidget.border": "#89ddff",
-            "settings.modifiedItemIndicator": "#89ddff",
-            "settings.headerForeground": "#89ddff",
-            "panelTitle.activeBorder": "#89ddff",
-            "breadcrumb.activeSelectionForeground": "#89ddff",
-            "menu.selectionForeground": "#89ddff",
-            "menubar.selectionForeground": "#89ddff",
-            "editor.findMatchBorder": "#89ddff",
-            "selection.background": "#89ddff40",
-            "statusBarItem.remoteBackground": "#89ddff"
         },
         "[Gruvbox Dark Hard]": {
-            "tab.border": "#333333",
-            "editorGroupHeader.tabsBorder": "#333333",
-            "activityBarBadge.background": "#458588",
-            "activityBar.activeBorder": "#458588",
-            "list.activeSelectionForeground": "#458588",
-            "list.inactiveSelectionForeground": "#458588",
-            "list.highlightForeground": "#458588",
-            "scrollbarSlider.activeBackground": "#45858850",
-            "editorSuggestWidget.highlightForeground": "#458588",
-            "textLink.foreground": "#458588",
-            "progressBar.background": "#458588",
-            "pickerGroup.foreground": "#458588",
-            "tab.activeBorder": "#458588",
-            "notificationLink.foreground": "#458588",
-            "editorWidget.resizeBorder": "#458588",
-            "editorWidget.border": "#458588",
-            "settings.modifiedItemIndicator": "#458588",
-            "settings.headerForeground": "#458588",
-            "panelTitle.activeBorder": "#458588",
-            "breadcrumb.activeSelectionForeground": "#458588",
-            "menu.selectionForeground": "#458588",
-            "menubar.selectionForeground": "#458588",
-            "editor.findMatchBorder": "#458588",
-            "selection.background": "#45858840",
-            "statusBarItem.remoteBackground": "#458588",
-
             // More contrast for sidebar and titlebar
             "titleBar.activeBackground": "#1b1b1b",
             "titleBar.inactiveBackground": "#1d2021"

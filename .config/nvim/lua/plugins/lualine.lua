@@ -6,6 +6,7 @@ return {
             options = {
                 -- theme = require('material.lualine'),
                 -- theme = "material",
+                -- theme = "poimandres",
                 theme = require("extras.gruvbox_lualine").stealth_theme,
                 component_separators = { left = '', right = '' },
                 section_separators = { left = '', right = '' },
