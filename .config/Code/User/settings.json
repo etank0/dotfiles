@@ -90,24 +90,40 @@
     "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: LLVM, ColumnLimit: 100 }",
 
     // VSCode-Neovim
-    "extensions.experimental.affinity": { "asvetliakov.vscode-neovim": 1
-    },
-    "workbench.colorTheme": "Gruvbox Dark Hard",
+    "extensions.experimental.affinity": { "asvetliakov.vscode-neovim": 1 },
+    "workbench.colorTheme": "Catppuccin Mocha",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.productIconTheme": "material-product-icons",
     "material-icon-theme.activeIconPack": "react_redux",
     "workbench.colorCustomizations": {
         "[*]": {
             "tab.border": "#333333",
-            "editorGroupHeader.tabsBorder": "#333333",
+            "titleBar.border": "#333333",
+            "sideBar.border": "#333333",
+            "statusBar.border": "#333333",
+            "editorGroupHeader.tabsBorder": "#333333"
         },
         "[Gruvbox Dark Hard]": {
             // More contrast for sidebar and titlebar
             "titleBar.activeBackground": "#1b1b1b",
             "titleBar.inactiveBackground": "#1d2021"
+        },
+        "[Catppuccin Mocha]": {
+            // Titlebar border and sidebar contrast
+            "titleBar.activeBackground": "#0a0a0a",
+            "titleBar.inactiveBackground": "#0a0a0a",
+            "sideBar.background": "#0a0a0a",
+            "statusBar.background": "#0a0a0a",
         }
     },
-
+    "catppuccin.colorOverrides": {
+        "mocha": {
+            "base": "#101010",
+            "mantle": "#111111",
+            "crust": "#121212"
+        }
+    },
+    "catppuccin.accentColor": "blue",
     // Git and Gitlens
     "diffEditor.ignoreTrimWhitespace": false,
     "gitlens.codeLens.enabled": false,
@@ -118,7 +134,7 @@
     // "find-it-faster.general.useTerminalInEditor": true,
     // "find-it-faster.general.killTerminalAfterUse": true,
     // "find-it-faster.general.batTheme": "material-theme-darker",
-    "find-it-faster.general.batTheme": "gruvbox-dark-hard",
+    "find-it-faster.general.batTheme": "catppuccin-black",
 
     // Errorlens
     "errorLens.enabled": false,
@@ -146,5 +162,6 @@
                 { "command": "cursorMove", "args": { "to": "viewPortCenter" } }
             ]
         }
-    ],
+    ]
 }
+
