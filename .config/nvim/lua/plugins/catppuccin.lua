@@ -8,13 +8,13 @@ return {
             flavour = "mocha", -- latte, frappe, macchiato, mocha
             transparent_background = true,
             color_overrides = {
-                all = {
-                    text = "#ffffff",
-                },
+                -- all = {
+                --     text = "#ffffff",
+                -- },
                 mocha = {
-                    base = "#000000",
-                    mantle = "#000000",
-                    crust = "#000000",
+                    base = "#101010",
+                    mantle = "#111111",
+                    crust = "#121212",
                 },
             },
             integrations = {
@@ -29,3 +29,4 @@ return {
         vim.cmd.colorscheme "catppuccin"
     end
 }
+
