@@ -91,7 +91,7 @@
 
     // VSCode-Neovim
     "extensions.experimental.affinity": { "asvetliakov.vscode-neovim": 1 },
-    "workbench.colorTheme": "Catppuccin Mocha",
+    "workbench.colorTheme": "Material Theme Darker",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.productIconTheme": "material-product-icons",
     "material-icon-theme.activeIconPack": "react_redux",

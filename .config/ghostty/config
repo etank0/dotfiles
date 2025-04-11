@@ -5,25 +5,23 @@ font-style-italic = "JetBrains Mono Light Italic"
 font-style-bold-italic = "JetBrains Mono Italic"
 # disable ligatures
 font-feature = -calt
-font-size = 13.6
+font-size = 11.3
 
 adjust-cell-height = 20%
 adjust-cursor-height = 20%
-adjust-cursor-thickness = 50%
+adjust-cursor-thickness = 40%
 
 # colorscheme/theme
-theme = "GruvboxDarkHard"
+theme = "MaterialDarker"
 
 # window
 window-decoration = auto
-window-height = 32
+window-height = 33
 window-width = 126
 background-opacity = 1
 window-inherit-working-directory = false
 
 # tabs
-macos-titlebar-style = tabs
-macos-option-as-alt = true
 gtk-wide-tabs = false
 
 # ---- Keybinds ----
@@ -42,5 +40,5 @@ keybind = ctrl+alt+k=goto_split:up
 keybind = ctrl+shift+h=previous_tab
 keybind = ctrl+shift+l=next_tab
 keybind = ctrl+shift+space=toggle_tab_overview
-keybind = open:ctrl+shift+f=write_scrollback_file
+keybind = ctrl+shift+f=write_scrollback_file:open
 

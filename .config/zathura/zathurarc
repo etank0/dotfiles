@@ -19,8 +19,8 @@ set scroll-step 100
 # set font "Fira Code 13"
 
 # Color Theme
-# include material-darker
-include gruvbox-dark-hard
+include material-darker
+# include gruvbox-dark-hard
 
 # Start up
 set guioptions s
