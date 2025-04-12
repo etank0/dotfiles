@@ -4,9 +4,14 @@ return {
         local workspaces = require("workspaces")
 
         workspaces.setup({
-            -- hooks = {
-            --   open = { "Telescope find_files" }, -- or "NvimTreeOpen" etc.
-            -- },
+            hooks = {
+                open = {
+                    function()
+                        -- load session when workspace is opened
+                        vim.cmd("SessionRestore")
+                    end,
+                },
+            },
         })
 
         local map = vim.keymap.set
