@@ -71,6 +71,7 @@ return {
         })
 
         require("mason").setup({
+            install_root_dir = vim.fn.expand("~/.nvim/mason"),
             ensure_installed = {
                 "shfmt",
                 "black",

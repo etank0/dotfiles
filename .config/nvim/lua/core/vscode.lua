@@ -77,7 +77,7 @@ vim.keymap.set("n", "<leader>s", function() vscode.action("workbench.action.spli
 vim.keymap.set("n", "<leader>o", function() vscode.action("workbench.action.joinAllGroups") end)
 
 -- Window focus command
-vim.keymap.set("n", "<leader>`", function() vscode.action("workbench.action.switchWindow") end)
+vim.keymap.set("n", "<leader>fp", function() vscode.action("workbench.action.switchWindow") end)
 vim.keymap.set("n", "<leader>w", function() vscode.action("workbench.action.focusNextGroup") end)
 vim.keymap.set("n", "<leader>p",
     function() vscode.action("workbench.action.focusPreviousGroup") end)
