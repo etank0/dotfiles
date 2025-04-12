@@ -1,50 +1,50 @@
-# Material Darker Vscode color theme for Zathura
-# Swaps Foreground for Background to get a light version if the user prefers
+# Material Darker for Zathura (Inverted-Mode Optimized)
+# Maintains distinct background colors for document context visibility
+# Highlight colors work in both light/dark viewing modes
 
-#
-# Material Darker Vscode color theme
-#
+# Notifications
+set notification-error-bg       rgba(240,113,120,1)      # Error background (red)
+set notification-error-fg       rgba(238,255,255,1)      # Error text (bright)
+set notification-warning-bg     rgba(247,140,108,1)      # Warning background (orange)
+set notification-warning-fg     rgba(97,97,97,0.31)      # Warning text (dark)
+set notification-bg             rgba(33,33,33,1)         # Notification background
+set notification-fg             rgba(238,255,255,1)      # Notification text
 
-set notification-error-bg       rgba(240,113,120,1)     # Red
-set notification-error-fg       rgba(238,255,255,1)   # Foreground
-set notification-warning-bg     rgba(247,140,108,1)   # Orange
-set notification-warning-fg     rgba(97,97,97,0.31) # Selection
-set notification-bg             rgba(33,33,33,1) # Background
-set notification-fg             rgba(238,255,255,1)   # Foreground
+# Completion Popup
+set completion-bg               rgba(33,33,33,1)         # Completion background
+set completion-fg               rgba(84,84,84,1)         # Completion text
+set completion-group-bg         rgba(33,33,33,1)         # Group background
+set completion-group-fg         rgba(84,84,84,1)         # Group text
+set completion-highlight-bg     rgba(97,97,97,0.31)      # Highlight background
+set completion-highlight-fg     rgba(238,255,255,1)      # Highlight text
 
-set completion-bg               rgba(33,33,33,1)      # Background
-set completion-fg               rgba(84,84,84,1)    # Comment
-set completion-group-bg         rgba(33,33,33,1)      # Background
-set completion-group-fg         rgba(84,84,84,1)    # Comment
-set completion-highlight-bg     rgba(97,97,97,0.31)   # Selection
-set completion-highlight-fg     rgba(238,255,255,1)    # Foreground
+# Document Index
+set index-bg                    rgba(33,33,33,1)         # Index background
+set index-fg                    rgba(238,255,255,1)      # Index text
+set index-active-bg             rgba(97,97,97,0.31)      # Active item background
+set index-active-fg             rgba(238,255,255,1)      # Active item text
 
-set index-bg                    rgba(33,33,33,1)    # Background
-set index-fg                    rgba(238,255,255,1)    # Foreground
-set index-active-bg             rgba(97,97,97,0.31) #rgba(238,255,255,1)  # Current Line
-set index-active-fg             rgba(238,255,255,1)    # Foreground
+# UI Elements
+set inputbar-bg                 rgba(33,33,33,1)         # Input bar background
+set inputbar-fg                 rgba(238,255,255,1)      # Input bar text
+set statusbar-bg                rgba(84,84,84,1)         # Status bar background
+set statusbar-fg                rgba(238,255,255,1)      # Status bar text
 
-set inputbar-bg                 rgba(33,33,33,1)      # Background
-set inputbar-fg                 rgba(238,255,255,1)    # Foreground
-set statusbar-bg                rgba(33,33,33,1)      # Background
-set statusbar-fg                rgba(238,255,255,1)    # Foreground
+# Text Selection
+set highlight-color             rgba(255,203,107,0.5)    # Selection highlight (yellow)
+set highlight-active-color      rgba(255,156,172,0.5)    # Active selection (pink)
 
-set highlight-color             rgba(247,140,108,1) # Orange
-set highlight-active-color      rgba(255,156,172,1) # Pink
+# Document Rendering
+set default-bg                  rgba(45,45,45,1)         # Document background (lighter)
+set default-fg                  rgba(238,255,255,1)      # Document text
 
-set default-bg                  rgba(33,33,33,1)      # Background
-set default-fg                  rgba(238,255,255,1)    # Foreground
-
+# Loading Indicator
 set render-loading              true
-set render-loading-fg           rgba(33,33,33,1)    # Background
-set render-loading-bg           rgba(238,255,255,1)    # Foreground
+set render-loading-fg           rgba(33,33,33,1)         # Loading foreground
+set render-loading-bg           rgba(238,255,255,1)      # Loading background
 
-#
-# Recolor mode settings
-#
-
-set recolor-lightcolor          rgba(33,33,33,1)     # Background
-set recolor-darkcolor           rgba(238,255,255,1)   # Foreground
-#
-# Startup options
-#
+# PDF Recolor Settings
+set recolor-lightcolor          rgba(33,33,33,1)         # Light color (dark mode)
+set recolor-darkcolor           rgba(238,255,255,1)      # Dark color (text)
+set recolor                     "true"
+set recolor-keephue             "true"
