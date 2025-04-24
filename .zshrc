@@ -39,6 +39,9 @@ source <(fzf --zsh)
 # For eclipse in Wayland
 # export WEBKIT_DISABLE_COMPOSITING_MODE=1
 
+# Add asdf path
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+
 # For fzf defaults
 source ~/.fzf.zsh
 #----------------------------------------------------
@@ -155,3 +158,4 @@ source $ZSH/oh-my-zsh.sh
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
