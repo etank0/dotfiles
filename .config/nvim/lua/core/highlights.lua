@@ -20,4 +20,3 @@ vim.o.termguicolors = true
 -------------------------------------------------------------------
 --vim.cmd([[highlight CursorLine cterm=NONE ctermfg=NONE ctermbg=NONE guibg=NONE guifg=NONE]])
 --vim.cmd([[highlight CursorLineNR cterm=Bold ctermfg=15 ctermbg=NONE]])
-

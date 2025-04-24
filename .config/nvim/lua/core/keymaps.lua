@@ -5,11 +5,16 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
 local function map(m, k, v)
-    vim.api.nvim_set_keymap(m, k, v, { silent = true })
+  vim.api.nvim_set_keymap(m, k, v, { silent = true })
 end
 
 -- Nvim/Neo Tree Toggle
-vim.api.nvim_set_keymap("n", "<C-b>", "<C-e>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap(
+  "n",
+  "<C-b>",
+  "<C-e>",
+  { noremap = true, silent = true }
+)
 map("n", "<C-e>", ":Neotree toggle<CR>")
 
 -- Window Manipulations
@@ -38,15 +43,15 @@ map("v", "K", ":m '<-2<CR>gv=gv")
 map("n", "<S-h>", ":bp<CR>")
 map("n", "<S-l>", ":bn<CR>")
 vim.keymap.set("n", "<leader>q", function()
-    if vim.fn.winnr("$") > 1 then
-        vim.cmd("close")
-    else
-        vim.cmd("bnext | bd#")
-    end
+  if vim.fn.winnr("$") > 1 then
+    vim.cmd("close")
+  else
+    vim.cmd("bnext | bd#")
+  end
 end, { noremap = true, silent = true })
 map("n", "<leader>bd", ":bd<CR>")
 map("n", "<leader>bw", ":bw<CR>")
-map('n', '<leader><tab>', ':b#<CR>')
+map("n", "<leader><tab>", ":b#<CR>")
 
 -- Format
 -- map("n", "<C-S-i>", "<leader>lf")
