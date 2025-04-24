@@ -5,6 +5,8 @@ SCRIPTS=(
     "flatpak-install.sh"
     "vscode-install.sh"
     "zen-install.sh"
+    "asdf-install.sh"
+    "dev-install.sh"
 )
 
 # Run all other scripts

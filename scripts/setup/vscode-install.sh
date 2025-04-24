@@ -99,6 +99,9 @@ extensions=(
   "llvm-vs-code-extensions.vscode-clangd"
   "sumneko.lua"
   "jdinhlife.gruvbox"
+  "golang.go"
+  "catppuccin.catppuccin-vsc"
+  "pmndrs.pmndrs"
 )
 
 for extension in "${extensions[@]}"; do
