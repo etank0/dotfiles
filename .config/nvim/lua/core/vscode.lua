@@ -23,6 +23,16 @@ vim.keymap.set({ "n", "v" }, "<leader>fg", function()
   vscode.action("find-it-faster.findWithinFiles")
 end)
 
+-- Grep typed files
+vim.keymap.set("n", "<leader>ft", function ()
+  vscode.action("find-it-faster.findWithinFilesWithType")
+end)
+
+-- Get Diagnostic List
+vim.keymap.set("n", "<leader>dl", function ()
+  vscode.action("workbench.actions.view.problems")
+end)
+
 -- Find Open Buffers
 vim.keymap.set({ "n", "v" }, "<leader>fb", function()
   vscode.action("workbench.action.showAllEditorsByMostRecentlyUsed")
