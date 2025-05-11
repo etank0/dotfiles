@@ -18,7 +18,7 @@
   "window.zoomLevel": 0.4,
 
   // Editor
-  "editor.fontFamily": "'JetBrains Mono', 'Droid Sans Mono', 'monospace', monospace",
+  "editor.fontFamily": "'SF Mono', 'JetBrains Mono', 'Droid Sans Mono', 'monospace', monospace",
   "editor.fontLigatures": false,
   "editor.lineNumbers": "relative",
   "editor.detectIndentation": true,
@@ -87,7 +87,7 @@
   "rust-analyzer.rustfmt.extraArgs": ["--config", "max_width=80"],
 
   // C/C++ formatting
-  "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: LLVM, ColumnLimit: 80 }",
+  "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: LLVM, ColumnLimit: 80, IndentWidth: 4, }",
 
   // VSCode-Neovim
   "extensions.experimental.affinity": { "asvetliakov.vscode-neovim": 1 },
@@ -162,5 +162,12 @@
         { "command": "cursorMove", "args": { "to": "viewPortCenter" } }
       ]
     }
-  ]
+  ],
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "notebook.lineNumbers": "on"
 }
