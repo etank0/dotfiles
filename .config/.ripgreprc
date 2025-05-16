@@ -1,0 +1,5 @@
+# Smart case matching/insenstive when small
+--smart-case
+
+# Use material-darker colors for match highlighting
+--colors=match:fg:82,170,255
