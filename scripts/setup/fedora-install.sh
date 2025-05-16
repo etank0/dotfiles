@@ -34,8 +34,10 @@ PACKAGES=(
     syncplay
     discord
     zathura
+    foliate
     zathura-pdf-mupdf
     zathura-djvu
+    zoxide
 )
 
 echo "Installing packages..."

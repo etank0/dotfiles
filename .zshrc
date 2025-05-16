@@ -44,6 +44,12 @@ export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
 # For fzf defaults
 source ~/.fzf.zsh
+
+# For yazi
+alias yazi="flatpak run io.github.sxyazi.yazi"
+
+# ripgrep config path
+export RIPGREP_CONFIG_PATH="$HOME/.config/.ripgreprc"
 #----------------------------------------------------
 
 # If you come from bash you might have to change your $PATH.

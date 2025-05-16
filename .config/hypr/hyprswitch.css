@@ -1,0 +1,87 @@
+/* ~/.config/hyprswitch/macos-gnome.css */
+:root {
+  --border-radius: 12px;
+  --border-size: 1px;
+  --bg-color: rgba(21, 21, 21, 0.8);
+  --bg-color-hover: rgba(53, 132, 228, 0.1);
+  --border-color: rgba(255, 255, 255, 0.1);
+  --border-color-active: #3584e4;
+  --index-border-color: rgba(255, 255, 255, 0.2);
+  --text-color: #ffffff;
+}
+
+/* Client Window Styling */
+.client {
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  border-radius: var(--border-radius);
+  border: var(--border-size) solid var(--border-color);
+  margin: 8px;
+  padding: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.client:hover {
+  background-color: var(--bg-color-hover);
+}
+
+.client_active {
+  border: 1px solid var(--border-color-active);
+  /* box-shadow: 0 6px 16px rgba(53, 132, 228, 0.3); */
+}
+
+/* Workspace Indicator */
+.workspace {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--text-color);
+  background-color: rgba(30, 30, 30, 0.8);
+  border-radius: var(--border-radius);
+  border: none;
+  margin: 4px;
+  padding: 8px 12px;
+}
+
+.workspace_active {
+  background-color: var(--border-color-active);
+  color: white;
+}
+
+/* Client Thumbnails */
+.client-image {
+  border-radius: 8px;
+  margin: 10px;
+}
+
+/* Index Numbers */
+.index {
+  font-size: 12px;
+  font-weight: bold;
+  font-family: "Inter";
+  color: var(--text-color);
+  border: var(--border-size) solid var(--index-border-color);
+  background-color: var(--border-color-active);
+  border-radius: 50%;
+  padding: 0px 4px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+}
+
+/* Monitor Indicator */
+.monitor {
+  background-color: rgba(20, 20, 20, 0.8);
+  border-radius: var(--border-radius);
+  padding: 6px 12px;
+  margin: 4px;
+  font-weight: 500;
+}
+
+.monitor_active {
+  border-bottom: 2px solid var(--border-color-active);
+}

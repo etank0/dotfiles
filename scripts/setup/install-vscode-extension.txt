@@ -1,12 +1,11 @@
 asvetliakov.vscode-neovim
 bradlc.vscode-tailwindcss
 catppuccin.catppuccin-vsc
+continue.continue
 dsznajder.es7-react-js-snippets
 eamodio.gitlens
 editorconfig.editorconfig
 esbenp.prettier-vscode
-github.copilot
-github.copilot-chat
 golang.go
 haskell.haskell
 jdinhlife.gruvbox
@@ -28,6 +27,7 @@ pmndrs.pmndrs
 rangav.vscode-thunder-client
 rust-lang.rust-analyzer
 ryuta46.multi-command
+saoudrizwan.claude-dev
 sumneko.lua
 t3dotgg.vsc-material-theme-but-i-wont-sue-you
 tomrijndorp.find-it-faster

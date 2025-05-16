@@ -73,8 +73,6 @@ extensions=(
   "eamodio.gitlens"
   "editorconfig.editorconfig"
   "esbenp.prettier-vscode"
-  "github.copilot"
-  "github.copilot-chat"
   "haskell.haskell"
   "justusadam.language-haskell"
   "mkhl.direnv"
@@ -102,6 +100,8 @@ extensions=(
   "golang.go"
   "catppuccin.catppuccin-vsc"
   "pmndrs.pmndrs"
+  "continue.continue"
+  "saoudrizwan.claude-dev"
 )
 
 for extension in "${extensions[@]}"; do

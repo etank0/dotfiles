@@ -1,0 +1,5 @@
+@import "~/.config/rofi/themes/raycast.rasi"
+
+mode-switcher {
+    border: 0 0 0 0;
+}

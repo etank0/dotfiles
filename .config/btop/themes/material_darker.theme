@@ -1,0 +1,78 @@
+# Main background (matches Material Darker's #212121)
+theme[main_bg]="#212121"
+
+# Main text color (foreground #eeffff)
+theme[main_fg]="#eeffff"
+
+# Title color for boxes
+theme[title]="#eeffff"
+
+# Highlight color (yellow #FFCC00 from cursor)
+theme[hi_fg]="#FFCC00"
+
+# Selected item (background #616161, text #eeffff)
+theme[selected_bg]="#616161"
+theme[selected_fg]="#eeffff"
+
+# Inactive text (duller gray #545454)
+theme[inactive_fg]="#545454"
+
+# Graph text (bright white)
+theme[graph_text]="#ffffff"
+
+# Meter background (darker gray)
+theme[meter_bg]="#424242"
+
+# Misc process colors (yellow accent)
+theme[proc_misc]="#FFCC00"
+
+# Box outlines (Material accent colors)
+theme[cpu_box]="#82aaff"    # Blue
+theme[mem_box]="#c3e88d"    # Green
+theme[net_box]="#f07178"    # Red
+theme[proc_box]="#C792EA"   # Magenta
+
+# Divider lines (inactive border #545454)
+theme[div_line]="#545454"
+
+# Temperature graph (Green -> Yellow -> Red)
+theme[temp_start]="#c3e88d"
+theme[temp_mid]="#FFCC00"
+theme[temp_end]="#f07178"
+
+# CPU graph (Light Blue -> Cyan)
+theme[cpu_start]="#82aaff"
+theme[cpu_mid]="#89ddff"
+theme[cpu_end]="#89ddff"
+
+# Mem/Disk meters (Material palette)
+theme[free_start]="#82aaff"   # Blue
+theme[free_mid]="#89ddff"    # Cyan
+theme[free_end]="#C792EA"    # Magenta
+
+theme[cached_start]="#89ddff"
+theme[cached_mid]="#82aaff"
+theme[cached_end]="#C792EA"
+
+theme[available_start]="#FFCC00"  # Yellow
+theme[available_mid]="#f07178"    # Red
+theme[available_end]="#f07178"
+
+theme[used_start]="#c3e88d"      # Green
+theme[used_mid]="#89ddff"        # Cyan
+theme[used_end]="#82aaff"        # Blue
+
+# Network graphs (Red -> Yellow)
+theme[download_start]="#f07178"
+theme[download_mid]="#FFCC00"
+theme[download_end]="#f07178"
+
+# Upload graphs (Green -> Cyan)
+theme[upload_start]="#c3e88d"
+theme[upload_mid]="#89ddff"
+theme[upload_end]="#82aaff"
+
+# Process threads/mem/cpu (Magenta -> Blue)
+theme[process_start]="#C792EA"
+theme[process_mid]="#82aaff"
+theme[process_end]="#89ddff"

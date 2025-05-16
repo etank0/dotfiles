@@ -1,0 +1,273 @@
+// -*- mode: jsonc -*-
+{
+  "output": ["eDP-1"],
+  "layer": "top", // Waybar at top layer
+  "position": "top", // Waybar position (top|bottom|left|right)
+  "margin-left": 4,
+  "margin-right": 4,
+  "margin-top": 2,
+  "margin-bottom": 0,
+  "height": 25, // Waybar height (to be removed for auto height)
+  // "width": 1280, // Waybar width
+  "spacing": 2, // Gaps between modules (4px)
+  // Choose the order of the modules
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["hyprland/window"],
+  "modules-right": [
+    "tray",
+    "group/performance",
+    // "network",
+    "group/audio",
+    // "backlight",
+    "keyboard-state",
+    "power-profiles-daemon",
+    "battery",
+    "battery#bat2",
+    "clock",
+    "custom/notification",
+    "custom/power",
+  ],
+
+  // Groups configuration
+  "group/audio": {
+    "orientation": "horizontal",
+    "modules": ["pulseaudio", "pulseaudio#microphone"],
+  },
+
+  "group/performance": {
+    "orientation": "horizontal",
+    "modules": ["cpu", "memory", "temperature", "disk"],
+  },
+
+  // Modules configuration
+  "hyprland/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": true,
+    "warp-on-scroll": false,
+    "format": "{name} : {icon}",
+    "format-icons": {
+      "1": " ",
+      "2": "󰈹 ",
+      "3": " ",
+      "4": " ",
+      "5": " ",
+      "6": "󰝚 ",
+      "urgent": " ",
+      "focused": " ",
+      "default": " ",
+    },
+  },
+
+  "hyprland/window": {
+    "format": "{}",
+    "max-length": 50,
+    "separate-outputs": true,
+  },
+
+  "wlr/taskbar": {
+    "format": "{icon} {name} ",
+    "icon-size": 15,
+    "all-outputs": false,
+    "tooltip-format": "{title}",
+    "on-click": "activate",
+    "on-click-middle": "close",
+    "ignore-list": ["wofi", "rofi"],
+  },
+
+  "keyboard-state": {
+    "numlock": true,
+    "capslock": true,
+    "format": "{name} {icon}",
+    "format-icons": {
+      "locked": "",
+      "unlocked": " ",
+    },
+  },
+
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+      "activated": " ",
+      "deactivated": " ",
+    },
+  },
+
+  "tray": {
+    // "icon-size": 21,
+    "spacing": 10,
+    // "icons": {
+    //   "blueman": "bluetooth",
+    //   "TelegramDesktop": "$HOME/.local/share/icons/hicolor/16x16/apps/telegram.png"
+    // }
+  },
+
+  "clock": {
+    // "timezone": "America/New_York",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "format": "{:%H:%M - %d %b, %Y}", // 24H
+  },
+
+  "cpu": {
+    "format": "   {usage}%",
+    // "tooltip": false,
+  },
+
+  "memory": {
+    "format": "  {}%",
+  },
+
+  "temperature": {
+    // "thermal-zone": 2,
+    // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+    "critical-threshold": 80,
+    // "format-critical": "{temperatureC}°C {icon}",
+    "format": "{icon}  {temperatureC}°C",
+    "format-icons": ["", "", ""],
+  },
+
+  "disk": {
+    "interval": 30,
+    //"format": "󰋊",
+    "path": "/",
+    //"format-alt-click": "click",
+    "format": "󰋊  {percentage_used}%",
+    //"tooltip": true,
+    "tooltip-format": "{used} used out of {total} on {path} ({percentage_used}%)",
+  },
+
+  "backlight": {
+    // "device": "acpi_video1",
+    "format": "{percent}% {icon}",
+    "format-icons": ["", "", "", "", "", "", "", "", ""],
+  },
+
+  "battery": {
+    "states": {
+      // "good": 95,
+      "warning": 30,
+      "critical": 15,
+    },
+    "format": "{icon}   {capacity}%",
+    "format-full": "{icon}   {capacity}%",
+    "format-charging": "  {capacity}%",
+    "format-plugged": "   {capacity}%",
+    "format-alt": "{icon} {time}",
+    // "format-good": "", // An empty format will hide the module
+    // "format-full": "",
+    "format-icons": [" ", " ", " ", " ", " "],
+  },
+
+  "battery#bat2": {
+    "bat": "BAT2",
+  },
+
+  "power-profiles-daemon": {
+    "format": "{icon}",
+    "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+    "tooltip": true,
+    "format-icons": {
+      "default": "",
+      "performance": "",
+      "balanced": " ",
+      "power-saver": " ",
+    },
+  },
+
+  "network": {
+    "format": "{ifname}",
+    "format-wifi": "{icon}",
+    "format-ethernet": "󰌘 ",
+    "format-disconnected": "󰌙 ",
+    "tooltip-format": "{ipaddr}  {bandwidthUpBytes}  {bandwidthDownBytes}",
+    "format-linked": "󰈁 {ifname} (No IP)",
+    "tooltip-format-wifi": "{essid} {icon} {signalStrength}%",
+    "tooltip-format-ethernet": "{ifname} 󰌘 ",
+    "tooltip-format-disconnected": "󰌙 Disconnected",
+    "max-length": 50,
+    "format-icons": ["󰤯 ", "󰤟 ", "󰤢 ", "󰤥 ", "󰤨 "],
+  },
+
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-bluetooth": "{icon} 󰂰 {volume}%",
+    "format-muted": "󰖁 ",
+    "format-icons": {
+      "headphone": " ",
+      "hands-free": " ",
+      "headset": " ",
+      "phone": " ",
+      "portable": " ",
+      "car": " ",
+      "default": [" ", " ", "󰕾 ", " "],
+      "ignored-sinks": ["Easy Effects Sink"],
+    },
+    "scroll-step": 5.0,
+    "on-click": "pavucontrol -t 3",
+    "tooltip-format": "{icon} {desc} | {volume}%",
+    "smooth-scrolling-threshold": 1,
+  },
+
+  "pulseaudio#microphone": {
+    "format": "{format_source}",
+    "format-source": "",
+    "format-source-muted": " ",
+    "on-click": "pavucontrol -t 4",
+    "tooltip-format": "{source_desc} | {source_volume}%",
+    "scroll-step": 5,
+  },
+
+  "custom/media": {
+    "format": "{icon} {0}",
+    "return-type": "json",
+    "max-length": 40,
+    "format-icons": {
+      "spotify": " ",
+      "default": "🎜 ",
+    },
+    "escape": true,
+    "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null", // Script in resources folder
+    // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
+  },
+
+  // "custom/power": {
+  //   "format": " ⏻ ",
+  //   "tooltip": false,
+  //   "menu": "on-click",
+  //   "menu-file": "$HOME/.config/waybar/power_menu.xml",
+  //   "menu-actions": {
+  //     "shutdown": "shutdown",
+  //     "reboot": "reboot",
+  //     "suspend": "systemctl suspend",
+  //     "hibernate": "systemctl hibernate",
+  //   },
+  // },
+
+  "custom/power": {
+    "format": " ",
+    "exec": "echo ; echo 󰟡 Power",
+    "on-click": "~/.config/hypr/scripts/wlogout.sh",
+    "interval": 86400, // once every day
+    "tooltip": true,
+  },
+
+  "custom/notification": {
+    "tooltip-format": "Left: Notifications\nRight: Do not disturb",
+    "format": "{icon}",
+    "format-icons": {
+      "notification": "<span rise='8pt'> <span foreground='red'><sup></sup></span></span>",
+      "none": " ",
+      "dnd-notification": "<span rise='8pt'> <span foreground='red'><sup></sup></span></span>",
+      "dnd-none": " ",
+      "inhibited-notification": "<span rise='8pt'><span foreground='red'><sup></sup></span></span>",
+      "inhibited-none": " ",
+      "dnd-inhibited-notification": "<span rise='8pt'> <span foreground='red'><sup></sup></span></span>",
+      "dnd-inhibited-none": " ",
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true,
+  },
+}
