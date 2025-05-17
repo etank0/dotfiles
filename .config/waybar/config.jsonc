@@ -17,9 +17,9 @@
     "tray",
     "group/performance",
     // "network",
-    "group/audio",
+    // "keyboard-state",
     "backlight",
-    "keyboard-state",
+    "group/audio",
     "power-profiles-daemon",
     "battery",
     "battery#bat2",
@@ -138,8 +138,8 @@
 
   "backlight": {
     // "device": "acpi_video1",
-    "format": "{percent}% {icon}",
-    "format-icons": ["", "", "", "", "", "", "", "", ""],
+    "format": "{icon} {percent}%",
+    "format-icons": [" ", " ", " ", " ", " ", " ", " ", " ", " "],
   },
 
   "battery": {
