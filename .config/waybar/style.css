@@ -3,12 +3,12 @@
 * {
   font-family: "Inter", "SF Mono", "JetBrains Mono", sans-serif;
   font-size: 12px;
-  border-radius: 8px;
   font-weight: bold;
 }
 
 window#waybar {
   /* background-color: transparent; */
+  border-radius: 8px;
   border: 1px solid rgba(160, 160, 160, 1.5);
   background-color: @background;
   color: @foreground;
@@ -25,6 +25,7 @@ window#waybar {
 .modules-right,
 .modules-left {
   /* border: 1px solid rgba(160, 160, 160, 1.5); */
+  margin: 0px 4px;
 }
 
 .modules-right {
@@ -49,7 +50,7 @@ window#waybar {
 #workspaces {
   /* background-color: @background; */
   background-color: transparent;
-  border-radius: 8px;
+  /* border-radius: 8px; */
   padding: 2px 2px;
 }
 
@@ -72,7 +73,8 @@ window#waybar {
 
 #workspaces button {
   background-color: transparent;
-  padding: 4px 12px;
+  border-radius: 0px;
+  padding: 2px 8px;
   color: @primary;
   transition:
     margin 150ms ease-in-out,
