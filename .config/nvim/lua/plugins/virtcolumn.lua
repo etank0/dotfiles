@@ -4,6 +4,6 @@ return {
     -- char to display the line
     -- vim.g.virtcolumn_char = '▕'
     vim.g.virtcolumn_char = "▏"
-    vim.opt.colorcolumn = "100"
+    vim.opt.colorcolumn = "80"
   end,
 }

@@ -90,12 +90,27 @@ return {
 
     require("mason").setup({
       install_root_dir = vim.fn.expand("~/.nvim/mason"),
-      ensure_installed = {
-        "shfmt",
-        "black",
-      },
     })
+
+    -- installing formatters
+    local registry = require("mason-registry")
+
+    local ensure_installed = {
+      "stylua",
+      "shfmt",
+      "black",
+      "prettier",
+      "clang-format",
+    }
+
+    for _, pkg in ipairs(ensure_installed) do
+      if not registry.is_installed(pkg) then
+        registry.get_package(pkg):install()
+      end
+    end
+
     require("mason-lspconfig").setup({
+      -- installing language servers
       ensure_installed = {
         "lua_ls",
         "ts_ls",
