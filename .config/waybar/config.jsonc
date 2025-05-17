@@ -18,7 +18,7 @@
     "group/performance",
     // "network",
     "group/audio",
-    // "backlight",
+    "backlight",
     "keyboard-state",
     "power-profiles-daemon",
     "battery",
@@ -36,7 +36,8 @@
 
   "group/performance": {
     "orientation": "horizontal",
-    "modules": ["cpu", "memory", "temperature", "disk"],
+    // "modules": ["cpu", "memory", "temperature", "disk"],
+    "modules": ["cpu", "memory", "disk"],
   },
 
   // Modules configuration
@@ -109,7 +110,7 @@
 
   "cpu": {
     "format": "   {usage}%",
-    // "tooltip": false,
+    "tooltip": true,
   },
 
   "memory": {
