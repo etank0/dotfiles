@@ -67,8 +67,8 @@ map("n", "<C-f>", "<C-f>zz")
 map("n", "<C-u>", "<C-u>zz")
 
 -- Quickfix
-map("n", "M-j", ":cnext")
-map("n", "M-k", ":cprev")
+map("n", "<M-j>", ":cnext<CR>")
+map("n", "<M-k>", ":cprev<CR>")
 
 -- autosave
 -- vim.api.nvim_create_augroup("autosave", { clear = true })
