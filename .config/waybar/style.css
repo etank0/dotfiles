@@ -1,10 +1,11 @@
 @import url("./colors.css");
 
 * {
-  font-family: "Inter", "SF Mono", "JetBrains Mono", sans-serif;
+  font-family: "Inter", "SF Mono", "JetBrains Mono", "JetBrainsMono Nerd Font", "JetBrainsMono Nerd Font", sans-serif;
   font-size: 12px;
   font-weight: bold;
 }
+
 
 window#waybar {
   /* background-color: transparent; */
@@ -117,6 +118,13 @@ window#waybar {
   color: @primary;
   /* background-color: @background; */
   padding: 4px 8px;
+}
+
+#memory > span {
+  font-family:
+    "JetBrainsMono Nerd Font", "FiraCode Nerd Font", "Symbols Nerd Font",
+    monospace;
+  font-size: 12px;
 }
 
 #window.hidden {

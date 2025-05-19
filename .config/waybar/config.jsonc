@@ -114,7 +114,7 @@
   },
 
   "memory": {
-    "format": "  {}%",
+    "format": "<span> </span>  {}%",
   },
 
   "temperature": {
