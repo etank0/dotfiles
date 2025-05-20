@@ -92,7 +92,7 @@ textbox-return-icon {
     str: "󰌑";
     expand: false;
     text-color: rgba(255, 255, 255, 0.6);
-    font: "Ubuntu Nerd Font 16px";
+    font: "JetBrainsMono Nerd Font 14px";
     vertical-align: 0.5;
     margin: 8px 0;
     padding: 0 8px;
@@ -104,7 +104,7 @@ textbox-command-icon {
     str: "󰘵";
     expand: false;
     text-color: white;
-    font: "Ubuntu Nerd Font 16px";
+    font: "JetBrainsMono Nerd Font 14px";
     vertical-align: 0.5;
     margin: 8px 0;
     padding: 0 8px;
@@ -127,7 +127,7 @@ textbox-down-icon {
     str: "J";
     expand: false;
     text-color: white;
-    font: "Inter Medium 16px";
+    font: "Inter Medium 14px";
     vertical-align: 0.5;
     margin: 8px 0;
     padding: 0 8px;
@@ -150,7 +150,7 @@ textbox-up-icon {
     str: "K";
     expand: false;
     text-color: white;
-    font: "Inter Medium 16px";
+    font: "Inter Medium 14px";
     vertical-align: 0.5;
     margin: 8px 0;
     padding: 0 8px;
@@ -173,7 +173,7 @@ textbox-left-icon {
     str: "H";
     expand: false;
     text-color: white;
-    font: "Inter Medium 16px";
+    font: "Inter Medium 14px";
     vertical-align: 0.5;
     margin: 8px 0;
     padding: 0 8px;
@@ -196,7 +196,7 @@ textbox-right-icon {
     str: "L";
     expand: false;
     text-color: white;
-    font: "Inter Medium 16px";
+    font: "Inter Medium 14px";
     vertical-align: 0.5;
     margin: 8px 0;
     padding: 0 8px;
@@ -211,7 +211,7 @@ footer {
     padding: 5px 10px;
     background-color: rgba(83, 83, 87, 0.1);
     border-color: rgba(255, 255, 255, 0.1);
-    border: 2px 0 0 0;
+    border: 1.75px 0 0 0;
 }
 
 textbox {
@@ -245,7 +245,7 @@ inputbar {
     children: [prompt, entry];
     background-color: transparent;
     border-color: rgba(255, 255, 255, 0.1);
-    border: 0 0 2px 0;
+    border: 0 0 1.75px 0;
 }
 
 entry {
@@ -257,6 +257,7 @@ entry {
 
 prompt {
     text-color: #FFFFFF;
+    font: "Inter Medium 14px";
     background-color: transparent;
     margin: 0px 0px 0px 16px;
     vertical-align: 0.5;
@@ -296,7 +297,7 @@ element-icon {
 }
 
 element-text {
-    font: "Inter Medium 16px";
+    font: "Inter Medium 14px";
     vertical-align: 0.5;
     text-color: white;
     background-color: transparent;
@@ -308,7 +309,7 @@ element selected {
 
 /* ---- Mode Switcher ---- */
 mode-switcher {
-    border: 2px 0 0 0;
+    border: 1.75px 0 0 0;
     border-color: rgba(255, 255, 255, 0.1);
     background-color: transparent;
     margin: 0px 0px;
