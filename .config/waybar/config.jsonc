@@ -11,11 +11,13 @@
   // "width": 1280, // Waybar width
   "spacing": 2, // Gaps between modules (4px)
   // Choose the order of the modules
-  "modules-left": ["hyprland/workspaces"],
+  "modules-left": [
+    "group/performance",
+    "hyprland/workspaces"
+  ],
   "modules-center": ["hyprland/window"],
   "modules-right": [
     "tray",
-    "group/performance",
     // "network",
     // "keyboard-state",
     "backlight",
@@ -204,7 +206,7 @@
     },
     "scroll-step": 5.0,
     "on-click": "pavucontrol -t 3",
-    "tooltip-format": "{icon} {desc} | {volume}%",
+    "tooltip-format": "{icon}  {desc} | {volume}%",
     "smooth-scrolling-threshold": 1,
   },
 
