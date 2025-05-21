@@ -27,6 +27,7 @@
     "battery",
     "battery#bat2",
     "custom/notification",
+    "custom/power"
   ],
 
   // Groups configuration
@@ -105,8 +106,8 @@
 
   "clock": {
     // "timezone": "America/New_York",
-    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    "format": "{:%H:%M - %d %b, %Y}", // 24H
+    "tooltip-format": "<tt>{calendar}</tt>",
+    "format": "{:%a %b %d   %H:%M}", // 24H
   },
 
   "cpu": {
