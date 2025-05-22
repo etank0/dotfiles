@@ -1,7 +1,7 @@
 /* ________Modes: drun, window, calc________ */
 
 configuration {
-    modi: "combi,calc";
+    modi: "combi";
     show-icons: true;
     display-calc: " ";
     display-drun: " ";
