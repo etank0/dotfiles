@@ -43,6 +43,7 @@
   "widgets": [
     "label",
     "buttons-grid",
+    "volume",
     "mpris",
     "title",
     "dnd",
@@ -86,10 +87,6 @@
         {
           "label": "󰂯",
           "command": "blueman-manager"
-        },
-        {
-          "label": "󰏘",
-          "command": "nwg-look"
         }
       ]
     }

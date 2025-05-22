@@ -15,7 +15,6 @@
 
   color: @text;
 
-  all: unset;
   font-size: 14px;
   font-family: "Inter";
   transition: 200ms;
@@ -28,7 +27,7 @@
 }
 
 .floating-notifications.background .notification-row .notification-background {
-  background: alpha(@background, 0.9);
+  background: alpha(@background, 0.8);
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.6);
   border-radius: 16px;
   margin: 12px;
@@ -39,7 +38,7 @@
   .notification-row
   .notification-background
   .notification {
-  padding: 6px;
+  padding: 0px;
   border-radius: 12px;
 }
 
@@ -133,8 +132,8 @@
   .notification-row
   .notification-background
   .close-button {
-  margin: 6px;
-  padding: 4px;
+  margin: 4px;
+  padding: 2px;
   border-radius: 50%;
   background-color: transparent;
   border: 1px solid transparent;

@@ -107,7 +107,7 @@
   "clock": {
     // "timezone": "America/New_York",
     "tooltip-format": "<tt>{calendar}</tt>",
-    "format": "{:%a %b %d   %H:%M}", // 24H
+    "format": "{:%a, %b %d   %H:%M}", // 24H
   },
 
   "cpu": {

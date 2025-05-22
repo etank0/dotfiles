@@ -38,6 +38,7 @@ PACKAGES=(
     zathura-pdf-mupdf
     zathura-djvu
     zoxide
+    openrgb
 )
 
 echo "Installing packages..."
