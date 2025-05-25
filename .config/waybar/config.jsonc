@@ -3,9 +3,9 @@
   "output": ["eDP-1"],
   "layer": "top", // Waybar at top layer
   "position": "top", // Waybar position (top|bottom|left|right)
-  "margin-left": 4,
-  "margin-right": 4,
-  "margin-top": 2,
+  "margin-left": 0,
+  "margin-right": 0,
+  "margin-top": 0,
   "margin-bottom": 0,
   "height": 25, // Waybar height (to be removed for auto height)
   // "width": 1280, // Waybar width

@@ -9,8 +9,8 @@
 
 window#waybar {
   /* background-color: transparent; */
-  border-radius: 8px;
-  border: 1px solid rgba(160, 160, 160, 1.5);
+  /* border-radius: 8px; */
+  /* border: 1px solid rgba(160, 160, 160, 1.5); */
   background-color: @background;
   color: @foreground;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
