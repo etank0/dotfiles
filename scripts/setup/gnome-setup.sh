@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Default to 'arch' if PACKAGE_TYPE environment variable is not set
+# Default to 'rpm' if PACKAGE_TYPE environment variable is not set
 PACKAGE_TYPE="${PACKAGE_TYPE:-rpm}"
 
 # Function to install gnome-shell-extensions utility

@@ -6,7 +6,7 @@ set -e
 # Detect package manager based on PACKAGE_TYPE
 install_packages() {
     case "$PACKAGE_TYPE" in
-        fedora)
+        rpm)
             echo "Detected Fedora system. Running fedora-install.sh..."
             sudo ./fedora-install.sh
             ;;
@@ -14,7 +14,7 @@ install_packages() {
             echo "Detected Arch-based system. Running arch-install.sh..."
             sudo ./arch-install.sh
             ;;
-        debian)
+        deb)
             echo "Detected Debian-based system. Running debian-install.sh..."
             sudo ./debian-install.sh
             ;;

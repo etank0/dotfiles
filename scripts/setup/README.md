@@ -21,7 +21,14 @@ aria2,
 pipewire-jack-audio-connection-kit,
 qjackctl,
 obs-studio,
-syncplay
+syncplay,
+openrgb,
+discord,
+zathura,
+foliate,
+zathura-pdf-mupdf,
+zathura-djvu,
+zoxide,
 
 ### Things to install manually after Nvidia Setup
 - Chrome
