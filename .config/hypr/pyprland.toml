@@ -1,0 +1,24 @@
+[pyprland]
+plugins = [
+ "scratchpads",
+ "magnify",
+]
+
+# using variables for demonstration purposes (not needed)
+[pyprland.variables]
+term_classed = "kitty --class"
+
+[scratchpads.term]
+animation = "fromTop"
+command = "[term_classed] main-dropterm"
+class = "main-dropterm"
+size = "60% 70%"
+max_size = "1920px 100%"
+
+[scratchpads.yazi]
+animation = "fromTop"
+command = "[term_classed] yazi yazi"
+class = "yazi"
+size = "60% 70%"
+unfocus = "hide"
+max_size = "1920px 100%"
