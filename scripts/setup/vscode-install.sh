@@ -88,7 +88,6 @@ extensions=(
   "ms-vscode.cpptools"
   "pkief.material-icon-theme"
   "pkief.material-product-icons"
-  "rangav.vscode-thunder-client"
   "rust-lang.rust-analyzer"
   "ryuta46.multi-command"
   "t3dotgg.vsc-material-theme-but-i-wont-sue-you"

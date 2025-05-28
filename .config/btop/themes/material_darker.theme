@@ -11,7 +11,7 @@ theme[title]="#eeffff"
 theme[hi_fg]="#FFCC00"
 
 # Selected item (background #616161, text #eeffff)
-theme[selected_bg]="#616161"
+theme[selected_bg]="#414141"
 theme[selected_fg]="#eeffff"
 
 # Inactive text (duller gray #545454)

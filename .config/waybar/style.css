@@ -43,7 +43,7 @@ window#waybar {
 #custom-media {
   color: @primary;
   background-color: @background;
-  padding-top: 4px;
+  padding-top: 2px;
   padding-left: 8px;
   padding-right: 8px;
   margin: 0 0 0 4px;
@@ -76,7 +76,7 @@ window#waybar {
 #workspaces button {
   background-color: transparent;
   border-radius: 0px;
-  padding: 2px 8px;
+  padding: 0px 8px;
   color: @primary;
   transition:
     margin 150ms ease-in-out,
@@ -118,7 +118,7 @@ window#waybar {
 #custom-power {
   color: @primary;
   /* background-color: @background; */
-  padding: 4px 8px;
+  padding: 2px 8px;
 }
 
 #memory > span {
