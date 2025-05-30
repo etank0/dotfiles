@@ -17,4 +17,5 @@ emoji=$(echo "$selected" | awk -F' : ' '{print $1}')
 echo -n "$emoji" | wl-copy
 
 # Type the emoji
-wtype $emoji
+wtype -M ctrl -M shift v -m shift -m ctrl
+

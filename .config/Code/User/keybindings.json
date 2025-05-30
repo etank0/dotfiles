@@ -1,39 +1,46 @@
 // Place your key bindings in this file to override the defaults
 [
-    // GitLens
-    {
-        "key": "ctrl+e",
-        "command": "workbench.action.toggleSidebarVisibility",
-        "when": "sideBarVisible"
-    },
-    {
-        "command": "workbench.files.action.focusFilesExplorer",
-        "key": "ctrl+e",
-        "when": "editorTextFocus"
-    },
+  // GitLens
+  {
+    "key": "ctrl+e",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "sideBarVisible"
+  },
+  {
+    "command": "workbench.files.action.focusFilesExplorer",
+    "key": "ctrl+e",
+    "when": "editorTextFocus"
+  },
 
-    // Centered Scrolling
-    {
-        "key": "ctrl+u",
-        "command": "multiCommand.pageUp",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+d",
-        "command": "multiCommand.pageDown",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "alt+w",
-        "command": "workbench.action.reloadWindow"
-    },
-    {
-        "key": "ctrl+j",
-        "command": "-workbench.action.togglePanel",
-    },
-    {
-        "key": "ctrl+k",
-        "command": "-",
-        "when": "terminalFocus"
-    }
+  // Centered Scrolling
+  {
+    "key": "ctrl+u",
+    "command": "multiCommand.pageUp",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+d",
+    "command": "multiCommand.pageDown",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+w",
+    "command": "workbench.action.reloadWindow"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "-workbench.action.togglePanel"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "-",
+    "when": "terminalFocus"
+  },
+
+  // Remove notification pop-ups
+  {
+    "key": "shift+escape",
+    "command": "notifications.clearAll",
+    "when": "notificationCenterVisible || notificationToastsVisible"
+  }
 ]

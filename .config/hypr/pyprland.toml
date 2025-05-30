@@ -1,7 +1,7 @@
 [pyprland]
 plugins = [
- "scratchpads",
  "magnify",
+ "scratchpads",
 ]
 
 # using variables for demonstration purposes (not needed)
@@ -13,12 +13,27 @@ animation = "fromTop"
 command = "[term_classed] main-dropterm"
 class = "main-dropterm"
 size = "60% 70%"
+lazy = true
+close_on_hide = true
 max_size = "1920px 100%"
 
 [scratchpads.yazi]
 animation = "fromTop"
-command = "[term_classed] yazi yazi"
+command = "[term_classed] yazi --hold zsh -c 'yazi'"
 class = "yazi"
 size = "60% 70%"
-unfocus = "hide"
+pinned = false
+lazy = true
+close_on_hide = true
 max_size = "1920px 100%"
+
+[scratchpads.nautilus]
+animation = "fromTop"
+command = "nautilus"
+class = "org.gnome.Nautilus"
+size = "60% 70%"
+pinned = false
+lazy = true
+close_on_hide = true
+max_size = "1920px 100%"
+

@@ -18,12 +18,12 @@
   "window.zoomLevel": 0.4,
 
   // Editor
-  "editor.fontFamily": "'SF Mono', 'JetBrains Mono', 'Droid Sans Mono', 'monospace', monospace",
+  "editor.fontFamily": "'Iosevka', 'SF Mono', 'JetBrains Mono', 'Droid Sans Mono', 'monospace', monospace",
   "editor.fontLigatures": false,
   "editor.lineNumbers": "relative",
   "editor.detectIndentation": true,
   "editor.indentSize": "tabSize",
-  "editor.fontSize": 14,
+  "editor.fontSize": 15,
   "editor.fontWeight": "400",
   "editor.scrollbar.verticalScrollbarSize": 10,
   "editor.scrollbar.horizontalScrollbarSize": 10,
@@ -39,7 +39,8 @@
   "breadcrumbs.enabled": true,
 
   // Terminal
-  "terminal.integrated.fontSize": 13,
+  "terminal.integrated.fontFamily": "'Iosevka Term', 'SF Mono', 'JetBrains Mono', 'Droid Sans Mono', 'monospace', monospace",
+  "terminal.integrated.fontSize": 14,
   "terminal.integrated.fontWeight": "400",
   "terminal.integrated.allowChords": false,
   // "terminal.integrated.shellIntegration.enabled": false,
@@ -91,7 +92,7 @@
 
   // VSCode-Neovim
   "extensions.experimental.affinity": { "asvetliakov.vscode-neovim": 1 },
-  "workbench.colorTheme": "Material Theme Darker",
+  "workbench.colorTheme": "Material Theme Darker High Contrast",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.productIconTheme": "material-product-icons",
   "material-icon-theme.activeIconPack": "react_redux",
@@ -133,8 +134,7 @@
   // find-it-faster
   // "find-it-faster.general.useTerminalInEditor": true,
   // "find-it-faster.general.killTerminalAfterUse": true,
-  // "find-it-faster.general.batTheme": "material-theme-darker",
-  "find-it-faster.general.batTheme": "catppuccin-black",
+  "find-it-faster.general.batTheme": "material-theme-darker",
 
   // Errorlens
   "errorLens.enabled": false,
