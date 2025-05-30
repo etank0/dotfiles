@@ -16,7 +16,7 @@ set scroll-full-overlap 0.01
 set scroll-step 100
 
 # set font
-# set font "Fira Code 13"
+set font "Iosevka 11"
 
 # Color Theme
 include material-darker
