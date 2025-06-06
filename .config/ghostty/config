@@ -13,7 +13,7 @@ font-feature = -calt
 
 adjust-cell-height = 20%
 adjust-cursor-height = 20%
-adjust-cursor-thickness = 50%
+adjust-cursor-thickness = 60%
 
 # colorscheme/theme
 theme = "MaterialDarker"

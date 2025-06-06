@@ -1,0 +1,26 @@
+waybar
+wlogout
+wtype
+openrgb
+nmtui
+rofi-wayland
+hyprland
+hyprpaper
+hyprlock
+hypridle
+pyprland (hyprland tools/plugins | curl)
+hyprshot (git clone)
+hyprswitch (cargo install)
+yazi (cargo install)
+ripdrag (cargo install)
+swaync (copr)
+nwg-look (build)
+rofi-calc (build)
+kf6-qqc2-desktop-style (for kde-connect)
+
+
+### hyprland plugins
+hyprpm add https://github.com/hyprwm/hyprland-plugins
+hyprpm add https://github.com/KZDKM/Hyprspace
+hyprpm enable hyprbars
+hyprpm enable Hyprspace

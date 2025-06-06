@@ -2,7 +2,7 @@
 {
   "output": ["eDP-1"],
   "layer": "top", // Waybar at top layer
-  "position": "top", // Waybar position (top|bottom|left|right)
+  "position": "bottom", // Waybar position (top|bottom|left|right)
   "margin-left": 0,
   "margin-right": 0,
   "margin-top": 0,
@@ -47,7 +47,8 @@
     "disable-scroll": true,
     "all-outputs": true,
     "warp-on-scroll": false,
-    "format": "{name} : {icon}",
+    // "format": "{name} : {icon}",
+    "format": "{name}",
     "format-icons": {
       "1": " ",
       "2": "󰈹 ",
@@ -107,16 +108,16 @@
   "clock": {
     // "timezone": "America/New_York",
     "tooltip-format": "<tt>{calendar}</tt>",
-    "format": "{:%a, %b %d   %H:%M}", // 24H
+    "format": "{:%a, %b %d  %H:%M}", // 24H
   },
 
   "cpu": {
-    "format": "   {usage}%",
+    "format": "  {usage}%",
     "tooltip": true,
   },
 
   "memory": {
-    "format": "<span> </span>  {}%",
+    "format": "<span> </span> {}%",
   },
 
   "temperature": {
@@ -124,7 +125,7 @@
     // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
     "critical-threshold": 80,
     // "format-critical": "{temperatureC}°C {icon}",
-    "format": "{icon}  {temperatureC}°C",
+    "format": "{icon} {temperatureC}°C",
     "format-icons": ["", "", ""],
   },
 
@@ -133,14 +134,14 @@
     //"format": "󰋊",
     "path": "/",
     //"format-alt-click": "click",
-    "format": "󰋊  {percentage_used}%",
+    "format": "󰋊 {percentage_used}%",
     //"tooltip": true,
     "tooltip-format": "{used} used out of {total} on {path} ({percentage_used}%)",
   },
 
   "backlight": {
     // "device": "acpi_video1",
-    "format": "{icon} {percent}%",
+    "format": "{icon}{percent}%",
     "format-icons": [" ", " ", " ", " ", " ", " ", " ", " ", " "],
   },
 
@@ -150,10 +151,10 @@
       "warning": 30,
       "critical": 15,
     },
-    "format": "{icon}   {capacity}%",
-    "format-full": "{icon}   {capacity}%",
-    "format-charging": "  {capacity}%",
-    "format-plugged": "   {capacity}%",
+    "format": "{icon} {capacity}%",
+    "format-full": "{icon} {capacity}%",
+    "format-charging": " {capacity}%",
+    "format-plugged": " {capacity}%",
     "format-alt": "{icon} {time}",
     // "format-good": "", // An empty format will hide the module
     // "format-full": "",
@@ -191,8 +192,8 @@
   },
 
   "pulseaudio": {
-    "format": "{icon}  {volume}%",
-    "format-bluetooth": "{icon} 󰂰   {volume}%",
+    "format": "{icon} {volume}%",
+    "format-bluetooth": "{icon} 󰂰  {volume}%",
     "format-muted": "󰖁 ",
     "format-icons": {
       "headphone": " ",

@@ -1,16 +1,17 @@
 @import url("./colors.css");
 
 * {
-  font-family: "Inter", "SF Mono", "JetBrains Mono", "JetBrainsMono Nerd Font", "JetBrainsMono Nerd Font", sans-serif;
-  font-size: 12px;
+  font-family:
+    "Iosevka", "Inter", "JetBrains Mono", "JetBrainsMono Nerd Font",
+    "JetBrainsMono Nerd Font", sans-serif;
+  font-size: 14px;
   font-weight: bold;
 }
-
 
 window#waybar {
   /* background-color: transparent; */
   /* border-radius: 8px; */
-  /* border: 1px solid rgba(160, 160, 160, 1.5); */
+  /* border: 1px solid rgba(160, 160, 160, 1); */
   background-color: @background;
   color: @foreground;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -53,13 +54,14 @@ window#waybar {
   /* background-color: @background; */
   background-color: transparent;
   /* border-radius: 8px; */
-  padding: 2px 2px;
+  padding: 0px 2px;
 }
 
 #workspaces button.active {
-  /* background-color: @background_dim; */
-  color: @accent;
-  border-bottom: 2px solid @accent;
+  color: @background;
+  background-color: @accent;
+  /* color: @accent; */
+  /* border-bottom: 2px solid @accent; */
   /* padding: 4px 12px; */
 }
 
@@ -70,13 +72,14 @@ window#waybar {
 }
 
 #workspaces button.empty {
-  color: @primary_dim;
+  /* color: @primary_dim; */
+  background: @primary_dim;
 }
 
 #workspaces button {
   background-color: transparent;
   border-radius: 0px;
-  padding: 0px 8px;
+  padding: 0px 0px;
   color: @primary;
   transition:
     margin 150ms ease-in-out,

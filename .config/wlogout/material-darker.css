@@ -3,7 +3,8 @@
 @define-color accent rgba(130, 170, 255, 1.0);
 
 window {
-  font-family: Inter;
+  font-family: "Iosevka", "Inter";
+  font-weight: bold;
   font-size: 16pt;
   color: @foreground; /* text */
   background-color: @background;
@@ -12,13 +13,13 @@ window {
 button {
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 20%;
+  background-size: 16%;
   background-color: transparent;
   animation: gradient_f 20s ease-in infinite;
   transition: all 0.3s ease-in;
   box-shadow: 0 0 10px 2px transparent;
   border-radius: 36px;
-  margin: 10px;
+  margin: 8px;
 }
 
 button:focus {

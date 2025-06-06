@@ -44,168 +44,13 @@ textbox-separator {
     expand: true;
     background-color: transparent;
     margin: 0 6px;
-    font: "Inter Bold 14px";
+    font: "Iosevka Bold 14px";
     vertical-align: 0.5;
     text-color: rgba(255, 255, 255, 0.2);
 }
 
-keys-info {
-    children: [
-        // Launch
-        textbox-return-text, textbox-return-icon,
-        textbox-separator,
-
-        // Left
-        textbox-left-text, textbox-command-icon, textbox-left-icon,
-        textbox-separator,
-
-        // Down
-        textbox-down-text, textbox-command-icon, textbox-down-icon,
-        textbox-separator,
-
-        // Up
-        textbox-up-text, textbox-command-icon, textbox-up-icon,
-        textbox-separator,
-
-        // Right
-        textbox-right-text, textbox-command-icon, textbox-right-icon
-    ];
-    expand: false;
-    vertical-align: 0.5;
-    orientation: horizontal;
-    spacing: 2px;
-    background-color: transparent;
-}
-
-textbox-return-text {
-    str: "Launch";
-    expand: false;
-    text-color: white;
-    font: "Inter Medium 14px";
-    vertical-align: 0.5;
-    padding: 0 8px;
-    border-radius: 4px;
-    background-color: transparent;
-}
-
-textbox-return-icon {
-    str: "󰌑";
-    expand: false;
-    text-color: rgba(255, 255, 255, 0.6);
-    font: "JetBrainsMono Nerd Font 14px";
-    vertical-align: 0.5;
-    margin: 8px 0;
-    padding: 0 8px;
-    border-radius: 4px;
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-textbox-command-icon {
-    str: "󰘵";
-    expand: false;
-    text-color: white;
-    font: "JetBrainsMono Nerd Font 14px";
-    vertical-align: 0.5;
-    margin: 8px 0;
-    padding: 0 8px;
-    border-radius: 4px;
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-textbox-down-text {
-    str: " ";
-    expand: false;
-    text-color: white;
-    font: "Ubuntu Nerd Font 14px";
-    margin: 2px 2px;
-    vertical-align: 0.5;
-    border-radius: 4px;
-    background-color: transparent;
-}
-
-textbox-down-icon {
-    str: "J";
-    expand: false;
-    text-color: white;
-    font: "Inter Medium 14px";
-    vertical-align: 0.5;
-    margin: 8px 0;
-    padding: 0 8px;
-    border-radius: 4px;
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-textbox-up-text {
-    str: " ";
-    expand: false;
-    text-color: white;
-    font: "Ubuntu Nerd Font 14px";
-    margin: 2px 2px;
-    vertical-align: 0.5;
-    border-radius: 4px;
-    background-color: transparent;
-}
-
-textbox-up-icon {
-    str: "K";
-    expand: false;
-    text-color: white;
-    font: "Inter Medium 14px";
-    vertical-align: 0.5;
-    margin: 8px 0;
-    padding: 0 8px;
-    border-radius: 4px;
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-textbox-left-text {
-    str: " ";
-    expand: false;
-    text-color: white;
-    font: "Ubuntu Nerd Font 14px";
-    margin: 2px 2px;
-    vertical-align: 0.5;
-    border-radius: 4px;
-    background-color: transparent;
-}
-
-textbox-left-icon {
-    str: "H";
-    expand: false;
-    text-color: white;
-    font: "Inter Medium 14px";
-    vertical-align: 0.5;
-    margin: 8px 0;
-    padding: 0 8px;
-    border-radius: 4px;
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-textbox-right-text {
-    str: " ";
-    expand: false;
-    text-color: white;
-    font: "Ubuntu Nerd Font 14px";
-    margin: 2px 2px;
-    vertical-align: 0.5;
-    border-radius: 4px;
-    background-color: transparent;
-}
-
-textbox-right-icon {
-    str: "L";
-    expand: false;
-    text-color: white;
-    font: "Inter Medium 14px";
-    vertical-align: 0.5;
-    margin: 8px 0;
-    padding: 0 8px;
-    border-radius: 4px;
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
 footer {
-    children: [textbox-1, spacer, keys-info];
+    children: [textbox-1];
     expand: false;
     orientation: horizontal;
     padding: 5px 10px;
@@ -218,7 +63,7 @@ textbox {
     expand: false;
     background-color: transparent;
     text-color: rgba(255, 255, 255, 0.5);
-    font: "Inter Medium 14px";
+    font: "Iosevka SemiBold 14px";
     vertical-align: 0.5;
 }
 
@@ -236,12 +81,13 @@ textbox-element {
     str: "Application";
     background-color: transparent;
     text-color: rgba(255, 255, 255, 0.5);
-    font: "Inter Medium 14px";
+    font: "Iosevka SemiBold 14px";
     vertical-align: 0.5;
     enabled: false;
 }
 
 inputbar {
+    vertical-align: 0.5;
     children: [prompt, entry];
     background-color: transparent;
     border-color: rgba(255, 255, 255, 0.1);
@@ -249,15 +95,16 @@ inputbar {
 }
 
 entry {
+    text-color: white;
+    font: "Iosevka SemiBold 16px";
     placeholder-color: rgba(255, 255, 255, 0.3);
     padding: 18px 14px;
-    text-color: white;
     background-color: transparent;
 }
 
 prompt {
     text-color: #FFFFFF;
-    font: "Inter Medium 14px";
+    font: "Iosevka SemiBold 14px";
     background-color: transparent;
     margin: 0px 0px 0px 16px;
     vertical-align: 0.5;
@@ -297,7 +144,7 @@ element-icon {
 }
 
 element-text {
-    font: "Inter Medium 14px";
+    font: "Iosevka SemiBold 14px";
     vertical-align: 0.5;
     text-color: white;
     background-color: transparent;
