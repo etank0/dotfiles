@@ -1,168 +1,204 @@
 -------------------------------------------------
 -- KEYBINDINGS
 -------------------------------------------------
+local map = require("utils.map")
 local vscode = require("vscode")
+vim.notify = vscode.notify
+
+-- Leader key setup
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
------------------ Old Syntax Example -----------------
--- vim.keymap.set({ "n", "v" }, "<leader>ff", ":call VSCodeNotify('find-it-faster.findFiles')<CR>")
+-------------------------------------------------
+-- VSCODE COMMANDS
+-------------------------------------------------
 
------------------ Builtin VsCode ------------------
--- Find Files
--- vim.keymap.set({'n', 'v'}, "<leader>ff",
---     function() vscode.action('workbench.action.quickOpen') end);
-vim.keymap.set({ "n", "v" }, "<leader>ff", function()
+-- File Operations
+map({ "n", "v" }, "<leader>ff", function()
   vscode.action("find-it-faster.findFiles")
-end)
+end, { desc = "Find files" })
 
--- Live Grep
--- vim.keymap.set({'n', 'v'}, "<leader>fg",
---     function() vscode.action('workbench.action.findInFiles') end);
-vim.keymap.set({ "n", "v" }, "<leader>fg", function()
+map({ "n", "v" }, "<leader>fg", function()
   vscode.action("find-it-faster.findWithinFiles")
-end)
+end, { desc = "Live grep" })
 
--- Grep typed files
-vim.keymap.set("n", "<leader>ft", function ()
+map("n", "<leader>ft", function()
   vscode.action("find-it-faster.findWithinFilesWithType")
-end)
+end, { desc = "Find by file type" })
 
--- Get Diagnostic List
-vim.keymap.set("n", "<leader>dl", function ()
-  vscode.action("workbench.actions.view.problems")
-end)
-
--- Find Open Buffers
-vim.keymap.set({ "n", "v" }, "<leader>fb", function()
-  vscode.action("workbench.action.showAllEditorsByMostRecentlyUsed")
-end)
-
--- Find Recently Opened buffers in the project/directory
-vim.keymap.set({ "n", "v" }, "<leader>fo", function()
+map({ "n", "v" }, "<leader>fo", function()
   vscode.action("workbench.action.quickOpen")
-end)
+end, { desc = "Recent files" })
 
--- Match Tags
-vim.keymap.set("n", "<leader>m", function()
+map({ "n", "v" }, "<leader>fb", function()
+  vscode.action("workbench.action.showAllEditorsByMostRecentlyUsed")
+end, { desc = "Open buffers" })
+
+-- Diagnostics
+map("n", "<leader>dl", function()
+  vscode.action("workbench.actions.view.problems")
+end, { desc = "Diagnostics list" })
+
+-- Editor Actions
+map("n", "<leader>m", function()
   vscode.action("editor.emmet.action.matchTag")
-end)
+end, { desc = "Match HTML tag" })
 
--- Git stuff
-vim.keymap.set("n", "<leader>gs", function()
+-------------------------------------------------
+-- GIT INTEGRATION
+-------------------------------------------------
+map("n", "<leader>gs", function()
   vscode.action("workbench.view.scm")
-end)
+end, { desc = "Git status" })
 
-vim.keymap.set("n", "<leader>tb", function()
+map("n", "<leader>tb", function()
   vscode.action("gitlens.toggleLineBlame")
-end)
+end, { desc = "Toggle line blame" })
 
-vim.keymap.set("n", "<leader>tB", function()
+map("n", "<leader>tB", function()
   vscode.action("gitlens.toggleFileBlame")
-end)
+end, { desc = "Toggle file blame" })
 
--- Formatting
-vim.keymap.set("n", "<leader>lf", function()
+-------------------------------------------------
+-- FORMATTING
+-------------------------------------------------
+map("n", "<leader>lf", function()
   vscode.action("editor.action.formatDocument")
-end)
-vim.keymap.set("v", "<leader>lf", function()
+end, { desc = "Format document" })
+
+map("v", "<leader>lf", function()
   vscode.action("editor.action.formatSelection")
-end)
+end, { desc = "Format selection" })
 
--- Switching Tabs
-vim.keymap.set({ "n", "v" }, "<leader><tab>", function()
-  vscode.action("workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup")
-end)
+-------------------------------------------------
+-- WINDOW MANAGEMENT
+-------------------------------------------------
 
--- Resize commands
-vim.keymap.set("n", "<C-Up>", function()
-  vscode.action("workbench.action.decreaseViewHeight")
-end)
-vim.keymap.set("n", "<C-Down>", function()
-  vscode.action("workbench.action.increaseViewHeight")
-end)
-vim.keymap.set("n", "<C-Left>", function()
-  vscode.action("workbench.action.decreaseViewHeight")
-end)
-vim.keymap.set("n", "<C-Right>", function()
-  vscode.action("workbench.action.increaseViewHeight")
-end)
-vim.keymap.set("n", "<leader>=", function()
-  vscode.action("workbench.action.evenEditorWidths")
-end)
-vim.keymap.set("n", "<leader>-", function()
-  vscode.action("workbench.action.toggleEditorWidths")
-end)
+-- Reload Window
+map("n", "<A-w>", function()
+  vscode.action("workbench.action.reloadWindow")
+end, { desc = "Reload window" })
 
--- Navigation commands
-vim.keymap.set("n", "<leader>h", function()
+-- Toggle Panel
+map("n", "<C-S-j>", function()
+  vscode.action("workbench.action.togglePanel")
+end, { desc = "Toggle panel" })
+
+-- Toggle tab bar
+map("n", "<leader>bb", function()
+  local current = vscode.get_config("workbench.editor.showTabs")
+  local new_value = (current == "multiple") and "none" or "multiple"
+  vscode.update_config("workbench.editor.showTabs", new_value, "global")
+end, { desc = "Toggle tab bar" })
+
+-- Navigation
+map("n", "<leader>h", function()
   vscode.action("workbench.action.navigateLeft")
-end)
-vim.keymap.set("n", "<leader>j", function()
+end, { desc = "Move focus left" })
+
+map("n", "<leader>j", function()
   vscode.action("workbench.action.navigateDown")
-end)
-vim.keymap.set("n", "<leader>k", function()
+end, { desc = "Move focus down" })
+
+map("n", "<leader>k", function()
   vscode.action("workbench.action.navigateUp")
-end)
-vim.keymap.set("n", "<leader>l", function()
+end, { desc = "Move focus up" })
+
+map("n", "<leader>l", function()
   vscode.action("workbench.action.navigateRight")
-end)
+end, { desc = "Move focus right" })
 
--- Split commands
-vim.keymap.set("n", "<leader>v", function()
+-- Splits
+map("n", "<leader>v", function()
   vscode.action("workbench.action.splitEditorRight")
-end)
-vim.keymap.set("n", "<leader>s", function()
+end, { desc = "Vertical split" })
+
+map("n", "<leader>s", function()
   vscode.action("workbench.action.splitEditorDown")
-end)
-vim.keymap.set("n", "<leader>o", function()
+end, { desc = "Horizontal split" })
+
+map("n", "<leader>o", function()
   vscode.action("workbench.action.joinAllGroups")
-end)
+end, { desc = "Close other splits" })
 
--- Window focus command
-vim.keymap.set("n", "<leader>fp", function()
+-- Focus
+map("n", "<leader>fp", function()
   vscode.action("workbench.action.switchWindow")
-end)
-vim.keymap.set("n", "<leader>w", function()
+end, { desc = "Focus window picker" })
+
+map("n", "<leader>w", function()
   vscode.action("workbench.action.focusNextGroup")
-end)
-vim.keymap.set("n", "<leader>p", function()
+end, { desc = "Focus next group" })
+
+map("n", "<leader>p", function()
   vscode.action("workbench.action.focusPreviousGroup")
-end)
+end, { desc = "Focus previous group" })
 
--- Close Window/Tab
-vim.keymap.set("n", "<leader>dd", function()
+-- Closing
+map("n", "<leader>dd", function()
   vscode.action("workbench.action.closeActiveEditor")
-end)
-vim.keymap.set("n", "<leader>q", function()
+end, { desc = "Close active editor" })
+
+map("n", "<leader>q", function()
   vscode.action("workbench.action.closeActiveEditor")
-end)
+end, { desc = "Close active editor" })
 
--- Errorlens/Inlay Hints
-vim.keymap.set("n", "<leader>tv", function()
-  vscode.action("errorLens.toggle")
-end)
-
--- Hover Virtual Text
-vim.keymap.set("n", "<leader>cd", function()
+-------------------------------------------------
+-- LSP AND DIAGNOSTICS
+-------------------------------------------------
+map("n", "<leader>cd", function()
   vscode.action("editor.action.showHover")
-end)
------------------ Native Neovim ------------------
--- Buffer Manipulations
--- vim.keymap.set("n", "<S-h>", ":bp<CR>")
--- vim.keymap.set("n", "<S-l>", ":bn<CR>")
-vim.keymap.set("n", "<S-l>", ":Tabnext<CR>")
-vim.keymap.set("n", "<S-h>", ":Tabprevious<CR>")
+end, { desc = "Show hover" })
 
--- Diagnostic
-vim.keymap.set("n", "<leader>dh", vim.diagnostic.open_float)
-vim.keymap.set("n", "]d", vim.diagnostic.goto_prev)
-vim.keymap.set("n", "[d", vim.diagnostic.goto_next)
+map("n", "<leader>tv", function()
+  vscode.action("errorLens.toggle")
+end, { desc = "Toggle error lens" })
 
--- Lsp
-vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action)
+map("n", "<leader>dh", vim.diagnostic.open_float, { desc = "Show diagnostics" })
+map("n", "]d", vim.diagnostic.goto_prev, { desc = "Previous diagnostic" })
+map("n", "[d", vim.diagnostic.goto_next, { desc = "Next diagnostic" })
+map(
+  { "n", "v" },
+  "<leader>ca",
+  vim.lsp.buf.code_action,
+  { desc = "Code actions" }
+)
 
--- Scroll [ Note: Not working :( ]
--- vim.keymap.set("n", "<C-d>", "<C-d>zz")
--- vim.keymap.set("n", "<C-f>", "<C-f>zz")
--- vim.keymap.set("n", "<C-u>", "<C-u>zz")
+-------------------------------------------------
+-- BUFFER NAVIGATION
+-------------------------------------------------
+map("n", "<S-l>", ":Tabnext<CR>", { desc = "Next tab" })
+map("n", "<S-h>", ":Tabprevious<CR>", { desc = "Previous tab" })
+map({ "n", "v" }, "<leader><tab>", function()
+  vscode.action("workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup")
+end, { desc = "Switch to last buffer" })
+
+-------------------------------------------------
+-- VIEW MANAGEMENT
+-------------------------------------------------
+
+-- Resizing
+map("n", "<C-Up>", function()
+  vscode.action("workbench.action.decreaseViewHeight")
+end, { desc = "Decrease height" })
+
+map("n", "<C-Down>", function()
+  vscode.action("workbench.action.increaseViewHeight")
+end, { desc = "Increase height" })
+
+map("n", "<C-Left>", function()
+  vscode.action("workbench.action.decreaseViewWidth")
+end, { desc = "Decrease width" })
+
+map("n", "<C-Right>", function()
+  vscode.action("workbench.action.increaseViewWidth")
+end, { desc = "Increase width" })
+
+-- Layout
+map("n", "<leader>=", function()
+  vscode.action("workbench.action.evenEditorWidths")
+end, { desc = "Even editor widths" })
+
+map("n", "<leader>-", function()
+  vscode.action("workbench.action.toggleEditorWidths")
+end, { desc = "Toggle editor width" })

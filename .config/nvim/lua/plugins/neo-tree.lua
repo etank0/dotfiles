@@ -12,7 +12,7 @@ return {
     require("neo-tree").setup({
       popup_border_style = "rounded",
       open_on_setup = false,
-      close_if_last_window = false,
+      close_if_last_window = true,
 
       -- Window
       window = {
@@ -23,10 +23,10 @@ return {
       -- Indent
       default_component_configs = {
         indent = {
-          indent_marker = "├",
+          indent_marker = "│",
           last_indent_marker = "└",
           expander_collapsed = "",
-          expander_expanded = "",
+          expander_expanded = " ",
         },
       },
 

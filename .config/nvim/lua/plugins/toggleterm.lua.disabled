@@ -31,7 +31,7 @@ return {
 
       float_opts = {
         -- not natively supported but implemented in this plugin.
-        border = "curved",
+        border = "single", -- curved
         -- like `size`, width and height can be a number or function which is passed the current terminal
         width = 110,
         height = 28,

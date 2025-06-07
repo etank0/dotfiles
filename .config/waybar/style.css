@@ -131,6 +131,13 @@ window#waybar {
   font-size: 12px;
 }
 
+#clock > span {
+  font-family:
+    "Iosevka Term", "FiraCode Nerd Font", "Symbols Nerd Font",
+    monospace;
+  font-size: 12px;
+}
+
 #window.hidden {
   opacity: 0;
   min-width: 0;

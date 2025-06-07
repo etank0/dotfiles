@@ -32,11 +32,12 @@ return {
       },
 
       plugins = {
+        "blink",
         "gitsigns",
         "indent-blankline",
-        "neogit",
         "neo-tree",
-        "nvim-cmp",
+        "neogit",
+        -- "nvim-cmp",
         "nvim-web-devicons",
         "telescope",
       },

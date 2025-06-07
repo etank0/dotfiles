@@ -11,10 +11,7 @@
   // "width": 1280, // Waybar width
   "spacing": 2, // Gaps between modules (4px)
   // Choose the order of the modules
-  "modules-left": [
-    "clock",
-    "hyprland/workspaces"
-  ],
+  "modules-left": ["clock", "hyprland/workspaces"],
   "modules-center": ["hyprland/window"],
   "modules-right": [
     "tray",
@@ -27,7 +24,7 @@
     "battery",
     "battery#bat2",
     "custom/notification",
-    "custom/power"
+    "custom/power",
   ],
 
   // Groups configuration
@@ -107,8 +104,14 @@
 
   "clock": {
     // "timezone": "America/New_York",
-    "tooltip-format": "<tt>{calendar}</tt>",
     "format": "{:%a, %b %d  %H:%M}", // 24H
+    "tooltip-format": "<span font='Iosevka Bold'>{calendar}</span>",
+    "calendar": {
+      "mode": "month",
+      "format": {
+        "today": "<span color='#f07178'><b>{}</b></span>",
+      },
+    },
   },
 
   "cpu": {

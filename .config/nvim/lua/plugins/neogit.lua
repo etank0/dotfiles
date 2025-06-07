@@ -3,34 +3,29 @@ return {
   dependencies = {
     "nvim-lua/plenary.nvim", -- required
     "sindrets/diffview.nvim", -- optional - Diff integration
-
-    -- Only one of these is needed, not both.
     "nvim-telescope/telescope.nvim", -- optional
   },
   config = function()
-    require("neogit").setup()
+    local map = require("utils.map")
+    local neogit = require("neogit")
+
+    -- Setup Neogit
+    neogit.setup()
 
     -- Show neogit
-    vim.keymap.set(
-      "n",
-      "<leader>gs",
-      require("neogit").open,
-      { silent = true, noremap = true }
-    )
+    map("n", "<leader>gs", neogit.open, { desc = "Open Neogit" })
 
-    -- Function to find if DiffView is Open
-    function IsDiffviewOpen()
+    -- DiffView Utilities
+    local function is_diffview_open()
       local lib = require("diffview.lib")
-      local view = lib.get_current_view()
-      return view ~= nil
+      return lib.get_current_view() ~= nil
     end
 
-    -- Function to stop LSP clients attached to the diffview buffer
     local function close_diffview()
+      -- Detach and close LSP clients from diffview buffers
       for _, bufnr in ipairs(vim.api.nvim_list_bufs()) do
         local buf_name = vim.api.nvim_buf_get_name(bufnr)
         if buf_name:match("^diffview://") then
-          -- Detach and Close LSP clients from this buffer
           for _, client in pairs(vim.lsp.get_active_clients()) do
             if vim.lsp.buf_is_attached(bufnr, client.id) then
               vim.lsp.buf_detach_client(bufnr, client.id)
@@ -42,15 +37,16 @@ return {
       vim.cmd.DiffviewClose()
     end
 
-    -- Toggle function for Diffview with LSP management
-    vim.keymap.set("n", "<leader>dv", function()
-      if IsDiffviewOpen() then
+    -- DiffView Toggle
+    map("n", "<leader>dv", function()
+      if is_diffview_open() then
         close_diffview()
       else
         vim.cmd.DiffviewOpen()
       end
-    end, { silent = true, noremap = true })
+    end, { desc = "Toggle Diffview" })
 
-    -- vim.keymap.set("n", "<leader>dc", function() vim.cmd.DiffviewClose() end, { silent = true, noremap = true })
+    -- Uncomment if you need a direct close mapping
+    -- map("n", "<leader>dc", vim.cmd.DiffviewClose, { desc = "Close Diffview" })
   end,
 }

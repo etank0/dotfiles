@@ -2,37 +2,38 @@ return {
   "natecraddock/workspaces.nvim",
   config = function()
     local workspaces = require("workspaces")
+    local map = require("utils.map")
 
     workspaces.setup({
       hooks = {
         open = {
           function()
-            -- load session when workspace is opened
+            -- Load session when workspace is opened
             vim.cmd("SessionRestore")
           end,
         },
       },
     })
 
-    local map = vim.keymap.set
-    local opts = { noremap = true, silent = true }
+    -- Workspace Operations
+    map(
+      "n",
+      "<leader>fp",
+      ":Telescope workspaces<CR>",
+      { desc = "Find and switch projects" }
+    )
 
-    -- Find & switch projects
-    map("n", "<leader>fp", ":Telescope workspaces<CR>", opts)
-
-    -- Add current directory as a workspace
     map("n", "<leader>fa", function()
       local path = vim.fn.getcwd()
       local name = vim.fn.fnamemodify(path, ":t")
       workspaces.add(path, name)
       print("Workspace added: " .. name)
-    end, opts)
+    end, { desc = "Add current directory as workspace" })
 
-    -- Remove current workspace
     map("n", "<leader>fr", function()
       local path = vim.fn.getcwd()
       workspaces.remove(path)
       print("Workspace removed: " .. path)
-    end, opts)
+    end, { desc = "Remove current workspace" })
   end,
 }

@@ -34,6 +34,7 @@ return {
         },
         completion = {
           menu = {
+            border = "single",
             scrolloff = 1,
             scrollbar = false,
             draw = {
@@ -47,6 +48,7 @@ return {
           },
           documentation = {
             window = {
+              border = "single",
               scrollbar = false,
             },
             auto_show = true,

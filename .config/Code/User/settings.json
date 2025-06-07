@@ -4,6 +4,7 @@
   "telemetry.telemetryLevel": "off",
 
   // Looks & File Tree
+  "workbench.editor.showTabs": "none",
   "workbench.activityBar.location": "top",
   "workbench.sideBar.location": "right",
   "workbench.tree.indent": 15,
@@ -14,17 +15,17 @@
   "window.titleBarStyle": "custom",
   "window.commandCenter": true,
   "window.menuBarVisibility": "toggle",
-  // "window.customTitleBarVisibility": "never",
+  "window.customTitleBarVisibility": "never",
   "window.zoomLevel": 0.4,
 
   // Editor
-  "editor.fontFamily": "'Iosevka', 'SF Mono', 'JetBrains Mono', 'Droid Sans Mono', 'monospace', monospace",
+  "editor.fontFamily": "'Iosevka', 'SF Mono', 'JetBrains Mono', 'JetBrainsMono Nerd Font', 'Droid Sans Mono', 'monospace', monospace",
   "editor.fontLigatures": false,
   "editor.lineNumbers": "relative",
   "editor.detectIndentation": true,
   "editor.indentSize": "tabSize",
   "editor.fontSize": 15,
-  "editor.fontWeight": "400",
+  "editor.fontWeight": "500",
   "editor.scrollbar.verticalScrollbarSize": 10,
   "editor.scrollbar.horizontalScrollbarSize": 10,
   "editor.scrollbar.vertical": "auto",
@@ -39,9 +40,9 @@
   "breadcrumbs.enabled": true,
 
   // Terminal
-  "terminal.integrated.fontFamily": "'Iosevka Term', 'SF Mono', 'JetBrains Mono', 'Droid Sans Mono', 'monospace', monospace",
+  //   "terminal.integrated.fontFamily": "'Iosevka Term', 'SF Mono', 'JetBrains Mono', 'JetBrainsMono Nerd Font', 'Droid Sans Mono', 'monospace', monospace",
   "terminal.integrated.fontSize": 14,
-  "terminal.integrated.fontWeight": "400",
+  "terminal.integrated.fontWeight": "500",
   "terminal.integrated.allowChords": false,
   // "terminal.integrated.shellIntegration.enabled": false,
   "terminal.integrated.persistentSessionReviveProcess": "never",
@@ -53,6 +54,12 @@
   "prettier.useTabs": false,
   "prettier.printWidth": 80,
   "reactSnippets.settings.prettierEnabled": true,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -162,12 +169,5 @@
         { "command": "cursorMove", "args": { "to": "viewPortCenter" } }
       ]
     }
-  ],
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "notebook.lineNumbers": "on"
+  ]
 }

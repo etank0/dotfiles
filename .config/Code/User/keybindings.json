@@ -23,10 +23,8 @@
     "command": "multiCommand.pageDown",
     "when": "editorTextFocus"
   },
-  {
-    "key": "alt+w",
-    "command": "workbench.action.reloadWindow"
-  },
+
+  // Terminal/Panel settings
   {
     "key": "ctrl+j",
     "command": "-workbench.action.togglePanel"
