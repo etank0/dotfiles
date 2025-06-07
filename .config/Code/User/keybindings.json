@@ -30,6 +30,10 @@
     "command": "-workbench.action.togglePanel"
   },
   {
+    "key": "alt+w",
+    "command": "workbench.action.reloadWindow"
+  },
+  {
     "key": "ctrl+k",
     "command": "-",
     "when": "terminalFocus"
