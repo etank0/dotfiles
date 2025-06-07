@@ -3,12 +3,7 @@ if vim.g.vscode == nil then
     require("core.keymaps")
     require("core.highlights")
     require("core.lazyconfig")
-    -- require("core.plugins")
-    -- require("core.plugins_config")
-
-    --Pywal AlphaTechnology
-    --local pywal = require('pywal')
-    --pywal.setup()
+    require("core.lsp")
 else
     require("core.settings")
     require("core.vscode")

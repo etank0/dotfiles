@@ -7,7 +7,7 @@ o.number = true
 o.cursorline = true
 o.numberwidth = 5
 o.relativenumber = true
---o.signcolumn = 'yes'
+o.signcolumn = 'yes'
 --o.termguicolors = true
 o.scrolloff = 8
 -- Better editing experience
@@ -32,5 +32,5 @@ o.splitbelow = true
 o.hlsearch = false
 o.incsearch = true
 -- remove '~'
-o.fillchars = "eob: ,vert:▏"
+o.fillchars = "eob: ,vert:│"
 o.mouse = "a"

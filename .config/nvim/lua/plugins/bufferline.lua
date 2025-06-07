@@ -16,7 +16,7 @@ return {
             filetype = "neo-tree",
             text = "File Explorer", -- Text shown in the offset
             text_align = "center", -- Align text (left, center, or right)
-            separator = "▏", -- Whether to show a separator
+            separator = "│", -- Whether to show a separator
           },
         },
         -- diagnostics_indicator = function(count, level, diagnostics_dict, context)

@@ -1,19 +1,10 @@
 return {
-  "VonHeikemen/lsp-zero.nvim",
-  branch = "v3.x",
+  "williamboman/mason-lspconfig.nvim",
   dependencies = {
-    -- LSP Support
-    { "neovim/nvim-lspconfig" }, -- Required
-    { "williamboman/mason.nvim" }, -- Optional
-    { "williamboman/mason-lspconfig.nvim" }, -- Optional
+    { "williamboman/mason.nvim" },
+    { "neovim/nvim-lspconfig" },
   },
   config = function()
-    local lsp = require("lsp-zero")
-    lsp.preset("recommended")
-    lsp.setup()
-
-    local capabilites = require("cmp_nvim_lsp").default_capabilities()
-
     vim.api.nvim_create_autocmd("LspAttach", {
       group = vim.api.nvim_create_augroup("UserLspConfig", {}),
       callback = function(ev)
@@ -89,6 +80,13 @@ return {
     })
 
     require("mason").setup({
+      ui = {
+        icons = {
+          package_installed = "✓",
+          package_pending = "➜",
+          package_uninstalled = "✗",
+        },
+      },
       install_root_dir = vim.fn.expand("~/.nvim/mason"),
     })
 
@@ -121,36 +119,10 @@ return {
         "bashls",
         -- "hls",
       },
-      handlers = {
-        function(server_name)
-          if server_name == "rust_analyzer" or server_name == "hls" then
-            -- Prevent rust-analyzer and hls from being attached directly
-            return
-          end
-          require("lspconfig")[server_name].setup({
-            capabilites = capabilites,
-          })
-        end,
-      },
-    })
-
-    require("lspconfig").lua_ls.setup({
-      capabilites = capabilites,
-      settings = {
-        Lua = {
-          diagnostics = {
-            globals = {
-              "vim",
-            },
-          },
-          format = {
-            enable = false,
-            defaultConfig = {
-              indent_style = "space",
-              indent_size = "2",
-              max_line_length = "80",
-            },
-          },
+      automatic_enable = {
+        exclude = {
+          "rust_analyzer",
+          "hls",
         },
       },
     })

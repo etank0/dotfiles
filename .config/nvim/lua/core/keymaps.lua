@@ -15,7 +15,6 @@ vim.api.nvim_set_keymap(
   "<C-e>",
   { noremap = true, silent = true }
 )
-map("n", "<C-e>", ":Neotree toggle<CR>")
 
 -- Window Manipulations
 map("n", "<C-Up>", ":resize -1<CR>")

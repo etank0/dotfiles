@@ -17,14 +17,14 @@ return {
       -- Window
       window = {
         position = "right",
-        width = 35,
+        width = 40,
       },
 
       -- Indent
       default_component_configs = {
         indent = {
-          indent_marker = "▏",
-          last_indent_marker = "🭼",
+          indent_marker = "├",
+          last_indent_marker = "└",
           expander_collapsed = "",
           expander_expanded = "",
         },
@@ -42,6 +42,20 @@ return {
           hide_gitignored = false,
         },
       },
+
+      -- Events
+      event_handlers = {
+        {
+          event = "file_open_requested",
+          handler = function()
+            require("neo-tree.command").execute({ action = "close" })
+          end,
+        },
+      },
     })
+
+    vim.keymap.set("n", "<C-e>", function()
+      require("neo-tree.command").execute({ toggle = true })
+    end, { desc = "Toggle NeoTree" })
   end,
 }
