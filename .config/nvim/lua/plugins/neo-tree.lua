@@ -57,5 +57,9 @@ return {
     vim.keymap.set("n", "<C-e>", function()
       require("neo-tree.command").execute({ toggle = true })
     end, { desc = "Toggle NeoTree" })
+
+    -- Hijack netrw
+    vim.g.loaded_netrw = 1
+    vim.g.loaded_netrwPlugin = 1
   end,
 }
