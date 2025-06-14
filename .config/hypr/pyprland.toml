@@ -17,15 +17,15 @@ lazy = true
 close_on_hide = true
 max_size = "1920px 100%"
 
-[scratchpads.yazi]
-animation = "fromTop"
-command = "[term_classed] yazi --hold zsh -c 'yazi'"
-class = "yazi"
-size = "60% 70%"
-pinned = false
-lazy = true
-close_on_hide = true
-max_size = "1920px 100%"
+# [scratchpads.yazi]
+# animation = "fromTop"
+# command = "[term_classed] yazi --hold zsh -c 'yazi'"
+# class = "yazi"
+# size = "60% 70%"
+# pinned = false
+# lazy = true
+# close_on_hide = true
+# max_size = "1920px 100%"
 
 [scratchpads.nautilus]
 animation = "fromTop"

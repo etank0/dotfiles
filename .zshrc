@@ -1,57 +1,3 @@
-#--------------------- My Settings ---------------------
-
-# STARSHIP : sh -c "$(curl -fsSL https://starship.rs/install.sh)"
-eval "$(starship init zsh)"
-
-# Setup default $EDITOR
-if which vim >/dev/null 2>&1; then
-  EDITOR=vim
-else
-  EDITOR=nano
-fi
-export EDITOR
-
-# User specific environment
-if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
-then
-    PATH="$HOME/.local/bin:$HOME/bin:$PATH"
-fi
-export PATH
-
-# for pywal
-# cat ~/.cache/wal/sequences
-
-#for tomcat
-export JAVA_HOME=/usr/lib/jvm/java-17-openjdk
-export CATALINA_HOME=/opt/tomcat
-export PATH=$PATH:$CATALINA_HOME/bin
-export PATH=$JAVA_HOME/bin:$PATH
-
-# If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
-
-# For SASS compiler/transpiler
-export PATH=/home/swetank/.local/bin/dart-sass:$PATH
-
-# Set up fzf key bindings and fuzzy completion
-source <(fzf --zsh)
-
-# For eclipse in Wayland
-# export WEBKIT_DISABLE_COMPOSITING_MODE=1
-
-# Add asdf path
-export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
-
-# For fzf defaults
-source ~/.fzf.zsh
-
-# For yazi
-alias yazi="flatpak run io.github.sxyazi.yazi"
-
-# ripgrep config path
-export RIPGREP_CONFIG_PATH="$HOME/.config/.ripgreprc"
-#----------------------------------------------------
-
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
@@ -161,7 +107,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
+#--------------------- My Settings ---------------------
+if [ -f ~/.zsh_profile ]; then
+    source ~/.zsh_profile
+fi
+#----------------------------------------------------

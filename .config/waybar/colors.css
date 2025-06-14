@@ -11,8 +11,8 @@
 /* @define-color error #ffb4ab; */
 /* @define-color on_error #690005; */
 
-/* @define-color background rgba(33, 33, 33, 0.8); */
-@define-color background rgba(33, 33, 33, 1.0);
+@define-color background rgba(33, 33, 33, 0.8);
+/* @define-color background rgba(33, 33, 33, 1.0); */
 @define-color background_dim rgba(56, 56, 56, 1.0);
 @define-color background_full rgba(33, 33, 33, 1.0);
 @define-color primary rgba(238, 255, 255, 1.0);
