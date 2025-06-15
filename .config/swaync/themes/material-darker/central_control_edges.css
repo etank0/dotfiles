@@ -17,7 +17,7 @@
   transition: 200ms;
 }
 
-/* Avoid 'annoying' backgroud */
+/* Avoid 'annoying' background */
 .blank-window {
   background: transparent;
 }
@@ -39,11 +39,15 @@
   .notification-row
   .notification-background
   .notification.critical {
-  background-color: transparent;
+  background-color: @background-alt;
   /* border-radius: 12px; */
   margin: 18px;
   margin: 4px 0px;
   padding: 4px;
+}
+
+.control-center .notification-row .notification-background .time {
+  margin: 0px 22px 0px 0px;
 }
 
 .control-center .notification-row .notification-background {
@@ -247,10 +251,13 @@ progressbar {
 
 /* Music player */
 
-/* NOTE: Background need *opacity 1* otherwise will turn into the album art blurred  */
+/* NOTE: Background need *opacity 1* or will make the album art blurred  */
+.widget-mpris {
+  /* The parent to all players */
+}
+
 .widget-mpris-player {
-  all: unset;
-  background-color: @background-sec;
+  background: @background-alt;
   box-shadow: rgba(0, 0, 0, 0.7) 0px -60px 36px -28px inset;
   border-radius: 0px;
   padding: 12px;
@@ -272,7 +279,7 @@ progressbar {
 }
 
 .widget-mpris-album-art {
-  border-radius: 0;
+  border-radius: 0px;
 }
 
 .widget-mpris-title {
@@ -286,10 +293,36 @@ progressbar {
 }
 
 /* Volume */
-.widget-volume {
-  background: @background-sec;
-  color: @text;
-  padding: 4px 8px;
+
+.control-center .widget-volume {
+  background-color: @background-alt;
+  padding: 8px;
   margin: 8px;
-  /* border-radius: 8px; */
 }
+
+.control-center .widget-volume trough {
+  border-radius: 0px;
+  -gtk-outline-radius: 9999px;
+  min-width: 2px;
+  min-height: 2px;
+  margin: 12px;
+  background-color: @background;
+}
+
+.control-center .widget-volume trough slider {
+  background-color: @hover;
+  border-radius: 0px;
+  min-width: 24px;
+  min-height: 12px;
+  /* min-width: 24px; */
+  /* min-height: 12px; */
+}
+
+.control-center .widget-volume trough slider:hover {
+  background-color: @hover;
+}
+
+.control-center .widget-volume trough slider:active {
+  background-color: @hover;
+}
+

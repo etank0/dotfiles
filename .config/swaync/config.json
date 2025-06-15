@@ -43,6 +43,7 @@
   "widgets": [
     "label",
     "buttons-grid",
+    "volume",
     "mpris",
     "title",
     "dnd",
@@ -67,7 +68,7 @@
     },
     "volume": {
       "label": "󰕾 ",
-      "show-per-app": true
+      "show-per-app": false
     },
     "buttons-grid": {
       "actions": [
