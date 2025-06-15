@@ -1,0 +1,206 @@
+@import "~/.config/rofi/colors/material-darker.rasi"
+
+/* ________Variables________ */
+* {
+    /* ________Window________ */
+    window-width: 700px;
+    window-height: 550px;
+    window-border: 1.75px;
+    window-border-color: #4A4A4C;
+    window-border-radius: 0px;
+    window-bg-color: rgba(33, 33, 33, 0.8);
+
+    bg-col-light: #1e1e2e;
+    selected-col: #1e1e2e;
+    blue: #89b4fa;
+    fg-col: #cdd6f4;
+    fg-col2: #f38ba8;
+    grey: #6c7086;
+}
+
+/* ________Main window________ */
+window {
+    width: @window-width;
+    border: @window-border;
+    border-color: @window-border-color;
+    background-color: @window-bg-color;
+    border-radius: @window-border-radius;
+}
+
+/* ________Main view inside the window________ */
+mainbox {
+    background-color: transparent;
+    children: [inputbar, message, listview, mode-switcher];
+}
+
+spacer {
+    str: "";
+    expand: true;
+    background-color: transparent;
+}
+
+textbox-separator {
+    str: "|";
+    expand: true;
+    background-color: transparent;
+    margin: 0 6px;
+    font: "Iosevka Bold 14px";
+    vertical-align: 0.5;
+    text-color: rgba(255, 255, 255, 0.2);
+}
+
+footer {
+    children: [textbox-1];
+    expand: false;
+    orientation: horizontal;
+    padding: 5px 10px;
+    background-color: rgba(83, 83, 87, 0.1);
+    border-color: rgba(255, 255, 255, 0.1);
+    border: 1.75px 0 0 0;
+}
+
+textbox {
+    expand: false;
+    background-color: transparent;
+    text-color: rgba(255, 255, 255, 0.5);
+    font: "Iosevka SemiBold 14px";
+    vertical-align: 0.5;
+}
+
+textbox-1 {
+    expand: false;
+    str: " ";
+    background-color: transparent;
+    text-color: rgba(255, 255, 255, 0.2);
+    font: "Ubuntu Nerd Font 34px";
+    vertical-align: 0.5;
+}
+
+textbox-element {
+    expand: false;
+    str: "Application";
+    background-color: transparent;
+    text-color: rgba(255, 255, 255, 0.5);
+    font: "Iosevka SemiBold 14px";
+    vertical-align: 0.5;
+    enabled: false;
+}
+
+inputbar {
+    vertical-align: 0.5;
+    children: [prompt, entry];
+    background-color: transparent;
+    border-color: rgba(255, 255, 255, 0.1);
+    border: 0 0 1.75px 0;
+}
+
+entry {
+    text-color: white;
+    font: "Iosevka SemiBold 16px";
+    placeholder-color: rgba(255, 255, 255, 0.3);
+    padding: 18px 14px;
+    background-color: transparent;
+}
+
+prompt {
+    text-color: #FFFFFF;
+    font: "Iosevka SemiBold 14px";
+    background-color: transparent;
+    margin: 0px 0px 0px 16px;
+    vertical-align: 0.5;
+}
+
+listview {
+    padding: 6px;
+    lines: 7;
+    spacing: 5px;
+    background-color: transparent;
+}
+
+element {
+    padding: 12px;
+    border-radius: 0px;
+    border: 0;
+    background-color: transparent;
+    text-color: blue;
+    spacing: 10px;
+    children: [group, textbox-element];
+}
+
+group {
+    background-color: transparent;
+    orientation: horizontal;
+    spacing: 10px;
+    children: [element-icon, element-text];
+}
+
+element hover {
+    background-color: red;
+}
+
+element-icon {
+    size: 30px;
+    background-color: transparent;
+}
+
+element-text {
+    font: "Iosevka SemiBold 14px";
+    vertical-align: 0.5;
+    text-color: white;
+    background-color: transparent;
+}
+
+element selected {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* ---- Mode Switcher ---- */
+mode-switcher {
+    border: 1.75px 0 0 0;
+    border-color: rgba(255, 255, 255, 0.1);
+    background-color: transparent;
+    margin: 0px 0px;
+    padding: 8px 16px;
+    spacing: 12px;
+}
+
+button {
+    padding: 12px 0px;
+    border-radius: 0px;
+    background-color: transparent;
+    text-color: #FFFFFF;
+    cursor: pointer;
+}
+
+button selected {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid;
+    border-color: @selected;
+    text-color: white;
+}
+
+/* ----- Message ----- */
+message {
+    children: [error-message, message-text];
+    padding: 24px;
+    background-color: transparent;
+    border: 0 0 2px 0;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+error-message {
+    padding: 96px;
+    border: 0px solid;
+    border-radius: 0px;
+    background-color: black / 10%;
+    text-color: @urgent;
+}
+
+message-text {
+    background-color: transparent;
+    text-color: #eeffff;
+    vertical-align: 0.5;
+    horizontal-align: 0.5;
+    highlight: none;
+}
+

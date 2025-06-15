@@ -1,0 +1,166 @@
+@define-color text              #eeffff;
+@define-color selected          #a0a0a0;
+@define-color hover             #82aaff;
+@define-color urgent            #f07178;
+@define-color background        #212121;
+@define-color background-alt    #454545;
+@define-color background-hover  #595959;
+
+* {
+  /*background-alt:        @color1;      Buttons background */
+  /*selected:              @color2;      Button selected */
+  /*hover:                 @color5;      Hover button */
+  /*urgent:                @color6;      Urgency critical */
+  /*text-selected:         @background; */
+
+  all: unset;
+  color: @text;
+
+  font-size: 12px;
+  font-family: "Iosevka", "Inter";
+  font-weight: bold;
+  transition: 200ms;
+}
+
+.notification-row {
+  outline: none;
+  margin: 0;
+  padding: 0px;
+}
+
+.floating-notifications.background .notification-row .notification-background {
+  background: alpha(@background, 0.8);
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.6);
+  /* border-radius: 16px; */
+  margin: 12px;
+  padding: 0;
+}
+
+.floating-notifications.background
+  .notification-row
+  .notification-background
+  .notification {
+  padding: 0px;
+  /* border-radius: 12px; */
+}
+
+.floating-notifications.background
+  .notification-row
+  .notification-background
+  .notification.normal {
+  border: 0.5px solid @selected;
+}
+
+.floating-notifications.background
+  .notification-row
+  .notification-background
+  .notification.low {
+  border: 1px solid @selected;
+}
+
+.floating-notifications.background
+  .notification-row
+  .notification-background
+  .notification.critical {
+  border: 2px solid @urgent;
+}
+
+.floating-notifications.background
+  .notification-row
+  .notification-background
+  .notification
+  .notification-content {
+  margin: 14px;
+}
+
+.floating-notifications.background
+  .notification-row
+  .notification-background
+  .notification
+  > *:last-child
+  > * {
+  min-height: 3em;
+}
+
+.floating-notifications.background
+  .notification-row
+  .notification-background
+  .notification
+  > *:last-child
+  > *
+  .notification-action {
+  /* border-radius: 8px; */
+  background-color: @background-alt;
+  margin: 8px;
+  border: 1px solid transparent;
+}
+
+.floating-notifications.background
+  .notification-row
+  .notification-background
+  .notification
+  > *:last-child
+  > *
+  .notification-action:hover {
+  background-color: @hover;
+  border: 1px solid @selected;
+}
+
+.floating-notifications.background
+  .notification-row
+  .notification-background
+  .notification
+  > *:last-child
+  > *
+  .notification-action:active {
+  background-color: @background;
+  color: @background;
+}
+
+.image {
+  margin: 10px 20px 10px 0px;
+}
+
+.summary {
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.body {
+  font-size: 0.8rem;
+}
+
+.floating-notifications.background
+  .notification-row
+  .notification-background
+  .close-button {
+  margin: 4px;
+  padding: 2px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+
+.floating-notifications.background
+  .notification-row
+  .notification-background
+  .close-button:hover {
+  background-color: @background-hover;
+}
+
+.floating-notifications.background
+  .notification-row
+  .notification-background
+  .close-button:active {
+  background-color: @background;
+  color: @background;
+}
+
+.notification.critical progress {
+  background-color: @background;
+}
+
+.notification.low progress,
+.notification.normal progress {
+  background-color: @background;
+}

@@ -12,7 +12,7 @@ while true; do
             -p "   Clipboard" \
             -kb-custom-1 "Control-Delete" \
             -kb-custom-2 "Alt-Delete" \
-            -theme ~/.config/rofi/themes/clip-raycast.rasi < <(cliphist list)
+            -theme ~/.config/rofi/themes/clip-raycast-edges.rasi < <(cliphist list)
     )
 
     case "$?" in

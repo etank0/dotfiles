@@ -21,4 +21,4 @@ configuration {
     kb-row-right: "Alt+l";
 }
 
-@theme "~/.config/rofi/themes/raycast.rasi"
+@theme "~/.config/rofi/themes/raycast-edges.rasi"

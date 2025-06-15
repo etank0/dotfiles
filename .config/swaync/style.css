@@ -1,2 +1,4 @@
-@import 'themes/material-darker/notifications.css';
-@import 'themes/material-darker/central_control.css';
+/* @import 'themes/material-darker/notifications.css'; */
+/* @import 'themes/material-darker/central_control.css'; */
+@import 'themes/material-darker/notifications_edges.css';
+@import 'themes/material-darker/central_control_edges.css';
