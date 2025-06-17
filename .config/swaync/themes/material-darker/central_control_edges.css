@@ -116,7 +116,7 @@
 
 .control-center .notification-row .notification-background .close-button {
   background: transparent;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   color: @text;
   margin: 2px;
   padding: 2px;
@@ -165,7 +165,7 @@ progressbar {
   background: transparent;
   color: @text;
   margin: 4px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   padding: 4px;
 }
 
