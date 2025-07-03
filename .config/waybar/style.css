@@ -74,10 +74,12 @@ window#waybar {
 #workspaces button.empty {
   /* color: @primary_dim; */
   background: @primary_dim;
+  border-bottom: 2px solid @primary_dim;
 }
 
 #workspaces button {
   background-color: transparent;
+  border-bottom: 2px solid transparent;
   border-radius: 0px;
   padding: 0px 0px;
   color: @primary;
@@ -97,6 +99,7 @@ window#waybar {
 
 #workspaces button.urgent {
   background-color: @error;
+  border-bottom: 2px solid @error;
   color: @on_error;
 }
 
