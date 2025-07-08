@@ -9,7 +9,7 @@ call plug#begin()
 Plug 'chrisbra/Colorizer'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'preservim/nerdtree'
+" Plug 'preservim/nerdtree'
 Plug 'itchyny/lightline.vim'
 Plug 'ryanoasis/vim-devicons'
 Plug 'kaicataldo/material.vim', { 'branch': 'main' }
@@ -57,8 +57,8 @@ endif
 
 "keybindings
 
-imap <c-e> <Esc>:NERDTreeToggle<CR>
-nmap <c-e> :NERDTreeToggle<CR>
+" imap <c-e> <Esc>:NERDTreeToggle<CR>
+" nmap <c-e> :NERDTreeToggle<CR>
 
 nnoremap <silent> <c-Up> :resize -1<CR>
 nnoremap <silent> <c-Down> :resize +1<CR>

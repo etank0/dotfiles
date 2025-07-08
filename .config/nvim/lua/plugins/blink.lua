@@ -33,6 +33,7 @@ return {
           },
         },
         completion = {
+          accept = { auto_brackets = { enabled = true } },
           menu = {
             border = "single",
             scrolloff = 1,
@@ -58,7 +59,7 @@ return {
       })
 
       require("luasnip.loaders.from_vscode").lazy_load()
-      vim.api.nvim_set_hl(0, 'NormalFloat', {link = 'BlinkCmpMenu'})
+      vim.api.nvim_set_hl(0, "NormalFloat", { link = "BlinkCmpMenu" })
     end,
   },
 }

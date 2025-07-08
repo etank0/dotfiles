@@ -1,4 +1,10 @@
 -------------------------------------------------
+-- NETRW
+-------------------------------------------------
+
+require("extras.netrw")
+
+-------------------------------------------------
 -- KEYBINDINGS
 -------------------------------------------------
 -- Set space as the global leader key
@@ -18,6 +24,7 @@ map("n", "<leader>k", "<C-w>k", { desc = "Move to window above" })
 map("n", "<leader>l", "<C-w>l", { desc = "Move to right window" })
 map("n", "<leader>w", "<C-w>w", { desc = "Cycle through windows" })
 map("n", "<leader>p", "<C-w>p", { desc = "Go to previous window" })
+map("n", "<leader>z", "<C-w>z", { desc = "Close tag preview window" })
 
 -- Buffer navigation
 map("n", "<S-h>", ":bp<CR>", { desc = "Previous buffer" })

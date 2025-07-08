@@ -103,7 +103,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
     end, vim.tbl_extend("force", opts, { desc = "Toggle inlay hints" }))
 
     -- Virtual Text Toggle
-    local show_virtual_text = true
+    local show_virtual_text = false
     local function toggle_virtual_text()
       show_virtual_text = not show_virtual_text
       vim.diagnostic.config({
@@ -126,7 +126,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
 
 vim.diagnostic.config({
   virtual_lines = false,
-  virtual_text = true,
+  virtual_text = false,
   underline = true,
   update_in_insert = false,
   severity_sort = true,
