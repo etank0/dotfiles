@@ -4,8 +4,9 @@
 
 vim.g.netrw_banner = 0 -- disable top banner
 vim.g.netrw_fastbrowse = 0 -- enable full redraw when browsing
+vim.g.netrw_liststyle = 1 -- tree-style view = 3
+vim.g.netrw_sizestyle = "h" -- human readable file size
 -- vim.g.netrw_browse_split = 0 -- open files in same window = 0
--- vim.g.netrw_liststyle = 1 -- tree-style view = 3
 -- vim.g.netrw_altv = 1 -- vertical splits open to the left
 -- vim.g.netrw_winsize = 40 -- vertical split width (in percent of screen)
 -- vim.g.netrw_keepdir = 0 -- allow netrw to change directory

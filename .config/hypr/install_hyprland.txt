@@ -20,7 +20,7 @@ nwg-look (build)
 rofi-calc (build)
 
 
-### hyprland plugins
+### hyprland plugins (NOT NEEDED)
 hyprpm add https://github.com/hyprwm/hyprland-plugins
 hyprpm add https://github.com/KZDKM/Hyprspace
 hyprpm enable hyprbars
