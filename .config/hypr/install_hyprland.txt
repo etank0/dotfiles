@@ -4,21 +4,29 @@ wtype
 openrgb
 nmtui
 rofi-wayland
+swayimg
+swaync
+kf6-qqc2-desktop-style (for kde-connect)
+
+# Enable copr for hyprland:
+```
+sudo dnf copr enable solopasha/hyprland
+```
 hyprland
+hyprland-devel
 hyprpaper
 hyprlock
 hypridle
-swayimg
-kf6-qqc2-desktop-style (for kde-connect)
-pyprland (hyprland tools/plugins | curl)
-hyprshot (git clone)
-hyprswitch (cargo install)
+hyprshot
+pyprland
+qt6ct-kde
+
 yazi (cargo install)
 ripdrag (cargo install)
-swaync (copr)
 nwg-look (build)
 rofi-calc (build)
 
+hyprswitch (cargo install) (NOT NEEDED: VERY SLOW)
 
 ### hyprland plugins (NOT NEEDED)
 hyprpm add https://github.com/hyprwm/hyprland-plugins

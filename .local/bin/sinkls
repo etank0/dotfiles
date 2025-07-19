@@ -1,0 +1,62 @@
+#!/bin/bash
+
+# Check if PipeWire/PulseAudio is running
+if ! pactl info &>/dev/null; then
+    echo "Error: PipeWire/PulseAudio is not running."
+    exit 1
+fi
+
+sink_count=0
+
+pactl list sinks | awk -v RS='Sink #' '
+{
+    if ($0 == "") next;
+
+    name = "";
+    desc = "";
+    state = "";
+    profile = "N/A";
+    active_port = "N/A";
+    device_type = "";
+
+    split($0, lines, "\n");
+    for (i in lines) {
+        line = lines[i];
+        sub(/^\s+/, "", line);
+
+        if (line ~ /^Name:/) {
+            name = substr(line, index(line, ":") + 2);
+
+            # Extract type before first "." or use entire name
+            dot_index = index(name, ".");
+            if (dot_index > 0)
+                device_type = substr(name, 1, dot_index - 1);
+            else
+                device_type = name;
+        }
+
+        if (line ~ /^Description:/) desc = substr(line, index(line, ":") + 2);
+        if (line ~ /^State:/) state = substr(line, index(line, ":") + 2);
+        if (line ~ /^Active Port:/) active_port = substr(line, index(line, ":") + 2);
+
+        if (device_type == "alsa_output" && line ~ /device.profile.name = "/) {
+            split(line, parts, "\"");
+            profile = parts[2];
+        }
+
+        if (device_type == "bluez_output" && line ~ /api.bluez5.profile = "/) {
+            split(line, parts, "\"");
+            profile = parts[2];
+        }
+    }
+
+    sink_count += 1;
+    printf "-[ RECORD %d ]----------------------------\n", sink_count;
+    printf "Name          | %s\n", name;
+    printf "Description   | %s\n", desc;
+    printf "Device Type   | %s\n", device_type;
+    printf "Profile       | %s\n", profile;
+    printf "Active Port   | %s\n", active_port;
+    printf "Status        | %s\n\n", state;
+}'
+

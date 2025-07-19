@@ -1,3 +1,0 @@
-#!/bin/sh
-
-openrgb -d "Lenovo 5 2022 Ideapad" -c 00050A

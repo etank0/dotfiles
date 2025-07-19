@@ -1,0 +1,35 @@
+### OS
+
+[arch]
+script = "os/arch.sh"
+
+[fedora]
+script = "os/fedora.sh"
+
+[debian]
+script = "os/debian.sh"
+
+### Tools
+
+[gnome]
+script = "tools/gnome.sh"
+
+[flatpak]
+script = "tools/flatpak.sh"
+os_verification = true
+
+[asdf]
+script = "tools/asdf.sh"
+
+[vscode]
+script = "tools/vscode.sh"
+os_verification = true
+
+[zen]
+script = "tools/zen.sh"
+
+[zsh]
+script = "tools/zsh.sh"
+
+[dev-tools]
+script = "tools/dev-tools.sh"
