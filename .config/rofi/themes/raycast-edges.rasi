@@ -4,7 +4,7 @@
 * {
     /* ________Window________ */
     window-width: 700px;
-    window-height: 550px;
+    window-height: 600px;
     window-border: 1.75px;
     window-border-color: #4A4A4C;
     window-border-radius: 0px;
@@ -107,6 +107,7 @@ prompt {
     font: "Iosevka SemiBold 14px";
     background-color: transparent;
     margin: 0px 0px 0px 16px;
+    padding: 4px 0px;
     vertical-align: 0.5;
 }
 
@@ -184,7 +185,7 @@ message {
     children: [error-message, message-text];
     padding: 24px;
     background-color: transparent;
-    border: 0 0 2px 0;
+    border: 0 0 1.75px 0;
     border-color: rgba(255, 255, 255, 0.1);
 }
 

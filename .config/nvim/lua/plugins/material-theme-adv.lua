@@ -69,5 +69,6 @@ return {
       { bg = "#212121", fg = "#343434" }
     )
     vim.api.nvim_set_hl(0, "BufferLineFill", { bg = "#212121", fg = "#212121" })
+    vim.opt.guicursor = ""
   end,
 }

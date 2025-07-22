@@ -4,7 +4,7 @@
 * {
     /* ________Window________ */
     window-width: 700px;
-    window-height: 550px;
+    window-height: 600px;
     window-border: 1.75px;
     window-border-color: #4A4A4C;
     window-border-radius: 12px;

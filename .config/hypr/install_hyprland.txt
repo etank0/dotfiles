@@ -5,6 +5,7 @@ openrgb
 nmtui
 rofi-wayland
 swayimg
+cliphist
 swaync
 kf6-qqc2-desktop-style (for kde-connect)
 

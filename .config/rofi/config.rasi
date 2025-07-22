@@ -1,12 +1,12 @@
 /* ________Modes: drun, window, calc________ */
 
 configuration {
-    modi: "combi";
+    modi: "combi,calc";
     show-icons: true;
     display-calc: " ";
     display-drun: " ";
     display-window: " ";
-    display-filebrowser: "󰈔";
+    display-filebrowser: "󰈔 ";
     display-combi: " ";
     drun-display-format: "{name}";
     combi-modi: "drun,window";
@@ -15,10 +15,6 @@ configuration {
 
     kb-mode-next: "Alt+n";
     kb-mode-previous: "Alt+p";
-    kb-row-up: "Alt+k";
-    kb-row-down: "Alt+j";
-    kb-row-left: "Alt+h";
-    kb-row-right: "Alt+l";
 }
 
 @theme "~/.config/rofi/themes/raycast-edges.rasi"
