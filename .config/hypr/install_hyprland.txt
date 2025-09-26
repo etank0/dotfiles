@@ -3,6 +3,7 @@ wlogout
 wtype
 openrgb
 nmtui
+nm-applet
 rofi-wayland
 swayimg
 cliphist
@@ -21,6 +22,7 @@ hypridle
 hyprshot
 pyprland
 qt6ct-kde
+nwg-look
 
 yazi (cargo install)
 ripdrag (cargo install)

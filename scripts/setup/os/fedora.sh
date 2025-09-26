@@ -17,6 +17,7 @@ PACKAGES=(
     adw-gtk3-theme
     aria2
     bat
+    blueman
     celluloid
     deluge
     fastfetch

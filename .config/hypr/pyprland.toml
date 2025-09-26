@@ -10,7 +10,7 @@ term_classed = "kitty --class"
 
 [scratchpads.term]
 animation = "fromTop"
-command = "[term_classed] main-dropterm"
+command = "[term_classed] main-dropterm --hold zsh -c 'cd ~/mygithub/notes && nvim .'"
 class = "main-dropterm"
 size = "60% 70%"
 lazy = true
@@ -30,7 +30,7 @@ max_size = "1920px 100%"
 [scratchpads.nautilus]
 animation = "fromTop"
 command = "nautilus"
-class = "org.gnome.Nautilus"
+class = "floating org.gnome.Nautilus"
 size = "60% 70%"
 pinned = false
 lazy = true
