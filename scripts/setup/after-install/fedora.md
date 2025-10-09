@@ -8,6 +8,8 @@
 
 `/etc/dnf/dnf.conf` inside `[main]`
 ```
+[main]
+installonly_limit=2
 fastestmirror=true
 max_paraller_downloads=3
 ```
@@ -23,4 +25,13 @@ sudo dnf upgrade @multimedia --setopt="install_weak_deps=False" --exclude=Packag
 ### Install Nvidia Drivers
 ```bash
 sudo dnf install akmod-nvidia nvidia-smi
+```
+
+### Network/WiFi Disconnects
+```bash
+sudo tee /etc/NetworkManager/conf.d/00-wifi-powersave.conf << EOF > /dev/null
+[connection]
+wifi.powersave=2
+EOF
+sudo systemctl restart NetworkManager.service
 ```

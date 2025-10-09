@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# Message text
+MESSAGE="System is now in a state of insomnia."
+
+# Run with systemd-inhibit
+systemd-inhibit bash -c "echo -e '\e[32m$MESSAGE\e[0m'; sleep infinity"
