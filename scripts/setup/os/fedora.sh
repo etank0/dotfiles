@@ -15,6 +15,7 @@ dnf update -y
 # Install packages via dnf
 PACKAGES=(
     adw-gtk3-theme
+    cava
     aria2
     bat
     blueman
@@ -36,6 +37,7 @@ PACKAGES=(
     syncplay
     tmux
     vim
+    wf-recorder
     yt-dlp
     zathura
     zathura-djvu

@@ -1,0 +1,20 @@
+#!/bin/sh
+
+# Ensure target directory exists
+mkdir -p ~/Videos/screencasts
+
+# Generate a unique filename based on current timestamp
+# Format: screencast_YYYYMMDD_HHMMSS.mkv
+filename=~/Videos/screencasts/screencast_$(date +%Y%m%d_%H%M%S).mkv
+
+# Run wf-recorder
+wf-recorder \
+  -c h264_nvenc \
+  -C aac \
+  --audio=alsa_output.pci-0000_06_00.6.analog-stereo.monitor \
+  -f "$filename" \
+  -r 120 \
+  -p qp=18 \
+  -p color_range=full \
+  -x gbrp
+
