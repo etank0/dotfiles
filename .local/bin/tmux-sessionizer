@@ -6,6 +6,8 @@ search_dirs=(
     ~/
     ~/mygithub
     ~/.config
+    ~/github
+    ~/dev_stuff
 )
 
 if [[ $# -eq 1 ]]; then

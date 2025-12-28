@@ -1,4 +1,4 @@
-@define-color background rgba(33, 33, 33, 0.2);
+@define-color background rgba(33, 33, 33, 0.8);
 @define-color foreground rgba(238, 255, 255, 1.0);
 @define-color accent rgba(130, 170, 255, 1.0);
 
@@ -13,7 +13,7 @@ window {
 button {
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 12%;
+  background-size: 16%;
   background-color: transparent;
   animation: gradient_f 20s ease-in infinite;
   transition: all 0.3s ease-in;
@@ -24,14 +24,15 @@ button {
 
 button:focus {
   box-shadow: none;
-  background-size: 20%;
+  outline: none;
+  border: 1px solid @accent;
+  border-radius: 0px;
 }
 
 button:hover {
-  background-size: 24%;
   box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.4);
   background-color: @accent;
-  color: transparent;
+  color: rgba(33, 33, 33, 1.0);
   transition:
     all 0.3s cubic-bezier(0.55, 0, 0.28, 1.682),
     box-shadow 0.5s ease-in;
