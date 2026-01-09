@@ -1,6 +1,6 @@
 // -*- mode: jsonc -*-
 {
-  "output": ["eDP-1"],
+  // "output": ["eDP-1"],
   "layer": "top", // Waybar at top layer
   "position": "bottom", // Waybar position (top|bottom|left|right)
   "margin-left": 0,
