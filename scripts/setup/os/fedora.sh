@@ -15,10 +15,11 @@ dnf update -y
 # Install packages via dnf
 PACKAGES=(
     adw-gtk3-theme
-    cava
     aria2
     bat
     blueman
+    breeze-icons
+    cava
     celluloid
     deluge
     fastfetch
@@ -27,12 +28,15 @@ PACKAGES=(
     fzf
     gnome-tweaks
     kitty
+    kvantum
     mpv
     neovim
     # obs-studio
     openrgb
     pavucontrol
     qjackctl
+    qt5ct
+    qt6ct
     ripgrep
     syncplay
     tmux

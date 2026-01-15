@@ -10,7 +10,7 @@ term_classed = "kitty --class"
 
 [scratchpads.term]
 animation = "fromTop"
-command = "[term_classed] main-dropterm --hold zsh -c 'cd ~/mygithub/notes && nvim .'"
+command = "[term_classed] main-dropterm --hold zsh -c 'cd ~/mygithub/scribbles && nvim .'"
 class = "main-dropterm"
 size = "60% 70%"
 lazy = true
