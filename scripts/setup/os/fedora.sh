@@ -27,6 +27,7 @@ PACKAGES=(
     foliate
     fzf
     gnome-tweaks
+    gum
     kitty
     kvantum
     mpv
