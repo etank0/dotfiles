@@ -40,6 +40,7 @@ PACKAGES=(
     qt6ct
     ripgrep
     syncplay
+    sxiv
     tmux
     vim
     wf-recorder
