@@ -1,0 +1,20 @@
+[
+  {
+    "label": "fzf File Finder",
+    "command": "result=$(fd -t f -I | fzf --reverse --height 100% --preview 'bat --color=always --style=numbers {1}' --preview-window '~3,+{2}+3/2') && [ -n \"$result\" ] && zed \"$result\" && exit",
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "reveal": "always",
+    "hide": "always",
+    "allow_concurrent_runs": false,
+    "use_new_terminal": true
+  },
+  {
+    "label": "fzf Text Search (grep)",
+    "command": "raw=$(rg --column --line-number --no-heading --color=always --smart-case \"${ZED_SELECTED_TEXT:-}\" | fzf --ansi --reverse --delimiter : --preview 'bat --color=always --highlight-line {2} {1}' --preview-window '~3,+{2}+3/2') && [ -n \"$raw\" ] && result=$(echo \"$raw\" | cut -d: -f1,2) && zed \"$result\"",
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "reveal": "always",
+    "hide": "always",
+    "allow_concurrent_runs": false,
+    "use_new_terminal": true
+  }
+]

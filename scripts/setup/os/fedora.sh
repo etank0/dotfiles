@@ -23,6 +23,7 @@ PACKAGES=(
     celluloid
     deluge
     fastfetch
+    fd-find
     ffmpeg
     foliate
     fzf

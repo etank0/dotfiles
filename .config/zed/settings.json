@@ -1,63 +1,106 @@
 {
-  // ui
-  "assistant": {
-    "default_open_ai_model": "gpt-3.5-turbo",
-    "provider": {
-      "name": "openai",
-      "default_model": "gpt-3.5-turbo",
-      "available_models": []
+  "agent": {
+    "default_model": {
+      "provider": "mistral",
+      "model": "codestral-latest",
+      "enable_thinking": false
+    },
+    "favorite_models": [],
+    "model_parameters": []
+  },
+  "ui_font_family": "Iosevka",
+  "ui_font_size": 16,
+  "theme": "Material Theme Darker High Contrast",
+
+  // Theme
+  "theme_overrides": {
+    "Material Theme Darker High Contrast": {
+      "syntax": {
+        "keyword": { "font_style": "normal" },
+        "comment": { "font_style": "normal" },
+        "function": { "font_style": "normal" },
+        "type": { "font_style": "normal" }
+      }
     }
   },
-  "ui_font_family": "JetBrains Mono",
-  "ui_font_size": 15,
+
+  // Interface Behavior
   "project_panel": {
+    "dock": "right",
+    "compact_folders": false,
+    "indent_size": 15
+  },
+  "git_panel": {
     "dock": "right"
   },
+  "tab_bar": { "show": false },
+  "scrollbar": { "show": "never" },
+  "title_bar": { "show_command_center": true },
 
-  // git
-  "git": {
-    "inline_blame": {
-      "enabled": false
-    }
-  },
-
-  //telemetry
-  "telemetry": {
-    "diagnostics": false,
-    "metrics": false
-  },
-
-  // theme
-  "theme": {
-    "mode": "system",
-    "light": "One Light",
-    "dark": "Material Theme Darker High Contrast"
-  },
-
-  // editor
-  // "enable_language_server": false,
-  "soft_wrap": "editor_width",
-  "autosave": "on_window_change",
-  "format_on_save": "off",
+  // Editor Behavior
   "base_keymap": "VSCode",
-  "relative_line_numbers": true,
   "vim_mode": true,
-  "buffer_font_family": "JetBrains Mono",
-  "buffer_font_size": 15,
-  "buffer_line_height": {
-    "custom": 1.6
-  },
-  "scrollbar": {
-    "show": "never"
-  },
-  "inlay_hints": {
-    "enabled": false
-  },
+  "relative_line_numbers": "enabled",
+  "autosave": "on_focus_change",
+  "format_on_save": "on",
+  "soft_wrap": "editor_width",
   "tab_size": 4,
+  "show_whitespaces": "trailing",
 
-  // terminal
+  // Typography
+  "buffer_font_family": "Iosevka",
+  "buffer_font_size": 16,
+  "buffer_font_weight": 400,
+  "buffer_line_height": { "custom": 1.6 },
+  "buffer_font_features": { "calt": false },
+  "wrap_guides": [80],
+
+  // Terminal
   "terminal": {
-    "font_family": "JetBrains Mono",
-    "font_size": 14
+    "font_family": "Iosevka Term",
+    "font_size": 15,
+    "font_weight": 400
+  },
+
+  // Languages
+  "languages": {
+    "Python": {
+      "formatter": {
+        "external": {
+          "command": "black",
+          "arguments": ["--line-length", "80", "-"]
+        }
+      }
+    },
+    "JavaScript": {
+      "formatter": {
+        "external": {
+          "command": "prettier",
+          "arguments": [
+            "--tab-width",
+            "2",
+            "--print-width",
+            "80",
+            "--stdin-filepath",
+            "{buffer_path}"
+          ]
+        }
+      }
+    },
+    "TypeScript": {
+      "formatter": {
+        "external": {
+          "command": "prettier",
+          "arguments": [
+            "--tab-width",
+            "2",
+            "--print-width",
+            "80",
+            "--stdin-filepath",
+            "{buffer_path}"
+          ]
+        }
+      }
+    }
   }
 }
