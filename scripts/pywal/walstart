@@ -1,5 +1,5 @@
 #!/bin/sh
-/home/swetank/.local/bin/wal -s -t -i ~/Pictures/kabegami/wal
+$HOME/.local/bin/wal -s -t -i $HOME/Pictures/kabegami/wal
 
 # Doesn't change with dark theme on gnome so do add this in 
 # .local/lib/python.../pywal/wallpapers.py

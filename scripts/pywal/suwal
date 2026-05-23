@@ -1,6 +1,6 @@
 #!/bin/sh
-/home/swetank/.local/bin/wal -t -s -i /home/swetank/Pictures/kabegami/wal
-sudo bash /home/swetank/.local/bin/rgbkeys
+$HOME/.local/bin/wal -t -s -i $HOME/Pictures/kabegami/wal
+sudo bash $HOME/.local/bin/rgbkeys
 
 # Doesn't change with dark theme on gnome so do add this in 
 # .local/lib/python.../pywal/wallpapers.py

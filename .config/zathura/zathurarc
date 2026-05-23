@@ -1,5 +1,6 @@
 set window-title-basename "true"
 set selection-clipboard "clipboard"
+set selection-notification "false"
 
 map <C-i> recolor
 #----------------------------------------------------------------------

@@ -9,6 +9,7 @@ swayimg
 cliphist
 swaync
 kf6-qqc2-desktop-style (for kde-connect)
+foot (for alttab)
 
 # Enable copr for hyprland:
 ```
