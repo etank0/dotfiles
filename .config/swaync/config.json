@@ -5,11 +5,11 @@
   "cssPriority": "user",
 
   "control-center-width": 400,
-  "control-center-height": 840,
-  "control-center-margin-top": 2,
-  "control-center-margin-bottom": 2,
-  "control-center-margin-right": 1,
-  "control-center-margin-left": 0,
+  "control-center-height": 800,
+  "control-center-margin-top": 18,
+  "control-center-margin-bottom": 18,
+  "control-center-margin-right": 18,
+  "control-center-margin-left": 18,
 
   "notification-window-width": 360,
   "notification-icon-size": 48,

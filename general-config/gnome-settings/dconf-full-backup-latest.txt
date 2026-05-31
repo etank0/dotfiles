@@ -207,8 +207,8 @@ translate=false
 
 [desktop/background]
 picture-options='zoom'
-picture-uri='file:///home/etank0/.config/background'
-picture-uri-dark='file:///home/etank0/Pictures/kabegami/wal/lli0c12vlvd91.png'
+picture-uri='file:///home/swetank/.config/background'
+picture-uri-dark='file:///home/swetank/Pictures/kabegami/wal/lli0c12vlvd91.png'
 
 [desktop/datetime]
 automatic-timezone=false
@@ -343,8 +343,8 @@ report-technical-problems=true
 [desktop/remote-desktop/rdp]
 enable=false
 screen-share-mode='extend'
-tls-cert='/home/etank0/.local/share/gnome-remote-desktop/certificates/rdp-tls.crt'
-tls-key='/home/etank0/.local/share/gnome-remote-desktop/certificates/rdp-tls.key'
+tls-cert='/home/swetank/.local/share/gnome-remote-desktop/certificates/rdp-tls.crt'
+tls-key='/home/swetank/.local/share/gnome-remote-desktop/certificates/rdp-tls.key'
 
 [desktop/search-providers]
 sort-order=['org.gnome.Settings.desktop', 'org.gnome.Contacts.desktop', 'org.gnome.Nautilus.desktop']
@@ -383,7 +383,7 @@ button-layout='appmenu:minimize,maximize,close'
 workspace-names=@as []
 
 [evince]
-document-directory=@ms 'file:///home/etank0/Downloads'
+document-directory=@ms 'file:///home/swetank/Downloads'
 
 [evince/default]
 continuous=true
@@ -574,7 +574,7 @@ panel-id='world'
 size=(870, 690)
 
 [org/gnome/control-center]
-last-panel='wacom'
+last-panel='keyboard'
 window-state=(1095, 681, true)
 
 [org/gnome/desktop/a11y]
@@ -686,7 +686,7 @@ name='Office'
 
 [org/gnome/desktop/background]
 picture-options='zoom'
-picture-uri='file:///home/etank0/.config/background'
+picture-uri='file:///home/swetank/.config/background'
 picture-uri-dark='file:///home/etank0/Pictures/kabegami/wal/wallhaven-jx2rxy_2560x1440.png'
 
 [org/gnome/desktop/datetime]
@@ -854,8 +854,8 @@ report-technical-problems=true
 [org/gnome/desktop/remote-desktop/rdp]
 enable=true
 screen-share-mode='extend'
-tls-cert='/home/etank0/.local/share/gnome-remote-desktop/certificates/rdp-tls.crt'
-tls-key='/home/etank0/.local/share/gnome-remote-desktop/certificates/rdp-tls.key'
+tls-cert='/home/swetank/.local/share/gnome-remote-desktop/certificates/rdp-tls.crt'
+tls-key='/home/swetank/.local/share/gnome-remote-desktop/certificates/rdp-tls.key'
 view-only=false
 
 [org/gnome/desktop/search-providers]
@@ -882,12 +882,12 @@ move-to-workspace-6=['<Super><Shift>6']
 move-to-workspace-7=['<Super><Shift>7']
 move-to-workspace-8=['<Super><Shift>8']
 move-to-workspace-9=['<Super><Shift>9']
-switch-applications=['<Super>Tab']
-switch-applications-backward=['<Shift><Super>Tab']
+switch-applications=['<Alt>Tab']
+switch-applications-backward=['<Shift><Alt>Tab']
 switch-input-source=['<Alt><Super>space']
 switch-input-source-backward=['<Shift><Alt><Super>space']
-switch-windows=['<Alt>Tab']
-switch-windows-backward=['<Shift><Alt>Tab']
+switch-windows=['<Super>Tab']
+switch-windows-backward=['<Shift><Super>Tab']
 toggle-maximized=['<Super>Up']
 unmaximize=@as []
 
@@ -897,7 +897,7 @@ num-workspaces=8
 workspace-names=@as []
 
 [org/gnome/evince]
-document-directory=@ms 'file:///home/etank0/Downloads'
+document-directory=@ms 'file:///home/swetank/Downloads'
 
 [org/gnome/evince/default]
 continuous=true
@@ -1007,7 +1007,7 @@ ignore-ca-cert=false
 ignore-phase2-ca-cert=false
 
 [org/gnome/portal/filechooser/appimagekit_ed4c74c35f8e67a0a36aa06d364600b7-Obsidian]
-last-folder-path='/home/etank0/mygithub'
+last-folder-path='/home/swetank/mygithub'
 
 [org/gnome/portal/filechooser/com.discordapp.Discord]
 last-folder-path='/home/etank0/Downloads'
@@ -1015,8 +1015,14 @@ last-folder-path='/home/etank0/Downloads'
 [org/gnome/portal/filechooser/com.google.Chrome]
 last-folder-path='/home/etank0/Downloads'
 
+[org/gnome/portal/filechooser/com.inochi2d.inochi-creator]
+last-folder-path='/home/etank0/Documents/pyrokyte_logo/inochi'
+
+[org/gnome/portal/filechooser/com.inochi2d.inochi-session]
+last-folder-path='/home/etank0/Documents/pyrokyte_logo/inochi'
+
 [org/gnome/portal/filechooser/gnome-control-center]
-last-folder-path='/home/etank0/Documents/Documents/etank0/images'
+last-folder-path='/home/swetank/Documents/Documents/swetank/images'
 
 [org/gnome/portal/filechooser/google-chrome]
 last-folder-path='/home/etank0/Downloads'
@@ -1025,7 +1031,7 @@ last-folder-path='/home/etank0/Downloads'
 last-folder-path='/home/etank0/Downloads/F1 The Movie (2025) [1080p] [WEBRip] [YTS.MX]'
 
 [org/gnome/portal/filechooser/io.github.zen_browser.zen]
-last-folder-path='/home/etank0/Documents/Documents/firefox-stuff'
+last-folder-path='/home/swetank/Documents/Documents/firefox-stuff'
 
 [org/gnome/portal/filechooser/org.gnome.Settings]
 last-folder-path='/home/etank0/Documents/backup/aesthetic-images'
@@ -1034,10 +1040,10 @@ last-folder-path='/home/etank0/Documents/backup/aesthetic-images'
 last-folder-path='/home/etank0/Downloads/2001 A Space Odyssey (1968) [BluRay] [1080p] [YTS.AM]'
 
 [org/gnome/portal/filechooser/snap.firefox]
-last-folder-path='/home/etank0/Documents/Documents/firefox-stuff'
+last-folder-path='/home/swetank/Documents/Documents/firefox-stuff'
 
 [org/gnome/portal/filechooser/snap.telegram-desktop]
-last-folder-path='/home/etank0/Downloads'
+last-folder-path='/home/swetank/Downloads'
 
 [org/gnome/portal/filechooser/transient]
 last-folder-path='/home/etank0/Downloads/PNGTubeRemixLinuxV1.4.2/PNGTubeRemix Linux'
@@ -1047,8 +1053,7 @@ night-light-last-coordinates=(15.3452, 76.154799999999994)
 night-light-schedule-automatic=false
 
 [org/gnome/settings-daemon/plugins/media-keys]
-custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/']
-search=['<Super>space']
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/']
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
 binding='<Super>Return'
@@ -1057,7 +1062,7 @@ name='Terminal'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1]
 binding='<Super>b'
-command='/home/etank0/Applications/zen/zen'
+command='/home/swetank/Applications/zen/zen'
 name='Browser'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2]
@@ -1070,13 +1075,33 @@ binding='<Shift><Super>e'
 command='flatpak run it.mijorus.smile'
 name='Emoji Picker'
 
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4]
+binding='Pause'
+command='playerctl play-pause'
+name='Pause-Play'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5]
+binding='<Super>backslash'
+command='playerctl play-pause'
+name='Play-Pause Universal'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6]
+binding='<Super>bracketright'
+command='playerctl next'
+name='Next Track'
+
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7]
+binding='<Super>bracketleft'
+command='playerctl prev'
+name='Prev Track'
+
 [org/gnome/settings-daemon/plugins/power]
 sleep-inactive-ac-timeout=2700
 sleep-inactive-ac-type='suspend'
 sleep-inactive-battery-timeout=1200
 
 [org/gnome/shell]
-app-picker-layout=[{'org.fedoraproject.MediaWriter.desktop': <{'position': <0>}>, 'simple-scan.desktop': <{'position': <1>}>, 'org.gnome.TextEditor.desktop': <{'position': <2>}>, 'org.gnome.SystemMonitor.desktop': <{'position': <3>}>, 'org.gnome.Ptyxis.desktop': <{'position': <4>}>, 'com.github.johnfactotum.Foliate.desktop': <{'position': <5>}>, 'org.pwmt.zathura.desktop': <{'position': <6>}>, '40ba67d8-4adf-4db6-9c02-97c5a8321167': <{'position': <7>}>, 'fd2f62bd-3e24-4b8d-97d5-74af99472385': <{'position': <8>}>, '57599155-c160-467f-98c9-ff03416071c1': <{'position': <9>}>, 'Utilities': <{'position': <10>}>, '58237e40-d7f4-4d31-a514-b8b98d6fd4a2': <{'position': <11>}>, '1136d9fc-159c-4a1d-a2bc-2bccef405f8f': <{'position': <12>}>, '29924836-3b49-426a-b801-bcbc936fe553': <{'position': <13>}>, '37173d24-3863-48b1-8eb0-d021f2ebc58c': <{'position': <14>}>, 'ab2fab41-d19d-40bd-8f50-647ba208f0db': <{'position': <15>}>, '186e90c6-22f7-4975-99f3-5de875333a93': <{'position': <16>}>, 'aed6cf74-4f98-46c0-8c88-5581f9f0065b': <{'position': <17>}>, 'com.usebruno.Bruno.desktop': <{'position': <18>}>, 'btop.desktop': <{'position': <19>}>, 'com.mitchellh.ghostty.desktop': <{'position': <20>}>, 'htop.desktop': <{'position': <21>}>, 'org.inkscape.Inkscape.desktop': <{'position': <22>}>, 'md.obsidian.Obsidian.desktop': <{'position': <23>}>}, {'blueman-manager.desktop': <{'position': <0>}>, 'org.signal.Signal.desktop': <{'position': <1>}>, 'steam.desktop': <{'position': <2>}>, 'org.tenacityaudio.Tenacity.desktop': <{'position': <3>}>}]
+app-picker-layout=[{'org.fedoraproject.MediaWriter.desktop': <{'position': <0>}>, 'simple-scan.desktop': <{'position': <1>}>, 'org.gnome.TextEditor.desktop': <{'position': <2>}>, 'org.gnome.SystemMonitor.desktop': <{'position': <3>}>, 'org.gnome.Ptyxis.desktop': <{'position': <4>}>, 'com.github.johnfactotum.Foliate.desktop': <{'position': <5>}>, 'org.pwmt.zathura.desktop': <{'position': <6>}>, '40ba67d8-4adf-4db6-9c02-97c5a8321167': <{'position': <7>}>, 'fd2f62bd-3e24-4b8d-97d5-74af99472385': <{'position': <8>}>, '57599155-c160-467f-98c9-ff03416071c1': <{'position': <9>}>, 'Utilities': <{'position': <10>}>, '58237e40-d7f4-4d31-a514-b8b98d6fd4a2': <{'position': <11>}>, '1136d9fc-159c-4a1d-a2bc-2bccef405f8f': <{'position': <12>}>, '29924836-3b49-426a-b801-bcbc936fe553': <{'position': <13>}>, '37173d24-3863-48b1-8eb0-d021f2ebc58c': <{'position': <14>}>, 'ab2fab41-d19d-40bd-8f50-647ba208f0db': <{'position': <15>}>, '186e90c6-22f7-4975-99f3-5de875333a93': <{'position': <16>}>, 'aed6cf74-4f98-46c0-8c88-5581f9f0065b': <{'position': <17>}>, 'com.usebruno.Bruno.desktop': <{'position': <18>}>, 'btop.desktop': <{'position': <19>}>, 'htop.desktop': <{'position': <20>}>, 'org.inkscape.Inkscape.desktop': <{'position': <21>}>, 'md.obsidian.Obsidian.desktop': <{'position': <22>}>}, {'blueman-manager.desktop': <{'position': <0>}>, 'com.calibre_ebook.calibre.desktop': <{'position': <1>}>, 'steam.desktop': <{'position': <2>}>, 'org.tenacityaudio.Tenacity.desktop': <{'position': <3>}>, 'Crunchyroll.desktop': <{'position': <4>}>, 'appimagekit_73d5f0f7e6982fe7979ebcc43cbc08de-Deskreen_CE.desktop': <{'position': <5>}>, 'com.calibre_ebook.calibre.ebook-edit.desktop': <{'position': <6>}>, 'com.calibre_ebook.calibre.ebook-viewer.desktop': <{'position': <7>}>, 'de.z_ray.Facetracker.desktop': <{'position': <8>}>, 'org.mozilla.firefox.desktop': <{'position': <9>}>, 'foot.desktop': <{'position': <10>}>, 'footclient.desktop': <{'position': <11>}>, 'foot-server.desktop': <{'position': <12>}>, 'google-chrome.desktop': <{'position': <13>}>, 'com.inochi2d.inochi-creator.desktop': <{'position': <14>}>, 'com.inochi2d.inochi-session.desktop': <{'position': <15>}>, 'kitty.desktop': <{'position': <16>}>, 'org.kde.krita.desktop': <{'position': <17>}>, 'kvantummanager.desktop': <{'position': <18>}>, 'org.localsend.localsend_app.desktop': <{'position': <19>}>, 'com.calibre_ebook.calibre.lrfviewer.desktop': <{'position': <20>}>, 'appimagekit_b0586f8f6583e9d974d0863a15dad539-Overlayed.desktop': <{'position': <21>}>, 'Photopea.desktop': <{'position': <22>}>, 'Prime Video.desktop': <{'position': <23>}>}, {'proton.vpn.app.gtk.desktop': <{'position': <0>}>, 'qt5ct.desktop': <{'position': <1>}>, 'qt6ct.desktop': <{'position': <2>}>, 'com.github.flxzt.rnote.desktop': <{'position': <3>}>, 'it.mijorus.smile.desktop': <{'position': <4>}>, 'com.stremio.Stremio.desktop': <{'position': <5>}>, 'dev.lizardbyte.app.Sunshine.desktop': <{'position': <6>}>, 'appimagekit_6f370f5b21495fcadf5c6501d3585dc3-TouchPortal.desktop': <{'position': <7>}>, 'x11vnc.desktop': <{'position': <8>}>, 'dev.zed.Zed.desktop': <{'position': <9>}>}]
 command-history=['lg', 'pw-jack qjackctl', 'xprop WM_CLASS']
 disable-user-extensions=false
 disabled-extensions=['ding@rastersoft.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com', 'windowsNavigator@gnome-shell-extensions.gcampax.github.com', 'light-style@gnome-shell-extensions.gcampax.github.com', 'native-window-placement@gnome-shell-extensions.gcampax.github.com', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'system-monitor@gnome-shell-extensions.gcampax.github.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com', 'background-logo@fedorahosted.org', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'window-list@gnome-shell-extensions.gcampax.github.com']
@@ -1106,8 +1131,9 @@ menu-layout='Eleven'
 menu-separator-color='rgba(255,255,255,0.1)'
 prefs-visible-page=0
 recently-installed-apps=['Postman.desktop', 'org.kde.kdeconnect.sms.desktop', 'org.kde.kdeconnect.nonplasma.desktop', 'vlc.desktop', 'org.telegram.desktop._3af8cbb2f1de9b3654e15d96c5e2585b.desktop', 'appimagekit_a123f13fdf1d04e120bee8b3faf55d51-Inkscape.desktop', 'Alacritty.desktop', 'dev.zed.Zed.desktop', 'org.codeberg.dnkl.footclient.desktop', 'org.codeberg.dnkl.foot.desktop', 'org.codeberg.dnkl.foot-server.desktop', 'postman.desktop', 'io.github.zen_browser.zen.desktop', 'org.gnome.Cheese.desktop', 'org.gnome.Weather.desktop', 'org.gnome.Music.desktop', 'transmission-gtk.desktop', 'org.gnome.Console.desktop', 'org.rncbc.qpwgraph.desktop', 'com.github.tchx84.Flatseal.desktop', 'chrome-magkoliahgffibhgfkmoealggombgknl-Default.desktop', 'appimagekit_7b1ff45e7e6874537b67941315493508-Overlayed.desktop', 'chrome-pliiebkcmokkgndfalahlmimanmbjlab-Default.desktop', 'org.gnome.Extensions.desktop', 'discord-canary.desktop', 'walchange.desktop', 'chrome-egmafekfmcnknbdlbfbhafbllplmjlhn-Default.desktop', 'htop.desktop', 'discord.desktop', 'it.mijorus.smile.desktop']
-runner-hotkey=['<Super>r']
+runner-hotkey=['<Super>space']
 runner-hotkey-open-primary-monitor=false
+runner-hotkey-overlay-key-enabled=false
 runner-menu-height=390
 runner-menu-width=600
 runner-position='Centered'
@@ -1302,7 +1328,7 @@ custom-battery-notification-value=uint32 80
 applications='{"Printers":{"iconName":"org.gnome.Settings-printers-symbolic","enabled":true},"Events and Tasks Reminders":{"iconName":"org.gnome.Evolution-alarm-notify","enabled":true},"Telegram":{"iconName":"org.telegram.desktop","enabled":true},"Zenity":{"iconName":"application-x-executable","enabled":true},"Deluge":{"iconName":"deluge","enabled":true},"Disks":{"iconName":"org.gnome.DiskUtility","enabled":true},"Software":{"iconName":"org.gnome.Software","enabled":true},"Date & Time":{"iconName":"org.gnome.Settings-time-symbolic","enabled":true},"Rhythmbox":{"iconName":"org.gnome.Rhythmbox3","enabled":true},"Disk Usage Analyzer":{"iconName":"org.gnome.baobab","enabled":true},"Power":{"iconName":"org.gnome.Settings-power-symbolic","enabled":true},"Color":{"iconName":"org.gnome.Settings-color-symbolic","enabled":true},"Files":{"iconName":"org.gnome.Nautilus","enabled":true},"Clocks":{"iconName":"org.gnome.clocks","enabled":true},"Problem Reporting":{"iconName":"abrt","enabled":true}}'
 
 [org/gnome/shell/extensions/gsconnect/device/3db81f6f_8bc6_4e36_92ca_c301e885aad0/plugin/share]
-receive-directory='/home/etank0/Downloads'
+receive-directory='/home/swetank/Downloads'
 
 [org/gnome/shell/extensions/gsconnect/device/4e4d11f3_ad63_4289_b27b_79c71cd1a98c]
 certificate-pem='-----BEGIN CERTIFICATE-----\nMIIBkzCCATmgAwIBAgIBATAKBggqhkjOPQQDBDBTMS0wKwYDVQQDDCQ0ZTRkMTFm\nM19hZDYzXzQyODlfYjI3Yl83OWM3MWNkMWE5OGMxFDASBgNVBAsMC0tERSBDb25u\nZWN0MQwwCgYDVQQKDANLREUwHhcNMjMxMjA3MTgzMDAwWhcNMzQxMjA3MTgzMDAw\nWjBTMS0wKwYDVQQDDCQ0ZTRkMTFmM19hZDYzXzQyODlfYjI3Yl83OWM3MWNkMWE5\nOGMxFDASBgNVBAsMC0tERSBDb25uZWN0MQwwCgYDVQQKDANLREUwWTATBgcqhkjO\nPQIBBggqhkjOPQMBBwNCAASP/VJI42BI5+snmARLFBf7ooeDZsNCygobReiqcOM/\n/FGvTWKqOOKC6D/Csr7p5unGcdNXQ+cMFkOwHBFlGMOmMAoGCCqGSM49BAMEA0gA\nMEUCIDRHW9Pv5sb66xwcB1ZZn4POKSs0wwj6imtYBfF0kNqBAiEArvYRokKeafSO\n1x6KwAqc3r0QYaa4RELbqLj6at5QaXc=\n-----END CERTIFICATE-----\n'
@@ -1321,7 +1347,7 @@ custom-battery-notification-value=uint32 80
 applications='{"Printers":{"iconName":"org.gnome.Settings-printers-symbolic","enabled":true},"Events and Tasks Reminders":{"iconName":"org.gnome.Evolution-alarm-notify","enabled":true},"Telegram":{"iconName":"org.telegram.desktop","enabled":true},"Zenity":{"iconName":"application-x-executable","enabled":true},"Deluge":{"iconName":"deluge","enabled":true},"Disks":{"iconName":"org.gnome.DiskUtility","enabled":true},"Software":{"iconName":"org.gnome.Software","enabled":true},"Date & Time":{"iconName":"org.gnome.Settings-time-symbolic","enabled":true},"Rhythmbox":{"iconName":"org.gnome.Rhythmbox3","enabled":true},"Disk Usage Analyzer":{"iconName":"org.gnome.baobab","enabled":true},"Power":{"iconName":"org.gnome.Settings-power-symbolic","enabled":true},"Color":{"iconName":"org.gnome.Settings-color-symbolic","enabled":true},"Files":{"iconName":"org.gnome.Nautilus","enabled":true},"Clocks":{"iconName":"org.gnome.clocks","enabled":true},"Problem Reporting":{"iconName":"abrt","enabled":true},"discord":{"iconName":"","enabled":true},"Zen":{"iconName":"","enabled":true},"blueman":{"iconName":"blueman","enabled":true},"Signal":{"iconName":"org.signal.Signal","enabled":true},"tray-icon":{"iconName":"sunshine-playing","enabled":true}}'
 
 [org/gnome/shell/extensions/gsconnect/device/4e4d11f3_ad63_4289_b27b_79c71cd1a98c/plugin/share]
-receive-directory='/home/etank0/Downloads'
+receive-directory='/home/swetank/Downloads'
 
 [org/gnome/shell/extensions/gsconnect/device/6d4440e9_5b3c_46cb_b106_58a91299857d]
 incoming-capabilities=['kdeconnect.battery', 'kdeconnect.bigscreen.stt', 'kdeconnect.clipboard', 'kdeconnect.clipboard.connect', 'kdeconnect.contacts.request_all_uids_timestamps', 'kdeconnect.contacts.request_vcards_by_uid', 'kdeconnect.findmyphone.request', 'kdeconnect.mousepad.keyboardstate', 'kdeconnect.mousepad.request', 'kdeconnect.mpris', 'kdeconnect.mpris.request', 'kdeconnect.notification', 'kdeconnect.notification.action', 'kdeconnect.notification.reply', 'kdeconnect.notification.request', 'kdeconnect.ping', 'kdeconnect.runcommand', 'kdeconnect.sftp.request', 'kdeconnect.share.request', 'kdeconnect.share.request.update', 'kdeconnect.sms.request', 'kdeconnect.sms.request_attachment', 'kdeconnect.sms.request_conversation', 'kdeconnect.sms.request_conversations', 'kdeconnect.systemvolume', 'kdeconnect.telephony.request', 'kdeconnect.telephony.request_mute']
@@ -1338,7 +1364,7 @@ custom-battery-notification-value=uint32 80
 applications='{"Printers":{"iconName":"org.gnome.Settings-printers-symbolic","enabled":true},"Events and Tasks Reminders":{"iconName":"org.gnome.Evolution-alarm-notify","enabled":true},"Telegram":{"iconName":"org.telegram.desktop","enabled":true},"Zenity":{"iconName":"application-x-executable","enabled":true},"Deluge":{"iconName":"deluge","enabled":true},"Disks":{"iconName":"org.gnome.DiskUtility","enabled":true},"Software":{"iconName":"org.gnome.Software","enabled":true},"Date & Time":{"iconName":"org.gnome.Settings-time-symbolic","enabled":true},"Rhythmbox":{"iconName":"org.gnome.Rhythmbox3","enabled":true},"Disk Usage Analyzer":{"iconName":"org.gnome.baobab","enabled":true},"Power":{"iconName":"org.gnome.Settings-power-symbolic","enabled":true},"Color":{"iconName":"org.gnome.Settings-color-symbolic","enabled":true},"Files":{"iconName":"org.gnome.Nautilus","enabled":true},"Clocks":{"iconName":"org.gnome.clocks","enabled":true},"Problem Reporting":{"iconName":"abrt","enabled":true}}'
 
 [org/gnome/shell/extensions/gsconnect/device/6d4440e9_5b3c_46cb_b106_58a91299857d/plugin/share]
-receive-directory='/home/etank0/Downloads'
+receive-directory='/home/swetank/Downloads'
 
 [org/gnome/shell/extensions/gsconnect/device/a1def3f2_dbbf_4d3a_80dd_35ab3d3daf78]
 certificate-pem='-----BEGIN CERTIFICATE-----\nMIIBkzCCATmgAwIBAgIBATAKBggqhkjOPQQDBDBTMS0wKwYDVQQDDCRhMWRlZjNm\nMl9kYmJmXzRkM2FfODBkZF8zNWFiM2QzZGFmNzgxFDASBgNVBAsMC0tERSBDb25u\nZWN0MQwwCgYDVQQKDANLREUwHhcNMjMwNjAyMTgzMDAwWhcNMzMwNjAyMTgzMDAw\nWjBTMS0wKwYDVQQDDCRhMWRlZjNmMl9kYmJmXzRkM2FfODBkZF8zNWFiM2QzZGFm\nNzgxFDASBgNVBAsMC0tERSBDb25uZWN0MQwwCgYDVQQKDANLREUwWTATBgcqhkjO\nPQIBBggqhkjOPQMBBwNCAARs/QC3DK5AY1fiRqllmz8B5xfliRq0dXLyDZP7yAPf\ntbyRyjxEf5urc/autPU5ELLzQ+rbwmIYooRye5rCzhr1MAoGCCqGSM49BAMEA0gA\nMEUCIQDJ1ONFCLgM8h1vl+0jmLp7SA6n6WN6U7cwmBXPHl3dDAIgW166q2bP0sww\n7DjgGPazzqCewckT7W8dT+YV7b1Otrc=\n-----END CERTIFICATE-----\n'
@@ -1362,7 +1388,7 @@ send-content=false
 applications='{"Printers":{"iconName":"org.gnome.Settings-printers-symbolic","enabled":true},"Desktop Sharing":{"iconName":"preferences-desktop-remote-desktop","enabled":true},"Events and Tasks Reminders":{"iconName":"org.gnome.Evolution-alarm-notify","enabled":true},"Zenity":{"iconName":"application-x-executable","enabled":true},"Snapd User Session Agent":{"iconName":"/usr/share/snapd/snapcraft-logo-bird.svg","enabled":true},"Disks":{"iconName":"org.gnome.DiskUtility","enabled":true},"Software":{"iconName":"org.gnome.Software","enabled":true},"Date & Time":{"iconName":"org.gnome.Settings-time-symbolic","enabled":true},"NetworkManager Applet":{"iconName":"nm-device-wireless","enabled":true},"Rhythmbox":{"iconName":"org.gnome.Rhythmbox3","enabled":true},"Disk Usage Analyzer":{"iconName":"org.gnome.baobab","enabled":true},"Power":{"iconName":"org.gnome.Settings-power-symbolic","enabled":true},"Color":{"iconName":"org.gnome.Settings-color-symbolic","enabled":true},"Console":{"iconName":"org.gnome.Console","enabled":true},"Backups":{"iconName":"org.gnome.DejaDup","enabled":true},"Files":{"iconName":"org.gnome.Nautilus","enabled":true},"Clocks":{"iconName":"org.gnome.clocks","enabled":true},"File Roller":{"iconName":"org.gnome.FileRoller","enabled":true},"Zen Browser":{"iconName":"","enabled":true},"Google Chrome":{"iconName":"file:///tmp/.com.google.Chrome.HIHtc2","enabled":true},"update-notifier":{"iconName":"gtk-dialog-warning","enabled":true},"discord":{"iconName":"","enabled":true},"kitty":{"iconName":"/usr/lib/kitty/logo/kitty.png","enabled":true},"Problem Reporting":{"iconName":"abrt","enabled":true},"Kdenlive":{"iconName":"kdenlive","enabled":true},"Telegram":{"iconName":"system-run-symbolic","enabled":true},"Deluge":{"iconName":"deluge","enabled":true},"Zen":{"iconName":"","enabled":true},"blueman":{"iconName":"blueman","enabled":true},"Signal":{"iconName":"org.signal.Signal","enabled":true},"tray-icon":{"iconName":"sunshine-playing","enabled":true}}'
 
 [org/gnome/shell/extensions/gsconnect/device/a1def3f2_dbbf_4d3a_80dd_35ab3d3daf78/plugin/share]
-receive-directory='/home/etank0/Downloads'
+receive-directory='/home/swetank/Downloads'
 
 [org/gnome/shell/extensions/gsconnect/device/d441d9da_ba5e_48e9_a296_c18166abd74a]
 incoming-capabilities=['kdeconnect.battery', 'kdeconnect.bigscreen.stt', 'kdeconnect.clipboard', 'kdeconnect.clipboard.connect', 'kdeconnect.contacts.request_all_uids_timestamps', 'kdeconnect.contacts.request_vcards_by_uid', 'kdeconnect.findmyphone.request', 'kdeconnect.mousepad.keyboardstate', 'kdeconnect.mousepad.request', 'kdeconnect.mpris', 'kdeconnect.mpris.request', 'kdeconnect.notification', 'kdeconnect.notification.action', 'kdeconnect.notification.reply', 'kdeconnect.notification.request', 'kdeconnect.ping', 'kdeconnect.runcommand', 'kdeconnect.sftp.request', 'kdeconnect.share.request', 'kdeconnect.share.request.update', 'kdeconnect.sms.request', 'kdeconnect.sms.request_attachment', 'kdeconnect.sms.request_conversation', 'kdeconnect.sms.request_conversations', 'kdeconnect.systemvolume', 'kdeconnect.telephony.request', 'kdeconnect.telephony.request_mute']
@@ -1480,14 +1506,14 @@ locations=[<(uint32 2, <('Bangalore', 'VOBG', true, [(0.22601989378717041, 1.355
 locations=[<(uint32 2, <('New York', 'KNYC', true, [(0.71180344078725644, -1.2909618758762367)], [(0.71059804659265924, -1.2916478949920254)])>)>]
 
 [org/gnome/software]
-check-timestamp=int64 1779535781
+check-timestamp=int64 1780204926
 first-run=false
 flatpak-purge-timestamp=int64 1771177441
 install-timestamp=int64 1757875512
 packagekit-historical-updates-timestamp=uint64 1757270564
 security-timestamp=int64 1756282857309595
 update-notification-timestamp=int64 1757875812
-upgrade-notification-timestamp=int64 1779535747
+upgrade-notification-timestamp=int64 1780204923
 
 [org/gnome/system/location]
 enabled=false
@@ -1549,28 +1575,28 @@ window-position=(0, 0)
 window-size=(958, 1003)
 
 [portal/filechooser/appimagekit_ed4c74c35f8e67a0a36aa06d364600b7-Obsidian]
-last-folder-path='/home/etank0/mygithub'
+last-folder-path='/home/swetank/mygithub'
 
 [portal/filechooser/gnome-control-center]
-last-folder-path='/home/etank0/Documents/Documents/etank0/images'
+last-folder-path='/home/swetank/Documents/Documents/swetank/images'
 
 [portal/filechooser/google-chrome]
-last-folder-path='/home/etank0/Downloads'
+last-folder-path='/home/swetank/Downloads'
 
 [portal/filechooser/io.github.zen_browser.zen]
-last-folder-path='/home/etank0/Documents/Documents/firefox-stuff'
+last-folder-path='/home/swetank/Documents/Documents/firefox-stuff'
 
 [portal/filechooser/org.gnome.Settings]
-last-folder-path='/home/etank0/Documents/Documents/etank0/images'
+last-folder-path='/home/swetank/Documents/Documents/swetank/images'
 
 [portal/filechooser/org.telegram.desktop]
-last-folder-path='/home/etank0/tokens'
+last-folder-path='/home/swetank/tokens'
 
 [portal/filechooser/snap.firefox]
-last-folder-path='/home/etank0/Documents/Documents/firefox-stuff'
+last-folder-path='/home/swetank/Documents/Documents/firefox-stuff'
 
 [portal/filechooser/snap.telegram-desktop]
-last-folder-path='/home/etank0/Downloads'
+last-folder-path='/home/swetank/Downloads'
 
 [settings-daemon/plugins/color]
 night-light-schedule-automatic=false
@@ -1585,7 +1611,7 @@ name='Terminal'
 
 [settings-daemon/plugins/media-keys/custom-keybindings/custom1]
 binding='<Super>b'
-command='/home/etank0/Applications/zen/zen'
+command='/home/swetank/Applications/zen/zen'
 name='Browser'
 
 [settings-daemon/plugins/media-keys/custom-keybindings/custom2]
@@ -1805,7 +1831,7 @@ custom-battery-notification-value=uint32 80
 applications='{"Printers":{"iconName":"org.gnome.Settings-printers-symbolic","enabled":true},"Events and Tasks Reminders":{"iconName":"org.gnome.Evolution-alarm-notify","enabled":true},"Telegram":{"iconName":"org.telegram.desktop","enabled":true},"Zenity":{"iconName":"application-x-executable","enabled":true},"Deluge":{"iconName":"deluge","enabled":true},"Disks":{"iconName":"org.gnome.DiskUtility","enabled":true},"Software":{"iconName":"org.gnome.Software","enabled":true},"Date & Time":{"iconName":"org.gnome.Settings-time-symbolic","enabled":true},"Rhythmbox":{"iconName":"org.gnome.Rhythmbox3","enabled":true},"Disk Usage Analyzer":{"iconName":"org.gnome.baobab","enabled":true},"Power":{"iconName":"org.gnome.Settings-power-symbolic","enabled":true},"Color":{"iconName":"org.gnome.Settings-color-symbolic","enabled":true},"Files":{"iconName":"org.gnome.Nautilus","enabled":true},"Clocks":{"iconName":"org.gnome.clocks","enabled":true},"Problem Reporting":{"iconName":"abrt","enabled":true},"discord":{"iconName":"","enabled":true}}'
 
 [shell/extensions/gsconnect/device/4e4d11f3_ad63_4289_b27b_79c71cd1a98c/plugin/share]
-receive-directory='/home/etank0/Downloads'
+receive-directory='/home/swetank/Downloads'
 
 [shell/extensions/gsconnect/device/a1def3f2_dbbf_4d3a_80dd_35ab3d3daf78]
 certificate-pem='-----BEGIN CERTIFICATE-----\nMIIBkzCCATmgAwIBAgIBATAKBggqhkjOPQQDBDBTMS0wKwYDVQQDDCRhMWRlZjNm\nMl9kYmJmXzRkM2FfODBkZF8zNWFiM2QzZGFmNzgxFDASBgNVBAsMC0tERSBDb25u\nZWN0MQwwCgYDVQQKDANLREUwHhcNMjMwNjAyMTgzMDAwWhcNMzMwNjAyMTgzMDAw\nWjBTMS0wKwYDVQQDDCRhMWRlZjNmMl9kYmJmXzRkM2FfODBkZF8zNWFiM2QzZGFm\nNzgxFDASBgNVBAsMC0tERSBDb25uZWN0MQwwCgYDVQQKDANLREUwWTATBgcqhkjO\nPQIBBggqhkjOPQMBBwNCAARs/QC3DK5AY1fiRqllmz8B5xfliRq0dXLyDZP7yAPf\ntbyRyjxEf5urc/autPU5ELLzQ+rbwmIYooRye5rCzhr1MAoGCCqGSM49BAMEA0gA\nMEUCIQDJ1ONFCLgM8h1vl+0jmLp7SA6n6WN6U7cwmBXPHl3dDAIgW166q2bP0sww\n7DjgGPazzqCewckT7W8dT+YV7b1Otrc=\n-----END CERTIFICATE-----\n'
@@ -1829,7 +1855,7 @@ send-content=false
 applications='{"Printers":{"iconName":"org.gnome.Settings-printers-symbolic","enabled":true},"Desktop Sharing":{"iconName":"preferences-desktop-remote-desktop","enabled":true},"Events and Tasks Reminders":{"iconName":"org.gnome.Evolution-alarm-notify","enabled":true},"Zenity":{"iconName":"application-x-executable","enabled":true},"Snapd User Session Agent":{"iconName":"/usr/share/snapd/snapcraft-logo-bird.svg","enabled":true},"Disks":{"iconName":"org.gnome.DiskUtility","enabled":true},"Software":{"iconName":"org.gnome.Software","enabled":true},"Date & Time":{"iconName":"org.gnome.Settings-time-symbolic","enabled":true},"NetworkManager Applet":{"iconName":"nm-device-wireless","enabled":true},"Rhythmbox":{"iconName":"org.gnome.Rhythmbox3","enabled":true},"Disk Usage Analyzer":{"iconName":"org.gnome.baobab","enabled":true},"Power":{"iconName":"org.gnome.Settings-power-symbolic","enabled":true},"Color":{"iconName":"org.gnome.Settings-color-symbolic","enabled":true},"Console":{"iconName":"org.gnome.Console","enabled":true},"Backups":{"iconName":"org.gnome.DejaDup","enabled":true},"Files":{"iconName":"org.gnome.Nautilus","enabled":true},"Clocks":{"iconName":"org.gnome.clocks","enabled":true},"File Roller":{"iconName":"org.gnome.FileRoller","enabled":true},"Zen Browser":{"iconName":"","enabled":true},"Google Chrome":{"iconName":"file:///tmp/.com.google.Chrome.HIHtc2","enabled":true},"update-notifier":{"iconName":"gtk-dialog-warning","enabled":true},"discord":{"iconName":"","enabled":true},"kitty":{"iconName":"/usr/lib/kitty/logo/kitty.png","enabled":true},"Problem Reporting":{"iconName":"abrt","enabled":true},"Kdenlive":{"iconName":"kdenlive","enabled":true},"Telegram":{"iconName":"system-run-symbolic","enabled":true},"Deluge":{"iconName":"deluge","enabled":true}}'
 
 [shell/extensions/gsconnect/device/a1def3f2_dbbf_4d3a_80dd_35ab3d3daf78/plugin/share]
-receive-directory='/home/etank0/Downloads'
+receive-directory='/home/swetank/Downloads'
 
 [shell/extensions/gsconnect/device/faf3ac3f-2bb7-4067-a634-b517db88ada9]
 incoming-capabilities=['kdeconnect.battery', 'kdeconnect.battery.request', 'kdeconnect.clipboard', 'kdeconnect.clipboard.connect', 'kdeconnect.connectivity_report', 'kdeconnect.contacts.response_uids_timestamps', 'kdeconnect.contacts.response_vcards', 'kdeconnect.findmyphone.request', 'kdeconnect.mousepad.echo', 'kdeconnect.mousepad.keyboardstate', 'kdeconnect.mousepad.request', 'kdeconnect.mpris', 'kdeconnect.mpris.request', 'kdeconnect.notification', 'kdeconnect.notification.request', 'kdeconnect.ping', 'kdeconnect.presenter', 'kdeconnect.runcommand', 'kdeconnect.runcommand.request', 'kdeconnect.sftp', 'kdeconnect.share.request', 'kdeconnect.sms.messages', 'kdeconnect.systemvolume.request', 'kdeconnect.telephony']

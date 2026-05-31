@@ -117,7 +117,9 @@
 }
 
 .image {
-  margin: 10px 20px 10px 0px;
+   margin: 10px 20px 10px 0px;
+   max-width: 180px;
+   max-height: 120px;
 }
 
 .summary {
