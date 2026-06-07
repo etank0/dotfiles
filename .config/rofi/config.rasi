@@ -17,4 +17,4 @@ configuration {
     kb-mode-previous: "Alt+p";
 }
 
-@theme "~/.config/rofi/themes/raycast-edges.rasi"
+@theme "~/.config/rofi/themes/material-darker-edges.rasi"

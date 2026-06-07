@@ -29,7 +29,8 @@ last_key_time=$(date +%s)
 
 # This is the main, unified event loop.
 # It reads from the `libinput` command's output.
-libinput debug-events 2>/dev/null | grep --line-buffered "KEYBOARD_KEY" | while true; do
+libinput debug-events 2>/dev/null |
+  grep --line-buffered "KEYBOARD_KEY" | while true; do
     # Try to read a line of input, but time out after 1 second.
     if read -r -t 1 line; then
         # If read succeeds (a key was pressed):

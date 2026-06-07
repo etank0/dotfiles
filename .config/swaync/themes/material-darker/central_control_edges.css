@@ -239,39 +239,65 @@ progressbar {
 
 /* Music player */
 .widget-mpris-player {
-  background: @background-alt;
-  box-shadow: rgba(0, 0, 0, 0.7) 0px -60px 36px -28px inset;
-  border-radius: 0px;
-  padding: 12px;
-  margin: 8px 8px;
-}
+  margin: 6px;
+  padding: 0;
 
-.widget-mpris > box > button {
-  color: @text;
-  margin: 4px;
-  border-radius: 0px;
-}
+  background: transparent;
+  border-radius: 0;
 
-.widget-mpris button {
-  color: alpha(@text, 0.6);
-}
-
-.widget-mpris button:hover {
-  color: @text;
+  box-shadow: none;
 }
 
 .widget-mpris-album-art {
-  border-radius: 0px;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+}
+
+.widget-mpris-player > box {
+  padding: 12px;
+
+  background-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 55%,
+    rgba(0, 0, 0, 0.35) 80%,
+    rgba(0, 0, 0, 0.75) 100%
+  );
+
+  border-radius: 0;
 }
 
 .widget-mpris-title {
-  font-weight: 700;
-  font-size: 14px;
+  font-size: 18px;
+  font-weight: 800;
+  color: #ffffff;
+
+  text-shadow: none;
 }
 
 .widget-mpris-subtitle {
-  font-weight: 500;
-  font-size: 11px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.75);
+
+  text-shadow: none;
+}
+
+.widget-mpris button {
+  border-radius: 0;
+  background: transparent;
+
+  min-width: 28px;
+  min-height: 28px;
+
+  padding: 2px;
+  margin: 6px;
+
+  font-size: 14px;
+}
+
+.widget-mpris button:hover {
+  background: rgba(255, 255, 255, 0.08);
 }
 
 /* Volume */

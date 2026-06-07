@@ -1,5 +1,0 @@
-@import "~/.config/rofi/themes/raycast-edges.rasi"
-
-mode-switcher {
-    border: 0 0 0 0;
-}

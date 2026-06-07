@@ -12,7 +12,8 @@ while true; do
             -p " " \
             -kb-custom-1 "Control-Delete" \
             -kb-custom-2 "Alt-Delete" \
-            -theme ~/.config/rofi/themes/clip-raycast-edges.rasi < <(cliphist list)
+            -theme ~/.config/rofi/themes/clip-material-darker-edges.rasi \
+            < <(cliphist list)
     )
 
     case "$?" in

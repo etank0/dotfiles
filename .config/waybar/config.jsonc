@@ -13,6 +13,7 @@
   // Choose the order of the modules
   "modules-left": [
       "clock",
+      // "custom/cava",
       "hyprland/workspaces"
   ],
   "modules-center": [
@@ -199,6 +200,12 @@
     "tooltip-format-disconnected": "󰌙 Disconnected",
     "max-length": 50,
     "format-icons": ["󰤯 ", "󰤟 ", "󰤢 ", "󰤥 ", "󰤨 "],
+  },
+
+  "custom/cava": {
+    "exec": "$HOME/.config/hypr/scripts/waybar-cava.sh",
+    "format": "{}",
+    "tooltip": false,
   },
 
   "pulseaudio": {

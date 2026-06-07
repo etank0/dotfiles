@@ -3,7 +3,7 @@
 EMOJI_TSV="$HOME/.config/rofi/assets/emojis.tsv"
 
 selected=$(awk -F'\t' '{print $1 " : " $2}' "$EMOJI_TSV" | rofi -dmenu \
-    -theme ~/.config/rofi/themes/clip-raycast-edges.rasi \
+    -theme ~/.config/rofi/themes/clip-material-darker-edges.rasi \
     -i \
     -p "󰞅 " \
     -columns 1 \
