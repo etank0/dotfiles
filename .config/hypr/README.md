@@ -29,7 +29,7 @@ sudo dnf install \
 ## Enable Hyprland COPR
 
 ```bash
-sudo dnf copr enable solopasha/hyprland
+sudo dnf copr enable lionheartp/Hyprland
 ```
 
 ---
