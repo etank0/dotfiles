@@ -1,17 +1,8 @@
 #!/usr/bin/env bash
-## /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  ##
-# Optimized bars animation without much CPU usage increase
-
-bar="▁▂▃▄▅▆▇█"
-dict="s/;//g"
-bar_length=${#bar}
-
-for ((i = 0; i < bar_length; i++)); do
-  dict+=";s/$i/${bar:$i:1}/g"
-done
 
 config_file="/tmp/bar_cava_config"
-cat >"$config_file" <<EOF
+
+cat > "$config_file" << EOF
 [general]
 bars = 10
 
@@ -28,4 +19,26 @@ EOF
 
 pkill -f "cava -p $config_file"
 
-cava -p "$config_file" | sed -u "$dict"
+chars="▁▂▃▄▅▆▇█"
+dict="s/;//g"
+for ((i = 0; i < ${#chars}; i++)); do
+    dict+=";s/$i/${chars:$i:1}/g"
+done
+
+count=0
+cava -p "$config_file" | while read -r line; do
+    bars=$(echo "$line" | sed "$dict")
+
+    count=$(( (count + 1) % 10 ))
+    if [ "$count" -eq 0 ]; then
+        status=$(playerctl status 2>/dev/null)
+    fi
+
+    if [ "$status" = "Playing" ]; then
+        printf '{"text": "%s", "class": "playing"}\n' "$bars"
+    elif [ "$status" = "Paused" ]; then
+        printf '{"text": "%s", "class": "paused"}\n' "$bars"
+    else
+        echo '{"text": "", "class": "hidden"}'
+    fi
+done

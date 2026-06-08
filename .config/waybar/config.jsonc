@@ -1,39 +1,44 @@
 // -*- mode: jsonc -*-
 {
-  // "output": ["eDP-1"],
-  "layer": "top", // Waybar at top layer
-  "position": "bottom", // Waybar position (top|bottom|left|right)
+  /* -------------------------------------------------------------------------- */
+  /* Bar                                                                         */
+  /* -------------------------------------------------------------------------- */
+
+  "layer": "top",
+  "position": "bottom",
+
   "margin-left": 0,
   "margin-right": 0,
   "margin-top": 0,
   "margin-bottom": 0,
-  "height": 28, // Waybar height (to be removed for auto height)
-  // "width": 1280, // Waybar width
-  "spacing": 2, // Gaps between modules (4px)
-  // Choose the order of the modules
-  "modules-left": [
-      "clock",
-      // "custom/cava",
-      "hyprland/workspaces"
-  ],
-  "modules-center": [
-      "hyprland/window"
-  ],
+
+  "height": 28,
+  "spacing": 2,
+
+  /* -------------------------------------------------------------------------- */
+  /* Layout                                                                      */
+  /* -------------------------------------------------------------------------- */
+
+  "modules-left": ["clock", "hyprland/workspaces"],
+
+  "modules-center": ["hyprland/window"],
+
   "modules-right": [
     "tray",
     "group/performance",
-    // "network",
-    // "keyboard-state",
     "backlight",
     "group/audio",
     "power-profiles-daemon",
     "battery",
     "battery#bat2",
     "custom/notification",
-    "custom/power"
+    "custom/power",
   ],
 
-  // Groups configuration
+  /* -------------------------------------------------------------------------- */
+  /* Groups                                                                      */
+  /* -------------------------------------------------------------------------- */
+
   "group/audio": {
     "orientation": "horizontal",
     "modules": ["pulseaudio", "pulseaudio#microphone"],
@@ -41,17 +46,19 @@
 
   "group/performance": {
     "orientation": "horizontal",
-    // "modules": ["cpu", "memory", "temperature", "disk"],
     "modules": ["cpu", "memory", "disk"],
   },
 
-  // Modules configuration
+  /* -------------------------------------------------------------------------- */
+  /* Hyprland                                                                    */
+  /* -------------------------------------------------------------------------- */
+
   "hyprland/workspaces": {
     "disable-scroll": true,
     "all-outputs": true,
     "warp-on-scroll": false,
-    // "format": "{name} : {icon}",
     "format": "{name}",
+
     "format-icons": {
       "1": " ",
       "2": "󰈹 ",
@@ -67,60 +74,41 @@
 
   "hyprland/window": {
     "format": "{}",
-    "on-scroll-up": "hyprctl dispatch workspace e+1",
-    "on-scroll-down": "hyprctl dispatch workspace e-1",
     "max-length": 50,
     "separate-outputs": true,
+
+    "on-scroll-up": "hyprctl dispatch workspace e+1",
+    "on-scroll-down": "hyprctl dispatch workspace e-1",
   },
 
-  "wlr/taskbar": {
-    "format": "{icon} {name} ",
-    "icon-size": 15,
-    "all-outputs": false,
-    "tooltip-format": "{title}",
-    "on-click": "activate",
-    "on-click-middle": "close",
-    "ignore-list": ["wofi", "rofi"],
-  },
-
-  "keyboard-state": {
-    "numlock": true,
-    "capslock": true,
-    "format": "{name} {icon}",
-    "format-icons": {
-      "locked": "",
-      "unlocked": " ",
-    },
-  },
-
-  "idle_inhibitor": {
-    "format": "{icon}",
-    "format-icons": {
-      "activated": " ",
-      "deactivated": " ",
-    },
-  },
+  /* -------------------------------------------------------------------------- */
+  /* System Tray                                                                 */
+  /* -------------------------------------------------------------------------- */
 
   "tray": {
-    // "icon-size": 21,
     "spacing": 10,
-    // "icons": {
-    //   "blueman": "bluetooth",
-    //   "TelegramDesktop": "$HOME/.local/share/icons/hicolor/16x16/apps/telegram.png"
-    // }
   },
 
+  /* -------------------------------------------------------------------------- */
+  /* Clock                                                                       */
+  /* -------------------------------------------------------------------------- */
+
   "clock": {
-    // "timezone": "America/New_York",
-    "format": "{:%a, %b %d  %H:%M}", // 24H
+    "format": "{:%a, %b %d  %H:%M}",
     "tooltip-format": "<span font='Iosevka Bold'>{calendar}</span>",
+
     "calendar": {
       "mode": "month",
+
       "format": {
         "today": "<span color='#f07178'><b>{}</b></span>",
       },
     },
   },
+
+  /* -------------------------------------------------------------------------- */
+  /* Performance                                                                 */
+  /* -------------------------------------------------------------------------- */
 
   "cpu": {
     "format": "  {usage}%",
@@ -131,44 +119,38 @@
     "format": "<span> </span> {}%",
   },
 
-  "temperature": {
-    // "thermal-zone": 2,
-    // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
-    "critical-threshold": 80,
-    // "format-critical": "{temperatureC}°C {icon}",
-    "format": "{icon} {temperatureC}°C",
-    "format-icons": ["", "", ""],
-  },
-
   "disk": {
     "interval": 30,
-    //"format": "󰋊",
     "path": "/",
-    //"format-alt-click": "click",
     "format": "󰋊 {percentage_used}%",
-    //"tooltip": true,
     "tooltip-format": "{used} used out of {total} on {path} ({percentage_used}%)",
   },
 
+  /* -------------------------------------------------------------------------- */
+  /* Brightness                                                                  */
+  /* -------------------------------------------------------------------------- */
+
   "backlight": {
-    // "device": "acpi_video1",
     "format": "{icon}{percent}%",
     "format-icons": [" ", " ", " ", " ", " ", " ", " ", " ", " "],
   },
 
+  /* -------------------------------------------------------------------------- */
+  /* Battery                                                                     */
+  /* -------------------------------------------------------------------------- */
+
   "battery": {
     "states": {
-      // "good": 95,
       "warning": 30,
       "critical": 15,
     },
+
     "format": "{icon} {capacity}%",
     "format-full": "{icon} {capacity}%",
     "format-charging": " {capacity}%",
     "format-plugged": " {capacity}%",
     "format-alt": "{icon} {time}",
-    // "format-good": "", // An empty format will hide the module
-    // "format-full": "",
+
     "format-icons": [" ", " ", " ", " ", " "],
   },
 
@@ -176,10 +158,15 @@
     "bat": "BAT2",
   },
 
+  /* -------------------------------------------------------------------------- */
+  /* Power Profiles                                                              */
+  /* -------------------------------------------------------------------------- */
+
   "power-profiles-daemon": {
     "format": "{icon}",
-    "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
     "tooltip": true,
+    "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+
     "format-icons": {
       "default": "",
       "performance": "",
@@ -188,30 +175,17 @@
     },
   },
 
-  "network": {
-    "format": "{ifname}",
-    "format-wifi": "{icon}",
-    "format-ethernet": "󰌘 ",
-    "format-disconnected": "󰌙 ",
-    "tooltip-format": "{ipaddr}  {bandwidthUpBytes}  {bandwidthDownBytes}",
-    "format-linked": "󰈁 {ifname} (No IP)",
-    "tooltip-format-wifi": "{essid} {icon} {signalStrength}%",
-    "tooltip-format-ethernet": "{ifname} 󰌘 ",
-    "tooltip-format-disconnected": "󰌙 Disconnected",
-    "max-length": 50,
-    "format-icons": ["󰤯 ", "󰤟 ", "󰤢 ", "󰤥 ", "󰤨 "],
-  },
-
-  "custom/cava": {
-    "exec": "$HOME/.config/hypr/scripts/waybar-cava.sh",
-    "format": "{}",
-    "tooltip": false,
-  },
+  /* -------------------------------------------------------------------------- */
+  /* Audio                                                                       */
+  /* -------------------------------------------------------------------------- */
 
   "pulseaudio": {
     "format": "{icon} {volume}%",
-    "format-bluetooth": "{icon} 󰂰  {volume}%",
+    "format-bluetooth": "{icon} 󰂰 {volume}%",
     "format-muted": "󰖁 ",
+
+    "ignored-sinks": ["Easy Effects Sink"],
+
     "format-icons": {
       "headphone": " ",
       "hands-free": " ",
@@ -220,60 +194,77 @@
       "portable": " ",
       "car": " ",
       "default": [" ", " ", "󰕾 ", " "],
-      "ignored-sinks": ["Easy Effects Sink"],
     },
-    "scroll-step": 5.0,
-    "on-click": "pavucontrol -t 3",
-    "tooltip-format": "{icon}  {desc} | {volume}%",
+
+    "scroll-step": 5,
     "smooth-scrolling-threshold": 1,
+
+    "on-click": "pavucontrol -t 3",
+    "tooltip-format": "{icon} {desc} | {volume}%",
   },
 
   "pulseaudio#microphone": {
     "format": "{format_source}",
     "format-source": "",
     "format-source-muted": " ",
+    "scroll-step": 5,
+
     "on-click": "pavucontrol -t 4",
     "tooltip-format": "{source_desc} | {source_volume}%",
-    "scroll-step": 5,
   },
 
-  "custom/media": {
-    "format": "{icon} {0}",
-    "return-type": "json",
-    "max-length": 40,
-    "format-icons": {
+  /* -------------------------------------------------------------------------- */
+  /* Media                                                                       */
+  /* -------------------------------------------------------------------------- */
+
+  "mpris": {
+    "format": "{player_icon} {dynamic}",
+    "format-paused": "{status_icon} {dynamic}",
+    "format-stopped": "",
+    "max-length": 50,
+
+    "player-icons": {
+      "default": "🎜",
       "spotify": " ",
-      "default": "🎜 ",
     },
-    "escape": true,
-    "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null", // Script in resources folder
-    // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
+
+    "status-icons": {
+      "paused": " ",
+    },
+
+    "ignored-players": ["firefox"],
+
+    "on-click": "play-pause",
+    "on-click-right": "next",
   },
 
-  // "custom/power": {
-  //   "format": " ⏻ ",
-  //   "tooltip": false,
-  //   "menu": "on-click",
-  //   "menu-file": "$HOME/.config/waybar/power_menu.xml",
-  //   "menu-actions": {
-  //     "shutdown": "shutdown",
-  //     "reboot": "reboot",
-  //     "suspend": "systemctl suspend",
-  //     "hibernate": "systemctl hibernate",
-  //   },
-  // },
+  /* -------------------------------------------------------------------------- */
+  /* Custom                                                                      */
+  /* -------------------------------------------------------------------------- */
+
+  "custom/cava": {
+    "exec": "$HOME/.config/hypr/scripts/waybar-cava.sh",
+    "format": "{}",
+    "return-type": "json",
+    "tooltip": false,
+  },
 
   "custom/power": {
     "format": " ",
     "exec": "echo ; echo 󰟡 Power",
     "on-click": "~/.config/hypr/scripts/wlogout.sh",
-    "interval": 86400, // once every day
+    "interval": 86400,
     "tooltip": true,
   },
 
   "custom/notification": {
+    "return-type": "json",
+    "escape": true,
+
     "tooltip-format": "Left: Notifications\nRight: Do not disturb",
+
     "format": "{icon}",
+
     "format-icons": {
       "notification": "<span rise='8pt'> <span foreground='red'><sup></sup></span></span>",
       "none": " ",
@@ -284,11 +275,11 @@
       "dnd-inhibited-notification": "<span rise='8pt'> <span foreground='red'><sup></sup></span></span>",
       "dnd-inhibited-none": " ",
     },
-    "return-type": "json",
+
     "exec-if": "which swaync-client",
     "exec": "swaync-client -swb",
+
     "on-click": "swaync-client -t -sw",
     "on-click-right": "swaync-client -d -sw",
-    "escape": true,
   },
 }

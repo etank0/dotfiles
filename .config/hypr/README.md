@@ -15,7 +15,9 @@ sudo dnf install \
   swaync \
   kf6-qqc2-desktop-style \
   foot \
-  pamixer
+  pamixer \
+  xdg-desktop-portal \
+  xdg-desktop-portal-hyprland
 ```
 
 ### Notes

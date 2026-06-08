@@ -9,9 +9,6 @@
 }
 
 window#waybar {
-  /* background-color: transparent; */
-  /* border-radius: 8px; */
-  /* border: 1px solid rgba(160, 160, 160, 1); */
   background-color: @background;
   color: @foreground;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -20,49 +17,25 @@ window#waybar {
 .modules-right,
 .modules-left,
 .modules-center {
-  /* margin-top: 4px; */
-  /* margin-right: 4px; */
-  /* margin-left: 4px; */
-}
-
-.modules-right,
-.modules-left {
-  /* border: 1px solid rgba(160, 160, 160, 1.5); */
   margin: 0px 4px;
 }
 
 .modules-right {
-  /* background-color: @background; */
   background-color: transparent;
 }
 
 .modules-center {
   background-color: transparent;
-  /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); */
-}
-
-#custom-media {
-  color: @primary;
-  background-color: @background;
-  padding-top: 2px;
-  padding-left: 8px;
-  padding-right: 8px;
-  margin: 0 0 0 4px;
 }
 
 #workspaces {
-  /* background-color: @background; */
   background-color: transparent;
-  /* border-radius: 8px; */
   padding: 0px 2px;
 }
 
 #workspaces button.active {
   color: @background;
   background-color: @accent;
-  /* color: @accent; */
-  /* border-bottom: 2px solid @accent; */
-  /* padding: 4px 12px; */
 }
 
 #workspaces button.active:hover {
@@ -72,7 +45,6 @@ window#waybar {
 }
 
 #workspaces button.empty {
-  /* color: @primary_dim; */
   background: @primary_dim;
   border-bottom: 2px solid @primary_dim;
 }
@@ -93,7 +65,6 @@ window#waybar {
 }
 
 #workspaces button:hover {
-  /* background: @background_dim; */
   border-bottom: 2px solid @primary;
 }
 
@@ -121,10 +92,16 @@ window#waybar {
 #custom-launcher,
 #custom-notification,
 #power-profiles-daemon,
-#custom-power {
+#custom-power,
+#mpris,
+#custom-cava {
   color: @primary;
-  /* background-color: @background; */
   padding: 2px 8px;
+}
+
+#mpris.paused,
+#custom-cava.paused {
+  color: @primary_dim;
 }
 
 #memory > span {
@@ -136,8 +113,7 @@ window#waybar {
 
 #clock > span {
   font-family:
-    "Iosevka Term", "FiraCode Nerd Font", "Symbols Nerd Font",
-    monospace;
+    "Iosevka Term", "FiraCode Nerd Font", "Symbols Nerd Font", monospace;
   font-size: 12px;
 }
 

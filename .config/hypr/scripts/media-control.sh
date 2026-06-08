@@ -18,6 +18,7 @@ play_previous() {
 
 toggle_play_pause() {
   playerctl play-pause
+  sleep 0.2
   show_music_notification
 }
 
