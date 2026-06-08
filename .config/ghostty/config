@@ -30,6 +30,9 @@ window-width = 140
 background-opacity = 1
 window-inherit-working-directory = false
 
+# disable paste protection prompt (reveals sensitive info)
+clipboard-paste-protection = false
+
 # tabs
 gtk-wide-tabs = false
 
@@ -49,5 +52,5 @@ keybind = ctrl+alt+k=goto_split:up
 keybind = ctrl+shift+h=previous_tab
 keybind = ctrl+shift+l=next_tab
 keybind = ctrl+shift+space=toggle_tab_overview
-keybind = ctrl+shift+f=write_scrollback_file:open
+# keybind = ctrl+shift+f=write_scrollback_file:open
 
