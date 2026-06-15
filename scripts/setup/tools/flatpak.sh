@@ -10,14 +10,15 @@ FLATPAK_APPS=(
   com.obsproject.Studio
   com.obsproject.Studio.Plugin.OBSVkCapture
   com.usebruno.Bruno
+  dev.overlayed.Overlayed
   it.mijorus.smile
   md.obsidian.Obsidian
+  org.audacityteam.Audacity
   org.gtk.Gtk3theme.adw-gtk3-dark
-  org.inkscape.Inkscap
+  org.inkscape.Inkscape
   org.kde.kdenlive
   org.localsend.localsend_app
   org.telegram.desktop
-  org.tenacityaudio.Tenacity
 )
 
 # Function to check if Flatpak is installed
