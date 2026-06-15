@@ -103,13 +103,23 @@ hl.window_rule({
   no_focus = true,
 })
 
+-- ALT TAB
+hl.workspace_rule({
+  workspace = "special:alttab",
+  gaps_out = 0,
+  gaps_in = 0,
+  border_size = 0,
+})
+
 hl.window_rule({
   name = "alttab",
+  float = true,
   match = { class = "^(alttab)$" },
+  size = { "monitor_w * 0.6", "monitor_h * 0.7" },
   no_anim = true,
   stay_focused = true,
   workspace = "special:alttab",
-  border_size = 0,
+  border_size = 1,
 })
 
 hl.window_rule({
