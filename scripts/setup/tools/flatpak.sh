@@ -11,6 +11,7 @@ FLATPAK_APPS=(
   com.obsproject.Studio.Plugin.OBSVkCapture
   com.usebruno.Bruno
   dev.overlayed.Overlayed
+  it.mijorus.gearlever
   it.mijorus.smile
   md.obsidian.Obsidian
   org.audacityteam.Audacity
