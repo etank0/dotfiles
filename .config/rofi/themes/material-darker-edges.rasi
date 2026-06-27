@@ -8,7 +8,7 @@
     window-border: 1.75px;
     window-border-color: #4A4A4C;
     window-border-radius: 0px;
-    window-bg-color: rgba(33, 33, 33, 0.8);
+    window-bg-color: rgba(33, 33, 33, 0.9);
 
     bg-col-light: #1e1e2e;
     selected-col: #1e1e2e;

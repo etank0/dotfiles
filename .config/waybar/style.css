@@ -3,7 +3,7 @@
 * {
   font-family:
     "Iosevka", "Inter", "JetBrains Mono", "JetBrainsMono Nerd Font",
-    "JetBrainsMono Nerd Font", sans-serif;
+    "JetBrainsMono Nerd Font", monospace;
   font-size: 14px;
   font-weight: bold;
 }
@@ -96,12 +96,16 @@ window#waybar {
 #mpris,
 #custom-cava {
   color: @primary;
-  padding: 2px 8px;
+  padding: 4px 8px 2px 8px;
 }
 
 #mpris.paused,
 #custom-cava.paused {
   color: @primary_dim;
+}
+
+#custom-cava {
+  font-size: 10px;
 }
 
 #memory > span {

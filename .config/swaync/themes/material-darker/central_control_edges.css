@@ -25,7 +25,7 @@
 /* ------------ CONTROL CENTER ------------- */
 
 .control-center {
-  background: alpha(@background, 0.8);
+  background: alpha(@background, 0.9);
   border: none;
   box-shadow:
     0 0 10px rgba(0, 0, 0, 0.6),
