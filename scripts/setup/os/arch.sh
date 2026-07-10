@@ -1,41 +1,20 @@
 #!/bin/bash
 
-# Exit on errors
-set -e
+set -euo pipefail
 
-# Ensure we have sudo privileges
+BASE_DIR="${DOTFILES_DIR:-$HOME/mygithub/dotfiles}"
+PACKAGES_FILE="${BASE_DIR}/scripts/setup/packages/arch.txt"
+
 if [[ $EUID -ne 0 ]]; then
     echo "[arch] Requesting sudo access..."
     exec sudo "$0" "$@"
 fi
 
-echo "Updating system..."
+echo "[arch] Updating system..."
 pacman -Syu --noconfirm
 
-# Install packages via pacman
-PACKAGES=(
-    zsh
-    kitty
-    tmux
-    fzf
-    bat
-    ripgrep
-    vim
-    neovim
-    mpv
-    celluloid
-    gnome-tweaks
-    deluge
-    yt-dlp
-    ffmpeg
-    aria2
-    qjackctl
-    obs-studio
-    syncplay
-    pipewire-jack
-)
-
-echo "Installing packages..."
+echo "[arch] Installing packages..."
+mapfile -t PACKAGES < <(grep -v '^\s*$' "$PACKAGES_FILE")
 pacman -S --noconfirm "${PACKAGES[@]}"
 
-echo "Arch-based installation completed!"
+echo "[arch] Installation complete!"

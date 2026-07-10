@@ -1,42 +1,20 @@
 #!/bin/bash
 
-# Exit on errors
-set -e
+set -euo pipefail
 
-# Ensure we have sudo privileges
+BASE_DIR="${DOTFILES_DIR:-$HOME/mygithub/dotfiles}"
+PACKAGES_FILE="${BASE_DIR}/scripts/setup/packages/debian.txt"
+
 if [[ $EUID -ne 0 ]]; then
     echo "[debian] Requesting sudo access..."
     exec sudo "$0" "$@"
 fi
 
-echo "Updating system..."
+echo "[debian] Updating system..."
 apt update && apt upgrade -y
 
-# Install packages via apt
-PACKAGES=(
-    zsh
-    kitty
-    tmux
-    fzf
-    bat
-    ripgrep
-    vim
-    neovim
-    mpv
-    celluloid
-    gnome-tweaks
-    deluge
-    yt-dlp
-    ffmpeg
-    aria2
-    qjackctl
-    obs-studio
-    syncplay
-    pipewire-audio
-)
-
-echo "Installing packages..."
+echo "[debian] Installing packages..."
+mapfile -t PACKAGES < <(grep -v '^\s*$' "$PACKAGES_FILE")
 apt install -y "${PACKAGES[@]}"
 
-echo "Debian-based installation completed!"
-
+echo "[debian] Installation complete!"

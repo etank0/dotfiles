@@ -6,14 +6,17 @@ APP_NAME="zen"
 INSTALL_DIR_NAME=".tarball-installations"
 INSTALL_BASE_DIR="$HOME/$INSTALL_DIR_NAME"
 APP_INSTALL_DIR="$INSTALL_BASE_DIR/$APP_NAME"
-TARBALL_URL="https://github.com/zen-browser/desktop/releases/latest/download/zen.linux-x86_64.tar.xz"
+TARBALL_URL="https://github.com/zen-browser/desktop"
+TARBALL_URL+="/releases/latest/download"
+TARBALL_URL+="/zen.linux-x86_64.tar.xz"
 TMP_TAR_PATH="$(mktemp /tmp/zen.XXXXXX.tar.xz)"
 TARBALL_DIR_NAME="zen"
 LOCAL_BIN="$HOME/.local/bin"
 LOCAL_DESKTOP="$HOME/.local/share/applications"
 APP_BIN="$LOCAL_BIN/$APP_NAME"
 DESKTOP_FILE="$LOCAL_DESKTOP/$APP_NAME.desktop"
-ICON_PATH="$APP_INSTALL_DIR/browser/chrome/icons/default/default128.png"
+ICON_DIR="browser/chrome/icons/default"
+ICON_PATH="$APP_INSTALL_DIR/$ICON_DIR/default128.png"
 EXECUTABLE_PATH="$APP_INSTALL_DIR/zen"
 
 echo "[zen] Installing Zen Browser..."
@@ -23,9 +26,9 @@ rm -f "$APP_BIN" "$DESKTOP_FILE"
 rm -rf "$APP_INSTALL_DIR"
 
 # Download and extract
-echo "[zen] Downloading Zen tarball..."
+echo "[zen] Downloading tarball..."
 curl -L -o "$TMP_TAR_PATH" "$TARBALL_URL"
-echo "[zen] Extracting Zen..."
+echo "[zen] Extracting..."
 tar -xJf "$TMP_TAR_PATH"
 
 mkdir -p "$INSTALL_BASE_DIR"
@@ -53,7 +56,7 @@ Type=Application
 StartupNotify=true
 StartupWMClass=zen
 Categories=Network;WebBrowser;
-MimeType=text/html;text/xml;application/xhtml+xml;application/vnd.mozilla.xul+xml;text/mml;x-scheme-handler/http;x-scheme-handler/https;
+MimeType=text/html;text/xml;application/xhtml+xml;text/mml;x-scheme-handler/http;x-scheme-handler/https;
 Actions=new-window;new-private-window;profile-manager-window;
 
 [Desktop Action new-window]
@@ -69,5 +72,4 @@ Name=Open the Profile Manager
 Exec=$EXECUTABLE_PATH --ProfileManager
 EOF
 
-echo "[✔] Zen installed successfully."
-
+echo "[zen] Installed successfully."

@@ -1,29 +1,31 @@
 # Fedora Hyprland Setup
 
-## Wayland Utilities
+## Wayland utilities
 
 ```bash
 sudo dnf install \
-  waybar \
-  wlogout \
-  wtype \
-  openrgb \
-  nm-applet \
-  rofi-wayland \
-  swayimg \
-  cliphist \
-  swaync \
-  kf6-qqc2-desktop-style \
-  foot \
-  pamixer \
-  xdg-desktop-portal \
-  xdg-desktop-portal-hyprland
+    waybar \
+    wlogout \
+    wtype \
+    openrgb \
+    nm-applet \
+    rofi-wayland \
+    swayimg \
+    cliphist \
+    swaync \
+    kf6-qqc2-desktop-style \
+    foot \
+    pamixer \
+    xdg-desktop-portal \
+    xdg-desktop-portal-hyprland
 ```
 
 ### Notes
 
-- `nmtui` is provided by `NetworkManager-tui` (usually installed by default with NetworkManager).
-- `kf6-qqc2-desktop-style` is useful for KDE applications such as KDE Connect.
+- `nmtui` is provided by `NetworkManager-tui`
+  (usually installed by default).
+- `kf6-qqc2-desktop-style` is useful for KDE
+  applications such as KDE Connect.
 - `foot` is required for Alt-Tab integration.
 
 ---
@@ -36,27 +38,28 @@ sudo dnf copr enable lionheartp/Hyprland
 
 ---
 
-## Hyprland Packages
+## Hyprland packages
 
 ```bash
 sudo dnf install \
-  hyprland \
-  hyprpaper \
-  hyprlock \
-  hypridle \
-  hyprshot \
-  qt6ct-kde \
-  nwg-look
+    hyprland \
+    hyprpaper \
+    hyprlock \
+    hypridle \
+    hyprshot \
+    qt6ct-kde \
+    nwg-look
 ```
 
-> `NOTE`:  Optional (as relying less on plugins)
+Optional (relying less on plugins):
+
 ```bash
- sudo dnf install pyprland hyprland-devel
+sudo dnf install pyprland hyprland-devel
 ```
 
 ---
 
-## Cargo Packages
+## Cargo packages
 
 ```bash
 cargo install yazi-fm
@@ -65,7 +68,7 @@ cargo install ripdrag
 
 ---
 
-## Build From Source
+## Build from source
 
 ```text
 nwg-look
@@ -74,14 +77,17 @@ rofi-calc
 
 ---
 
-## Optional Hyprland Plugins
+## Optional Hyprland plugins
 
 ```bash
-hyprpm add https://github.com/hyprwm/hyprland-plugins
-hyprpm add https://github.com/KZDKM/Hyprspace
+hyprpm add \
+    https://github.com/hyprwm/hyprland-plugins
+hyprpm add \
+    https://github.com/KZDKM/Hyprspace
 
 hyprpm enable hyprbars
 hyprpm enable Hyprspace
 ```
 
-> Plugins are optional and may require updates when Hyprland versions change.
+Plugins are optional and may require updates
+when Hyprland versions change.

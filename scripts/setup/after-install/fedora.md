@@ -1,37 +1,50 @@
 # Fedora After Install Setup
 
-`NOTE`: Refer these
-[`https://github.com/devangshekhawat/Fedora-42-Post-Install-Guide`](https://github.com/devangshekhawat/Fedora-42-Post-Install-Guide)
-[`https://github.com/roworu/nvidia-fedora-secureboot`](https://github.com/roworu/nvidia-fedora-secureboot)
+Refer to these guides:
+- [Fedora 42 Post Install Guide](https://github.com/devangshekhawat/Fedora-42-Post-Install-Guide)
+- [Nvidia Fedora Secureboot](https://github.com/roworu/nvidia-fedora-secureboot)
 
 ### Update dnf settings
 
-`/etc/dnf/dnf.conf` inside `[main]`
-```
+`/etc/dnf/dnf.conf` inside `[main]`:
+
+```ini
 [main]
 installonly_limit=2
 fastestmirror=true
-max_paraller_downloads=3
+max_parallel_downloads=3
 ```
 
 ### Install multimedia codecs
+
 ```bash
 sudo dnf group install -y multimedia
 sudo dnf group install -y sound-and-video
-sudo dnf swap 'ffmpeg-free' 'ffmpeg' --allowerasing # Switch to full FFMPEG.
-sudo dnf upgrade @multimedia --setopt="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin # Installs gstreamer components. Required if you use Gnome Videos and other dependent applications.
+
+# Switch to full ffmpeg
+sudo dnf swap 'ffmpeg-free' 'ffmpeg' --allowerasing
+
+# Install gstreamer components
+# Required for gnome videos and other apps
+sudo dnf upgrade @multimedia \
+    --setopt="install_weak_deps=False" \
+    --exclude=PackageKit-gstreamer-plugin
 ```
 
-### Install Nvidia Drivers
+### Install Nvidia drivers
+
 ```bash
 sudo dnf install akmod-nvidia nvidia-smi
 ```
 
-### Network/WiFi Disconnects
+### Network/WiFi disconnects
+
 ```bash
-sudo tee /etc/NetworkManager/conf.d/00-wifi-powersave.conf << EOF > /dev/null
+sudo tee /etc/NetworkManager/conf.d/00-wifi-powersave.conf \
+    << 'EOF' > /dev/null
 [connection]
 wifi.powersave=2
 EOF
+
 sudo systemctl restart NetworkManager.service
 ```

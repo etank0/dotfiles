@@ -1,59 +1,20 @@
-#!/bin/sh
+#!/bin/bash
 
-# Exit on errors
-set -e
+set -euo pipefail
 
-# Ensure we have sudo privileges
+BASE_DIR="${DOTFILES_DIR:-$HOME/mygithub/dotfiles}"
+PACKAGES_FILE="${BASE_DIR}/scripts/setup/packages/fedora.txt"
+
 if [[ $EUID -ne 0 ]]; then
     echo "[fedora] Requesting sudo access..."
     exec sudo "$0" "$@"
 fi
 
-echo "Updating package repositories..."
+echo "[fedora] Updating package repositories..."
 dnf update -y
 
-# Install packages via dnf
-PACKAGES=(
-    adw-gtk3-theme
-    aria2
-    bat
-    blueman
-    breeze-icons
-    cava
-    celluloid
-    deluge
-    fastfetch
-    fd-find
-    ffmpeg
-    foliate
-    fzf
-    gnome-tweaks
-    gum
-    kitty
-    kvantum
-    mpv
-    neovim
-    # obs-studio
-    openrgb
-    pavucontrol
-    qjackctl
-    qt5ct
-    qt6ct
-    ripgrep
-    syncplay
-    sxiv
-    tmux
-    vim
-    wf-recorder
-    yt-dlp
-    zathura
-    zathura-djvu
-    zathura-pdf-mupdf
-    zoxide
-    zsh
-)
-
-echo "Installing packages..."
+echo "[fedora] Installing packages..."
+mapfile -t PACKAGES < <(grep -v '^\s*$' "$PACKAGES_FILE")
 dnf install -y "${PACKAGES[@]}"
 
-echo "Installation complete!"
+echo "[fedora] Installation complete!"
