@@ -23,43 +23,30 @@ then
 fi
 export PATH
 
-# for pywal
-# cat ~/.cache/wal/sequences
-
-#for tomcat
-export JAVA_HOME=/usr/lib/jvm/java-17-openjdk
-export CATALINA_HOME=/opt/tomcat
-export PATH=$PATH:$CATALINA_HOME/bin
-export PATH=$JAVA_HOME/bin:$PATH
-
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# For SASS compiler/transpiler
-export PATH=/home/swetank/.local/bin/dart-sass:$PATH
-
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
-
-# For eclipse in Wayland
-# export WEBKIT_DISABLE_COMPOSITING_MODE=1
+source ~/.fzf.zsh
 
 # Add asdf path
 export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
-# For fzf defaults
-source ~/.fzf.zsh
-
-# ripgrep config path
+# RipGrep config path
 export RIPGREP_CONFIG_PATH="$HOME/.config/.ripgreprc"
-
-# nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Add Haskell ghcup
 if [ -f "$HOME/.ghcup/env" ]; then
   source "$HOME/.ghcup/env"
 fi
+
+# For Rust
+source $HOME/.cargo/env
+
+# API KEYS
+export MISTRAL_API_KEY=$(cat ~/tokens/mistral/codestral_key.txt)
+
+# Opencode
+export PATH=$HOME/.opencode/bin:$PATH
 

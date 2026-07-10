@@ -1,7 +1,8 @@
 #!/bin/sh
 
 # Directory containing wallpapers
-WALLPAPER_DIR="$HOME/Pictures/kabegami/wal" # Update this path to your directory
+# Update this path to your directory
+WALLPAPER_DIR="$HOME/Pictures/kabegami/wal"
 
 # Pick a random wallpaper
 WALLPAPER=$(find "$WALLPAPER_DIR" -type f \

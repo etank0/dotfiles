@@ -111,4 +111,9 @@ source $ZSH/oh-my-zsh.sh
 if [ -f ~/.zsh_profile ]; then
     source ~/.zsh_profile
 fi
+if [ -f ~/.zsh_aliases ]; then
+    source ~/.zsh_aliases
+fi
 #----------------------------------------------------
+
+
